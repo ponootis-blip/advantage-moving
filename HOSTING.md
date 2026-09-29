@@ -32,13 +32,13 @@ private API keys, passwords, or GitHub tokens in this file.
 5. Choose branch `main`, folder `/ (root)`, then save.
 6. GitHub will show the public `github.io` URL after the first deployment.
 
-The `.nojekyll` file tells GitHub Pages to serve these files directly. The
-`CNAME` file prepares the site for `advantagemovingaustin.com`; the domain will
-not switch until its DNS records are updated in the domain provider.
+The `.nojekyll` file tells GitHub Pages to serve these files directly. Keep the
+default `github.io` address until the custom-domain DNS records are ready.
 
 ## Custom domain
 
 After the `github.io` site works, add `advantagemovingaustin.com` in the Pages
 custom-domain field and follow GitHub's displayed DNS instructions. Verify the
 domain in GitHub before changing DNS, then enable **Enforce HTTPS** after the
-certificate is issued.
+certificate is issued. GitHub will create the repository's `CNAME` file when
+the custom domain is saved.

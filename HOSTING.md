@@ -6,22 +6,30 @@ This folder is a static site ready for GitHub Pages. Publish the **contents of
 ## What is needed
 
 1. A GitHub account and a public repository, suggested name: `advantage-moving`.
-2. A free Web3Forms access key sent to the inbox that should receive quote
+2. A free Formspree form connected to the inbox that should receive quote
    requests (currently `service@advantagemovingaustin.com`).
 3. DNS access for `advantagemovingaustin.com` when the custom domain is ready
    to be pointed at GitHub Pages.
 
-## Connect quote requests
+## Connect quote requests and alerts
 
-1. Create an access key at <https://web3forms.com/> and verify the receiving
-   email address.
-2. Open `site-config.js` and replace `REPLACE_WITH_WEB3FORMS_ACCESS_KEY` with
-   the issued key.
-3. In the Web3Forms dashboard, restrict submissions to the production domain
-   if that option is available for the account.
+1. Create a form at <https://formspree.io/> using the email inbox that should
+   receive every new quote alert.
+2. Copy the endpoint shown for the form. It looks like
+   `https://formspree.io/f/xxxxxxxx`.
+3. Open `site-config.js` and replace the placeholder endpoint with that value.
+4. In Formspree, keep the Email plugin enabled and restrict the form to the
+   production GitHub Pages/custom domain.
+5. Submit one test lead from the live site. Confirm that it appears in the
+   Formspree Inbox and arrives by email.
+6. Reply directly to the notification email. The visitor's `email` field is
+   used as the Reply-To address, so the reply goes to the customer rather than
+   to the form service.
 
-The access key is designed for static client-side forms. Do not place unrelated
-private API keys, passwords, or GitHub tokens in this file.
+The public form endpoint is designed for client-side forms. Do not place private
+API keys, passwords, email credentials, or GitHub tokens in `site-config.js`.
+The free Formspree plan currently allows 50 processed submissions per month and
+keeps 30 days of submission history, so monitor usage and export important leads.
 
 ## Publish
 

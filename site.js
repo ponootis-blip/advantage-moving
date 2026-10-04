@@ -20,14 +20,15 @@ if(typeof document!=="undefined"){
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){error.textContent="Enter a valid email address.";return}
     if(phone.replace(/\D/g,"").length<10){error.textContent="Enter a 10-digit phone number.";return}
     var config=window.ADVANTAGE_FORM||{};
-    var payload={access_key:config.accessKey,subject:"New Advantage Moving quote request",from_name:"Advantage Moving website",name:name,phone:phone,email:email,"Moving from":value("qFrom"),"Moving to":value("qTo"),"Move date":value("qDate")||"Flexible / not selected","Move type":value("qType"),botcheck:value("qWebsite")};
+    var reference="ADV-"+Date.now().toString(36).slice(-6).toUpperCase();
+    var payload={_subject:"New Advantage Moving quote — "+reference,reference:reference,name:name,phone:phone,email:email,"Moving from":value("qFrom"),"Moving to":value("qTo"),"Move date":value("qDate")||"Flexible / not selected","Move type":value("qType"),message:"Quote "+reference+": "+value("qType")+" move from "+value("qFrom")+" to "+value("qTo")+". Requested date: "+(value("qDate")||"flexible")+".",_gotcha:value("qWebsite")};
+    if(config.provider==="web3forms"){payload.access_key=config.accessKey;payload.subject=payload._subject;payload.from_name="Advantage Moving website";payload.botcheck=payload._gotcha}
     submit.disabled=true;submit.textContent="Sending…";
     try{
-      if(!config.accessKey||config.accessKey.indexOf("REPLACE_")===0){throw new Error("not-configured")}
-      var response=await fetch(config.endpoint||"https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(payload)});
+      if(!config.endpoint||config.endpoint.indexOf("REPLACE_")!==-1||(config.provider==="web3forms"&&(!config.accessKey||config.accessKey.indexOf("REPLACE_")===0))){throw new Error("not-configured")}
+      var response=await fetch(config.endpoint,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(payload)});
       var data=await response.json().catch(function(){return{}});
-      if(!response.ok||!data.success){throw new Error(data.message||"Unable to send")}
-      var reference="ADV-"+Date.now().toString(36).slice(-6).toUpperCase();
+      if(!response.ok||(config.provider==="web3forms"&&!data.success)){throw new Error(data.error||data.message||"Unable to send")}
       status.textContent="Thanks, "+name+". Your request "+reference+" was sent to Advantage Moving. We’ll be in touch during business hours.";
       status.hidden=false;quoteForm.reset();
     }catch(sendError){

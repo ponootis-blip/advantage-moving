@@ -1,4 +1,4 @@
 window.ADVANTAGE_FORM = {
-  endpoint: "https://api.web3forms.com/submit",
-  accessKey: "REPLACE_WITH_WEB3FORMS_ACCESS_KEY"
+  provider: "formspree",
+  endpoint: "https://formspree.io/f/REPLACE_WITH_FORMSPREE_FORM_ID"
 };

@@ -18,7 +18,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MovingCompany","name":"Advantage Moving Austin","url":"https://advantagemovingaustin.com/","telephone":"+1-512-443-6141","email":"service@advantagemovingaustin.com","foundingDate":"2001","address":{"@type":"PostalAddress","streetAddress":"2462 Satterwhite Rd.","addressLocality":"Buda","addressRegion":"TX","postalCode":"78610"},"openingHours":"Mo-Su 08:00-17:00","areaServed":["Austin TX","Buda TX","Central Texas","Texas"],"priceRange":"$$","image":"https://advantagemovingaustin.com/assets/hero-mosaic-desktop-v2.jpg"}
 </script>
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -42,10 +42,10 @@
   <div class="wrap quote-wrap">
     <div class="quote-card" id="quote">
       <div class="quote-heading"><p class="step-kicker">Free · no obligation · about one minute</p><h2 id="quote-title">Get your moving estimate</h2><p>Tell us where you’re going. Our local team will follow up with a practical plan.</p></div>
-      <form id="quoteForm" novalidate>
+      <form id="quoteForm" novalidate aria-describedby="qPrivacy">
         <div class="form-step" id="quoteStep1">
-          <label class="field"><span>Moving from <b>*</b></span><input type="text" id="qFrom" name="from" autocomplete="street-address" placeholder="City or ZIP" required></label>
-          <label class="field"><span>Moving to <b>*</b></span><input type="text" id="qTo" name="to" autocomplete="off" placeholder="City or ZIP" required></label>
+          <label class="field"><span>Moving from <b>*</b></span><input type="text" id="qFrom" name="from" autocomplete="street-address" placeholder="City or ZIP" maxlength="120" required></label>
+          <label class="field"><span>Moving to <b>*</b></span><input type="text" id="qTo" name="to" autocomplete="off" placeholder="City or ZIP" maxlength="120" required></label>
           <div class="field-row">
             <label class="field"><span>Move date</span><input type="date" id="qDate" name="date"></label>
             <label class="field"><span>Move type <b>*</b></span><select id="qType" name="type" required><option value="">Choose one</option><option>Apartment</option><option>House</option><option>Business</option><option>Piano / valuable</option><option>Other</option></select></label>
@@ -55,15 +55,16 @@
         </div>
         <div class="form-step" id="quoteStep2" hidden>
           <button class="back-button" id="quoteBack" type="button"><span aria-hidden="true">←</span> Back to move details</button>
-          <div class="field-row"><label class="field"><span>Name <b>*</b></span><input type="text" id="qName" name="name" autocomplete="name" required></label><label class="field"><span>Phone <b>*</b></span><input type="tel" id="qPhone" name="phone" autocomplete="tel" inputmode="tel" placeholder="512-555-0100" required></label></div>
-          <label class="field"><span>Email <b>*</b></span><input type="email" id="qEmail" name="email" autocomplete="email" required></label>
-          <label class="hp-field" aria-hidden="true">Website<input type="text" id="qWebsite" name="website" tabindex="-1" autocomplete="off"></label>
+          <div class="field-row"><label class="field"><span>Name <b>*</b></span><input type="text" id="qName" name="name" autocomplete="name" maxlength="80" required></label><label class="field"><span>Phone <b>*</b></span><input type="tel" id="qPhone" name="phone" autocomplete="tel" inputmode="tel" placeholder="512-555-0100" maxlength="30" required></label></div>
+          <label class="field"><span>Email <b>*</b></span><input type="email" id="qEmail" name="email" autocomplete="email" maxlength="254" required></label>
+          <label class="hp-field" aria-hidden="true">Website<input type="text" id="qWebsite" name="_gotcha" tabindex="-1" autocomplete="off"></label>
           <div class="form-error" id="qErr2" role="alert"></div>
           <button class="button button-wide" id="quoteSubmit" type="submit">Send my quote request <span aria-hidden="true">→</span></button>
-          <p class="form-note">Your details go directly to our local team—not a lead marketplace. We reply during daily business hours, 8am–5pm.</p>
-          <div class="form-status" id="qStatus" role="status" aria-live="polite" hidden></div>
+          <p class="form-note" id="qPrivacy">Your details go directly to our local team—not a lead marketplace. By sending, you agree we may contact you about this move. <a href="privacy-policy.html">Privacy policy</a>.</p>
         </div>
+        <div class="form-status" id="qStatus" role="status" aria-live="polite" tabindex="-1" hidden></div>
       </form>
+      <noscript><p class="form-status is-error">JavaScript is required for the online form. Please call <a href="tel:+15124436141">(512) 443-6141</a> or email <a href="mailto:service@advantagemovingaustin.com">service@advantagemovingaustin.com</a>.</p></noscript>
       <div class="quote-or"><span>or</span></div>
       <a class="call-now" href="tel:+15124436141"><span class="call-icon" aria-hidden="true">☎</span><span><small>Prefer a real person? Call the local team</small><strong>(512) 443-6141</strong></span></a>
     </div>
@@ -129,7 +130,7 @@
   <div><h2>Contact</h2><a href="tel:+15124436141">(512) 443-6141</a><a href="mailto:service@advantagemovingaustin.com">service@advantagemovingaustin.com</a><span>2462 Satterwhite Rd.<br>Buda, TX 78610</span></div>
   <div><h2>Hours &amp; resources</h2><span>Open daily<br>8am–5pm</span><span>TXDMV #000572890B</span><a href="moving-guide-south-austin.html">South Austin moving guide</a><a href="privacy-policy.html">Privacy policy</a></div>
 </div><div class="wrap footer-bottom"><span>© 2026 Advantage Moving Austin</span><span>Hometown service. Texas reach.</span></div></footer>
-<script src="site-config.js?v=2" defer></script>
-<script src="site.js?v=7" defer></script>
+<script src="site-config.js?v=3" defer></script>
+<script src="site.js?v=8" defer></script>
 </body>
 </html>

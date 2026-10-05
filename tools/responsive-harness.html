@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Advantage Moving responsive harness</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#071f2b;color:#eef9ff;font:14px/1.45 ui-sans-serif,system-ui,sans-serif}header{position:sticky;z-index:10;top:0;padding:14px 20px;background:#063f65;border-bottom:4px solid #f5a623}h1{margin:0;font-size:18px}p{margin:3px 0 0;color:#c5dfeb}.wall{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;padding:18px}.device{overflow:auto;padding:12px;border:1px solid #316782;border-radius:10px;background:#0b2d3d;box-shadow:0 8px 24px rgba(0,0,0,.24)}.label{display:flex;justify-content:space-between;margin-bottom:9px;font-weight:800}.stage{overflow:hidden;background:#fff;transform-origin:top left}.stage iframe{display:block;border:0;background:#fff}</style>
+</head>
+<body>
+<header><h1>Advantage Moving responsive QA</h1><p id="summary">True-width frames from 320px phone through 2560px ultrawide.</p></header>
+<main class="wall" id="wall"></main>
+<script>
+const sizes=[[320,568,'Small phone'],[390,844,'Phone'],[768,1024,'Tablet portrait'],[820,1180,'Large tablet'],[1024,768,'Tablet landscape'],[1366,768,'Laptop'],[1440,900,'Desktop'],[1920,1080,'Full HD'],[2560,1440,'Ultrawide']];
+const params=new URLSearchParams(location.search);const page=(params.get('page')||'index.html').replace(/[^a-z0-9-\.]/gi,'');document.getElementById('summary').textContent=`${page} · true-width frames from 320px phone through 2560px ultrawide.`;
+const wall=document.getElementById('wall');for(const [w,h,name] of sizes){const scale=Math.min(1,540/w);const card=document.createElement('section');card.className='device';card.dataset.viewport=`${w}x${h}`;card.innerHTML=`<div class="label"><span>${name}</span><span>${w} × ${h}</span></div><div class="stage" style="width:${w*scale}px;height:${h*scale}px"><iframe title="${name} ${w} by ${h}" src="../${page}?harness=${w}" width="${w}" height="${h}" style="transform:scale(${scale})"></iframe></div>`;wall.append(card)}
+</script>
+</body>
+</html>

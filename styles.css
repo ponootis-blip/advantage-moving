@@ -195,3 +195,188 @@ footer{background:var(--blue-dark)}.footer-grid h2{color:#ffd276}.footer-brand i
   .home .hero-quote-tile{bottom:22px}
 }
 @media(prefers-reduced-motion:reduce){.hero-logo{transition:none}}
+
+/* Site-wide ceramic mosaic system — semantic HTML on reusable Texas tile slabs. */
+:root{
+  --porcelain:#fffaf0;
+  --porcelain-warm:#fff1d7;
+  --grout:#efd7ae;
+  --grout-light:#fff0d0;
+  --tile-blue:#08659a;
+  --tile-blue-dark:#06466e;
+  --tile-green:#167647;
+  --tile-orange:#e45e12;
+  --tile-shadow:0 6px 0 rgba(177,121,53,.28),0 16px 34px rgba(6,75,135,.13);
+  --slab-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -3px 5px rgba(113,64,20,.08),0 6px 0 rgba(178,122,54,.24),0 20px 44px rgba(6,75,135,.12)
+}
+body{overflow-x:hidden;background-color:var(--paper)}
+main{background:
+  radial-gradient(circle at 12px 12px,rgba(228,94,18,.045) 0 1.5px,transparent 2px),
+  linear-gradient(180deg,#fffaf0,#fff7e9);background-size:24px 24px,auto}
+.home .hero,.interior .inner-hero{width:min(100%,1920px);margin-inline:auto;box-shadow:0 0 50px rgba(4,50,74,.16)}
+.home .sitehead{width:min(100%,1920px);margin-inline:auto}
+
+/* Every action is a single raised ceramic slab, never a pill. */
+.button,.mobile-actions a:last-child{
+  position:relative;overflow:hidden;border:1px solid rgba(255,230,196,.72);border-radius:9px;
+  background:radial-gradient(ellipse at 20% 8%,rgba(255,255,255,.16),transparent 48%),linear-gradient(145deg,#ef741f 0%,#e45e12 52%,#d74d0c 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.42),inset 0 -3px 5px rgba(116,36,3,.18),0 4px 0 #a63b0b,0 12px 24px rgba(2,35,46,.22)
+}
+.button:hover{background:radial-gradient(ellipse at 20% 8%,rgba(255,255,255,.2),transparent 50%),linear-gradient(145deg,#f17a25,#e76015 56%,#db520e);box-shadow:inset 0 1px 0 rgba(255,255,255,.46),inset 0 -3px 5px rgba(116,36,3,.17),0 6px 0 #a63b0b,0 16px 28px rgba(2,35,46,.26)}
+.button:active{transform:translateY(2px);box-shadow:inset 0 2px 5px rgba(116,36,3,.17),0 2px 0 #9b3509,0 7px 16px rgba(2,35,46,.2)}
+.button-cream{color:var(--blue-dark);border-color:#eed7a7;background:linear-gradient(145deg,#fffdf7,#fff2d2);box-shadow:inset 0 1px 0 #fff, inset 0 -3px 5px rgba(121,80,27,.08),0 4px 0 #d5ad62,0 12px 24px rgba(2,35,46,.18)}
+.button-cream:hover{color:var(--blue-dark);background:linear-gradient(145deg,#fff,#fff5df);box-shadow:inset 0 1px 0 #fff,0 6px 0 #d5ad62,0 16px 28px rgba(2,35,46,.2)}
+.button-outline{color:var(--blue-dark);border-color:#a7cee0;background:linear-gradient(145deg,#fff,#edf8fc);box-shadow:inset 0 1px 0 #fff,0 4px 0 #aed3e3,0 10px 20px rgba(5,75,130,.12)}
+.button-outline:hover{color:var(--blue-dark);background:linear-gradient(145deg,#fff,#e4f5fb)}
+
+/* Interior navigation uses the floating mosaic logo and a stable tile rail. */
+.interior .sitehead{position:relative;top:auto;left:auto;right:auto;height:92px;background:linear-gradient(180deg,#fffdf7,#f7f8f7);border-bottom:3px solid var(--gold);box-shadow:0 5px 22px rgba(6,75,135,.12)}
+.interior .nav-row{width:min(1280px,calc(100% - 36px));height:100%;justify-content:flex-start;gap:22px;padding:0}
+.interior .brand{display:flex;width:180px;filter:drop-shadow(0 3px 4px rgba(2,31,43,.16))}
+.interior .brand img{display:block;width:100%;height:auto;background:transparent}
+.interior .main-nav{display:flex;margin-left:auto;gap:8px}
+.interior .main-nav a{padding:8px 11px}
+.interior .nav-actions{display:flex;gap:9px}
+.interior .phone-link{padding:7px 11px}
+.interior .sitehead .button-small{min-height:46px}
+.interior .sitehead .button-small{color:#fff;background:radial-gradient(ellipse at 20% 8%,rgba(255,255,255,.16),transparent 48%),linear-gradient(145deg,#ef741f,#e45e12 52%,#d74d0c);border:1px solid rgba(255,230,196,.72)}
+
+/* Layered scene and separate text slabs keep copy crawlable and art responsive. */
+.interior .inner-hero{min-height:720px;padding:34px 0 72px;background:#0877c9;color:#fff}
+.interior .inner-hero>.wrap{display:flex;min-height:614px;flex-direction:column}
+.interior .inner-hero:before{inset:0;transform:none;background-image:url("assets/hero-scene-mosaic-desktop-v4.png"),url("assets/hero-sky-mosaic-desktop-v4.jpg");background-position:center bottom,center top;background-repeat:no-repeat;background-size:contain,cover}
+.interior .inner-hero:after{background:linear-gradient(90deg,rgba(2,45,68,.34),rgba(2,45,68,.08) 54%,rgba(2,45,68,.02)),linear-gradient(0deg,rgba(3,48,65,.64),transparent 58%)}
+.interior .breadcrumbs{align-self:flex-start;margin:0;padding:8px 12px;border:1px solid rgba(255,240,209,.74);border-radius:7px;background:rgba(5,75,130,.88);box-shadow:0 3px 0 rgba(3,47,81,.78);color:#fff;font-weight:800;backdrop-filter:blur(4px)}
+.interior .inner-hero-grid{margin-top:auto;grid-template-columns:minmax(0,1fr) 350px;gap:28px;align-items:end}
+.interior .inner-hero-grid>div:first-child{max-width:850px;padding:30px 34px 32px;border:2px solid rgba(255,239,203,.65);border-left:7px solid var(--gold);border-radius:12px;background:rgba(3,52,66,.94);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 8px 0 rgba(2,38,52,.35),0 24px 50px rgba(1,29,41,.3)}
+.interior .inner-hero h1{font-size:clamp(3rem,4.6vw,5rem);margin-bottom:18px;text-shadow:0 2px 9px rgba(0,0,0,.34)}
+.interior .inner-hero .lede{color:#f4fbff}
+.hero-contact{padding:25px;border:2px solid #edc78c;border-top:7px solid var(--orange);border-radius:11px;background:linear-gradient(145deg,#fff,#fff5e3);box-shadow:var(--slab-shadow)}
+
+/* Large porcelain slabs hold long-form HTML, with smaller scene pieces around them. */
+.content-section{position:relative;padding:88px 0;background:radial-gradient(circle at 11px 11px,rgba(8,119,201,.045) 0 1.5px,transparent 2px);background-size:22px 22px}
+.content-section.alt{background-color:#eef8fb;background-image:linear-gradient(90deg,rgba(8,119,201,.045) 1px,transparent 1px),linear-gradient(rgba(8,119,201,.045) 1px,transparent 1px);background-size:30px 30px}
+.content-grid{gap:34px;align-items:start}
+.article{padding:clamp(26px,4vw,50px);border:2px solid var(--grout);border-radius:12px;background:linear-gradient(145deg,#fffdf8,#fff8e9);box-shadow:var(--slab-shadow)}
+.privacy-article{max-width:940px;margin-inline:auto}
+.article h3{padding-top:20px;border-top:1px solid #ead5b1}
+.side-card{top:28px;padding:27px;border:2px solid #e7b865;border-radius:11px;background:linear-gradient(145deg,#fff4d9,#ffe7b8);box-shadow:var(--tile-shadow)}
+.side-card li{border-color:rgba(135,82,26,.18)}
+.side-card a{padding:12px 9px;border-radius:6px;transition:background .18s ease,transform .18s ease}
+.side-card a:hover{background:rgba(255,255,255,.58);transform:translateX(3px)}
+.location-cloud a{border:1px solid #b6d7e6;border-radius:7px;background:linear-gradient(145deg,#fff,#eaf7fb);box-shadow:0 3px 0 #c2dfe9;color:var(--blue-dark)}
+.process-grid,.related-grid{gap:16px}
+.process-card,.related-card{border:2px solid var(--grout);border-radius:10px;background:linear-gradient(145deg,#fff,#fff6e5);box-shadow:var(--tile-shadow)}
+.process-card:nth-child(2n),.related-card:nth-child(2n){border-color:#acd7ea;box-shadow:0 6px 0 #cce8f2,0 16px 30px rgba(6,75,135,.12)}
+.process-card span,.related-card small{display:inline-flex;padding:6px 9px;border-radius:6px;background:var(--blue-dark);color:#fff;box-shadow:0 3px 0 #053451}
+.page-faq{max-width:900px;padding:clamp(24px,4vw,44px);border:2px solid #acd7ea;border-radius:12px;background:#fffdf8;box-shadow:var(--slab-shadow)}
+.page-faq .accordion details{margin-bottom:10px}
+
+/* A single Texas-sized tile anchors local proof without turning text into an image. */
+.local-band{padding:48px 0;border:0;background:linear-gradient(180deg,#fff4dd,#ffedcc)}
+.local-band-grid{position:relative;overflow:hidden;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:44px;padding:44px 150px 44px 44px;border:3px solid #f3c16e;border-radius:13px;background:radial-gradient(circle at 10px 10px,rgba(255,255,255,.08) 0 5px,transparent 5.5px),linear-gradient(145deg,#075985,#063f65);background-size:22px 22px,auto;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 8px 0 #e7be75,0 24px 42px rgba(5,54,75,.2)}
+.local-band-grid:after{content:"★";position:absolute;right:34px;top:50%;display:grid;place-items:center;width:92px;height:92px;transform:translateY(-50%);background:linear-gradient(145deg,#ef741f,#d84d0d);clip-path:polygon(7% 0,48% 0,52% 27%,63% 34%,71% 29%,79% 42%,100% 50%,89% 65%,83% 79%,69% 82%,58% 100%,47% 82%,27% 72%,21% 53%,0 47%,10% 34%);color:#fff4d6;font:900 1.7rem/1 ui-sans-serif,sans-serif;filter:drop-shadow(0 5px 0 rgba(2,38,58,.3))}
+.local-band h2{font-size:clamp(2.15rem,3.4vw,3.45rem)}
+.local-band p{color:#e5f7ff}
+
+/* Home conversion flow: each block reads as a composed wall of ceramic pieces. */
+.quote-section{position:relative;background:linear-gradient(135deg,#e9f8ff,#fff4df 52%,#ffe3ba);background-size:auto}
+.quote-card{border:2px solid #eab969;border-top:8px solid var(--orange);border-radius:12px;background:linear-gradient(145deg,#fff,#fff8eb);box-shadow:var(--slab-shadow)}
+.field input,.field select,.estimate-tool input,.estimate-tool select{border:2px solid #b9cbc5;border-radius:7px;background:linear-gradient(180deg,#fff,#fbfaf5);box-shadow:inset 0 2px 4px rgba(3,52,66,.06)}
+.call-icon{border:1px solid #b6ddec;border-radius:7px;box-shadow:0 3px 0 #c0deea}
+.trust-strip{padding:20px 0 26px;border-block:7px solid var(--gold);background:linear-gradient(180deg,#0877c9,#065e9a)}
+.trust-grid{gap:12px;padding-block:0}
+.trust-grid>div,.trust-grid>div:first-child{min-height:92px;padding:17px 18px;border:2px solid rgba(255,242,210,.66);border-radius:9px;background:radial-gradient(circle at 7px 7px,rgba(255,255,255,.1) 0 4px,transparent 4.5px),linear-gradient(145deg,#0a6b9e,#075884);background-size:16px 16px,auto;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 5px 0 rgba(3,49,80,.65)}
+.trust-grid>div:nth-child(2n){background:radial-gradient(circle at 7px 7px,rgba(255,255,255,.1) 0 4px,transparent 4.5px),linear-gradient(145deg,#198651,#106b42);background-size:16px 16px,auto;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 5px 0 rgba(6,77,46,.67)}
+.services{background:linear-gradient(180deg,#fffaf0,#fff1d7)}
+.section-intro>div,.estimate-copy,.faq-intro{padding:24px 26px;border:2px solid var(--grout);border-left:7px solid var(--gold);border-radius:10px;background:linear-gradient(145deg,#fff,#fff7e8);box-shadow:var(--tile-shadow)}
+.section-intro.centered>div{display:inline-block}
+.service-card{border-radius:12px;background:#fffdf8;box-shadow:var(--tile-shadow)}
+.service-card:hover{box-shadow:0 10px 0 #efc987,0 24px 42px rgba(6,75,135,.16)}
+.service-art:after{background-image:linear-gradient(90deg,rgba(255,244,216,.13) 1px,transparent 1px),linear-gradient(rgba(255,244,216,.12) 1px,transparent 1px);background-size:19px 19px}
+.story{width:min(100%,1920px);margin-inline:auto;border-block:8px solid var(--gold)}
+.story-image{background-image:url("assets/hero-scene-mosaic-desktop-v4.png"),url("assets/hero-sky-mosaic-desktop-v4.jpg");background-position:center bottom,center;background-repeat:no-repeat;background-size:contain,cover;border-right:8px solid var(--gold)}
+.story-copy{background:radial-gradient(circle at 10px 10px,rgba(255,255,255,.055) 0 5px,transparent 5.5px),linear-gradient(145deg,#064b76,#073d42);background-size:22px 22px,auto}
+.promise-list li{margin-bottom:9px;padding:16px;border:1px solid rgba(255,242,210,.24);border-radius:8px;background:rgba(3,43,59,.42);box-shadow:0 3px 0 rgba(2,29,41,.28)}
+.estimate-section{background:linear-gradient(135deg,#e5f6ff,#fff0d5)}
+.estimate-tool{border:2px solid #9dd4ef;border-radius:12px;background:linear-gradient(145deg,#fff,#f5fbfd);box-shadow:var(--slab-shadow)}
+.estimate-result{border-width:2px;border-radius:8px;box-shadow:0 4px 0 #cbe5d5}
+.reviews{background:linear-gradient(180deg,#fff,#eef8fb)}
+.review-card{border:2px solid #e5c694;border-radius:11px;background:linear-gradient(145deg,#fff,#fff7e7);box-shadow:var(--tile-shadow)}
+.review-card.featured{border-color:#7dbbd7;background:radial-gradient(circle at 9px 9px,rgba(255,255,255,.06) 0 4px,transparent 4.5px),linear-gradient(145deg,#075b88,#073d60);background-size:20px 20px,auto;box-shadow:0 7px 0 #b7ddeb,0 18px 36px rgba(5,54,75,.2)}
+.faq{background:linear-gradient(180deg,#fff6e5,#fffaf0)}
+.accordion details{margin:0 0 11px;padding:0 20px;border:2px solid #ecd3a8!important;border-radius:9px;background:linear-gradient(145deg,#fff,#fff7e8);box-shadow:0 4px 0 #edd8b6}
+.accordion summary{padding:19px 0}
+.accordion details p{margin:-3px 42px 20px 0}
+
+/* Texas wildflowers join the final conversion slab and footer tile wall. */
+.final-cta{position:relative;overflow:hidden;padding:66px 0 108px;border-top:7px solid var(--gold);background:linear-gradient(110deg,#d94e0d,#ec741f 52%,#f4a22a)}
+.final-cta:before{content:"";position:absolute;z-index:1;left:0;right:0;bottom:-3px;height:128px;background:url("assets/texas-wildflower-divider-v1.png") center bottom/100% auto no-repeat;pointer-events:none}
+.final-cta:after{z-index:0;background-image:linear-gradient(90deg,rgba(255,243,215,.11) 1px,transparent 1px),linear-gradient(rgba(255,243,215,.09) 1px,transparent 1px);background-size:28px 28px}
+.final-cta-inner{z-index:2}
+footer{background:radial-gradient(circle at 10px 10px,rgba(255,255,255,.045) 0 4px,transparent 4.5px),linear-gradient(145deg,#06466e,#073d42);background-size:22px 22px,auto;border-top:5px solid #f2c269}
+.footer-brand img{width:210px;border:0;background:transparent;border-radius:0;filter:drop-shadow(0 4px 4px rgba(0,0,0,.22))}
+.footer-grid>div:not(.footer-brand){padding:19px;border:1px solid rgba(255,238,198,.2);border-radius:8px;background:rgba(3,39,55,.3);box-shadow:0 4px 0 rgba(2,28,40,.25)}
+
+@media(max-width:1180px){
+  .interior .sitehead{height:64px;background:radial-gradient(circle at 8px 8px,rgba(255,255,255,.055) 0 5px,transparent 5.5px),linear-gradient(180deg,#075f94,#064f7d);background-size:18px 18px,auto;border-bottom:2px solid rgba(255,208,112,.72)}
+  .interior .sitehead .nav-row{width:min(100% - 24px,920px);justify-content:center}
+  .interior .brand,.interior .nav-actions{display:none}
+  .interior .sitehead .main-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;max-width:760px;margin:0;gap:8px}
+  .interior .inner-hero-grid{grid-template-columns:minmax(0,1fr) 320px}
+}
+@media(max-width:900px){
+  .interior .inner-hero{min-height:740px;padding:26px 0 40px}
+  .interior .inner-hero>.wrap{min-height:674px}
+  .interior .inner-hero-grid{grid-template-columns:1fr;gap:16px}
+  .interior .inner-hero-grid>div:first-child{max-width:680px;padding:24px 26px}
+  .interior .inner-hero h1{font-size:clamp(2.8rem,7.8vw,4.35rem)}
+  .hero-contact{max-width:520px;padding:21px}
+  .content-grid{grid-template-columns:1fr;gap:24px}
+  .side-card{position:static}
+  .local-band-grid{padding-right:120px}
+}
+@media(max-width:800px){
+  .trust-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .trust-grid>div,.trust-grid>div:first-child{padding:15px;border:2px solid rgba(255,242,210,.66)}
+  .section-intro>div,.estimate-copy,.faq-intro{padding:21px}
+  .story-image{min-height:430px;border-right:0;border-bottom:7px solid var(--gold)}
+  .content-section{padding:62px 0}
+  .article{padding:28px 24px}
+  .local-band-grid{grid-template-columns:1fr;padding:34px 105px 34px 30px;gap:18px}
+  .local-band-grid:after{right:20px;width:70px;height:70px}
+  .final-cta{padding-bottom:104px}
+  .footer-grid>div:not(.footer-brand){padding:16px}
+}
+@media(max-width:560px){
+  .interior .sitehead{height:106px;min-height:106px}
+  .interior .sitehead .nav-row{width:100%;height:100%;padding:8px 9px}
+  .interior .sitehead .main-nav{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none;gap:7px}
+  .interior .sitehead .main-nav a{min-height:40px;padding:5px 7px;font-size:.65rem;white-space:normal}
+  .interior .inner-hero{min-height:790px;padding:20px 0 30px}
+  .interior .inner-hero>.wrap{min-height:740px}
+  .interior .inner-hero:before{background-image:url("assets/hero-scene-mosaic-portrait-v4.png"),url("assets/hero-sky-mosaic-portrait-v4.jpg");background-position:center bottom,center top;background-size:contain,cover}
+  .interior .inner-hero:after{background:linear-gradient(0deg,rgba(2,41,58,.8),rgba(2,41,58,.08) 68%)}
+  .interior .breadcrumbs{font-size:.62rem;padding:7px 9px}
+  .interior .inner-hero-grid>div:first-child{padding:21px 20px 23px;border-left-width:5px}
+  .interior .inner-hero h1{font-size:clamp(2.35rem,11vw,3.25rem)}
+  .interior .inner-hero .lede{font-size:.94rem}
+  .interior .hero-contact{width:100%;max-width:none;margin:0;padding:18px}
+  .hero-contact p{margin-bottom:13px}
+  .article{padding:23px 19px}
+  .process-card,.related-card{padding:23px}
+  .trust-grid{grid-template-columns:1fr}
+  .trust-grid>div{min-height:82px}
+  .local-band{padding:34px 0}
+  .local-band-grid{padding:28px 24px 94px}
+  .local-band-grid:after{right:22px;top:auto;bottom:18px;transform:none;width:62px;height:62px}
+  .final-cta{padding:54px 0 96px}
+  .final-cta:before{height:92px;background-size:auto 92px}
+  .footer-brand img{width:190px}
+}
+@media(min-width:1921px){
+  .home .hero,.interior .inner-hero{border-inline:8px solid #f0d29a}
+}
+@media(prefers-reduced-motion:reduce){
+  .side-card a,.service-card,.hero-logo,.button{transition:none}
+}

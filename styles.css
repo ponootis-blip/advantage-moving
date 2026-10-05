@@ -148,3 +148,50 @@ footer{background:var(--blue-dark)}.footer-grid h2{color:#ffd276}.footer-brand i
   .hero{height:calc(100svh - 140px)}
   .hero-quote-tile{min-width:176px;min-height:62px;padding:11px 21px}
 }
+
+/* Layered responsive hero system — sky, scene, logo and controls stay independent. */
+.home .sitehead{position:absolute;top:34px;left:0;right:0;height:68px;background:transparent;border:0;box-shadow:none}
+.home .sitehead .nav-row{width:min(100% - 32px,1240px);height:100%;justify-content:flex-end;padding:0}
+.home .sitehead .main-nav{position:static;display:flex;width:auto;max-width:none;height:auto;margin-left:auto;padding:0;gap:9px;overflow:visible;background:transparent;border:0}
+.home .sitehead .main-nav a{display:flex;align-items:center;justify-content:center;min-height:42px;padding:7px 11px;white-space:nowrap}
+.home .sitehead .nav-actions{display:flex}
+.home .hero{height:calc(100svh - 34px);min-height:620px;background:var(--blue);isolation:isolate}
+.hero-layer{position:absolute;inset:0;display:block;pointer-events:none}
+.hero-layer img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center center}
+.hero-sky{z-index:0}
+.hero-scene{z-index:1}
+.hero-scene img{object-fit:contain;object-position:center bottom}
+.hero-logo{position:absolute;z-index:5;top:clamp(28px,4.5vh,52px);left:clamp(22px,4vw,72px);display:block;width:clamp(310px,31vw,500px);filter:drop-shadow(0 5px 7px rgba(2,31,43,.25));transition:transform .2s ease,filter .2s ease}
+.hero-logo img{display:block;width:100%;height:auto}
+.hero-logo:hover{transform:translateY(-2px);filter:drop-shadow(0 8px 10px rgba(2,31,43,.3))}
+.home .hero-quote-tile{z-index:6}
+
+@media(max-width:1320px){
+  .home .sitehead{height:58px}
+  .home .sitehead .nav-row{width:min(100% - 24px,820px);justify-content:center}
+  .home .sitehead .main-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;max-width:760px;margin:0;gap:8px}
+  .home .sitehead .main-nav a{min-width:0;padding:6px 9px;text-align:center}
+  .home .sitehead .nav-actions{display:none}
+  .home .hero-logo{top:76px;left:50%;width:clamp(315px,46vw,500px);transform:translateX(-50%)}
+  .home .hero-logo:hover{transform:translate(-50%,-2px)}
+}
+@media(max-width:800px){
+  .home .sitehead{top:34px;height:56px;min-height:56px;background:transparent;border:0}
+  .home .sitehead .nav-row{width:100%;height:100%;padding-inline:9px}
+  .home .sitehead .main-nav{grid-template-columns:repeat(4,minmax(0,1fr));width:100%;max-width:none;gap:6px}
+  .home .sitehead .main-nav a{min-height:40px;padding:5px 5px;font-size:clamp(.57rem,1.55vw,.68rem);line-height:1.08;white-space:normal}
+  .home .hero{height:calc(100svh - 34px);min-height:650px}
+  .hero-sky img{object-position:center top}
+  .hero-scene img{object-position:center bottom}
+  .home .hero-logo{top:70px;width:min(62vw,470px)}
+}
+@media(max-width:560px){
+  .home .sitehead{height:96px;min-height:96px}
+  .home .sitehead .nav-row{padding:7px 9px}
+  .home .sitehead .main-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+  .home .sitehead .main-nav a{min-height:38px;padding:4px 7px;font-size:.64rem}
+  .home .hero{height:calc(100svh - 34px);min-height:690px}
+  .home .hero-logo{top:108px;width:min(86vw,390px)}
+  .home .hero-quote-tile{bottom:22px}
+}
+@media(prefers-reduced-motion:reduce){.hero-logo{transition:none}}

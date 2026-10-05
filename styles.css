@@ -70,3 +70,128 @@ footer{background:var(--blue-dark)}.footer-grid h2{color:#ffd276}.footer-brand i
 .hero .hero-copy{display:none!important}
 .service-card{border-width:4px;border-color:#e5aa52;box-shadow:0 10px 0 #eac98e,0 18px 32px rgba(6,75,135,.11)}.service-card:nth-child(2n){border-color:#66bfea;box-shadow:0 10px 0 #b8e2f5,0 18px 32px rgba(6,75,135,.11)}.service-art{position:relative;border-bottom:7px solid #fff0cf}.service-art:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(90deg,rgba(255,244,216,.18) 1px,transparent 1px),linear-gradient(rgba(255,244,216,.14) 1px,transparent 1px);background-size:22px 22px;box-shadow:inset 0 0 0 2px rgba(255,245,220,.55)}.service-body{position:relative;background-image:radial-gradient(circle at 9px 9px,rgba(229,94,18,.055) 0 2px,transparent 2.5px);background-size:21px 21px}.service-number{z-index:3;width:46px;height:46px;border:4px solid #fff0ce;border-radius:10px;background-color:var(--blue-dark);background-image:radial-gradient(circle at 6px 6px,rgba(255,255,255,.2) 0 4px,transparent 4.5px);background-size:13px 13px;color:#fff;box-shadow:0 4px 0 #07385c,0 8px 18px rgba(0,30,38,.3)}.texas-accent{position:absolute;z-index:2;left:13px;bottom:13px;display:flex;align-items:center;gap:8px;padding:6px 11px 7px 7px;border:4px solid #fff0cf;border-radius:11px;background-color:rgba(5,75,130,.94);background-image:radial-gradient(circle at 6px 6px,rgba(255,255,255,.17) 0 4px,transparent 4.5px);background-size:13px 13px;box-shadow:0 4px 0 rgba(3,50,83,.9),0 8px 20px rgba(0,28,42,.3);color:#fff;text-transform:uppercase;letter-spacing:.1em;font-size:.62rem;font-weight:950}.texas-accent i{display:grid;place-items:center;width:31px;height:31px;padding:0 4px 2px 0;background:var(--orange);clip-path:polygon(7% 0,48% 0,52% 27%,63% 34%,71% 29%,79% 42%,100% 50%,89% 65%,83% 79%,69% 82%,58% 100%,47% 82%,27% 72%,21% 53%,0 47%,10% 34%);color:#fff7db;font:normal 900 12px/1 ui-sans-serif,sans-serif}.service-card:nth-child(2) .texas-accent i{background:var(--green)}.service-card:nth-child(3) .texas-accent i{background:var(--gold);color:var(--deep)}.service-card:nth-child(4) .texas-accent i{background:#e74d25}.service-card:hover .texas-accent{filter:brightness(1.08)}
 @media(max-width:520px){.texas-accent{left:11px;bottom:11px}.service-number{right:12px;top:12px}}
+
+/* Collision-safe hero controls and natural terracotta quote slab */
+.hero-quote-tile{
+  overflow:hidden;
+  border:1px solid rgba(255,232,202,.72);
+  border-radius:11px;
+  background:
+    radial-gradient(ellipse at 22% 12%,rgba(255,255,255,.15),transparent 48%),
+    linear-gradient(145deg,#ee711e 0%,#e76215 48%,#d94e0d 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.38),
+    inset 0 -3px 5px rgba(116,36,3,.2),
+    0 4px 0 #a63b0b,
+    0 12px 24px rgba(2,35,46,.3);
+}
+.hero-quote-tile:after{
+  content:"";
+  position:absolute;
+  inset:1px;
+  pointer-events:none;
+  border-radius:9px;
+  background:linear-gradient(115deg,rgba(255,255,255,.1),transparent 38%,rgba(116,36,3,.06));
+}
+.hero-quote-tile:hover{
+  transform:translate(-50%,-3px);
+  filter:saturate(1.04) brightness(1.025);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.42),
+    inset 0 -3px 5px rgba(116,36,3,.18),
+    0 6px 0 #a63b0b,
+    0 16px 28px rgba(2,35,46,.34);
+}
+.hero-quote-tile:active{
+  transform:translate(-50%,1px);
+  box-shadow:
+    inset 0 2px 5px rgba(116,36,3,.18),
+    inset 0 -1px 0 rgba(255,255,255,.24),
+    0 2px 0 #9b3509,
+    0 7px 16px rgba(2,35,46,.26);
+}
+
+/* At narrower widths the navigation gets its own tile rail instead of
+   competing with the logo baked into the hero artwork. */
+@media(max-width:1180px){
+  .sitehead{
+    position:relative;
+    top:auto;
+    left:auto;
+    right:auto;
+    height:64px;
+    background:
+      radial-gradient(circle at 8px 8px,rgba(255,255,255,.055) 0 5px,transparent 5.5px),
+      linear-gradient(180deg,#075f94,#064f7d);
+    background-size:18px 18px,auto;
+    border-bottom:2px solid rgba(255,208,112,.72);
+  }
+  .sitehead .nav-row{width:min(100% - 24px,920px);height:100%;justify-content:center;padding:0}
+  .sitehead .main-nav{position:static;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;max-width:760px;height:auto;margin:0;gap:8px;overflow:visible;background:transparent;border:0;padding:0}
+  .sitehead .main-nav a{display:flex;align-items:center;justify-content:center;min-height:42px;padding:6px 10px;text-align:center;line-height:1.12}
+  .sitehead .nav-actions{display:none}
+  .hero{height:calc(100svh - 98px)}
+}
+@media(max-width:800px){
+  .sitehead{top:auto;height:64px;min-height:64px}
+  .sitehead .nav-row{width:100%;height:100%;padding-inline:10px}
+  .sitehead .main-nav{position:static;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;height:auto;padding:0;gap:7px;overflow:visible}
+  .sitehead .main-nav a{min-width:0;min-height:42px;padding:5px 6px;font-size:clamp(.58rem,1.55vw,.69rem);white-space:normal}
+  .hero{height:calc(100svh - 98px)}
+  .hero-quote-tile{border-width:1px}
+}
+@media(max-width:560px){
+  .sitehead{height:106px;min-height:106px}
+  .sitehead .nav-row{padding-block:8px}
+  .sitehead .main-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .sitehead .main-nav a{min-height:40px;padding:5px 8px;font-size:.66rem}
+  .hero{height:calc(100svh - 140px)}
+  .hero-quote-tile{min-width:176px;min-height:62px;padding:11px 21px}
+}
+
+/* Layered responsive hero system — sky, scene, logo and controls stay independent. */
+.home .sitehead{position:absolute;top:34px;left:0;right:0;height:68px;background:transparent;border:0;box-shadow:none}
+.home .sitehead .nav-row{width:min(100% - 32px,1240px);height:100%;justify-content:flex-end;padding:0}
+.home .sitehead .main-nav{position:static;display:flex;width:auto;max-width:none;height:auto;margin-left:auto;padding:0;gap:9px;overflow:visible;background:transparent;border:0}
+.home .sitehead .main-nav a{display:flex;align-items:center;justify-content:center;min-height:42px;padding:7px 11px;white-space:nowrap}
+.home .sitehead .nav-actions{display:flex}
+.home .hero{height:calc(100svh - 34px);min-height:620px;background:var(--blue);isolation:isolate}
+.hero-layer{position:absolute;inset:0;display:block;pointer-events:none}
+.hero-layer img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center center}
+.hero-sky{z-index:0}
+.hero-scene{z-index:1}
+.hero-scene img{object-fit:contain;object-position:center bottom}
+.hero-logo{position:absolute;z-index:5;top:clamp(28px,4.5vh,52px);left:clamp(22px,4vw,72px);display:block;width:clamp(310px,31vw,500px);filter:drop-shadow(0 5px 7px rgba(2,31,43,.25));transition:transform .2s ease,filter .2s ease}
+.hero-logo img{display:block;width:100%;height:auto}
+.hero-logo:hover{transform:translateY(-2px);filter:drop-shadow(0 8px 10px rgba(2,31,43,.3))}
+.home .hero-quote-tile{z-index:6}
+
+@media(max-width:1320px){
+  .home .sitehead{height:58px}
+  .home .sitehead .nav-row{width:min(100% - 24px,820px);justify-content:center}
+  .home .sitehead .main-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;max-width:760px;margin:0;gap:8px}
+  .home .sitehead .main-nav a{min-width:0;padding:6px 9px;text-align:center}
+  .home .sitehead .nav-actions{display:none}
+  .home .hero-logo{top:76px;left:50%;width:clamp(315px,46vw,500px);transform:translateX(-50%)}
+  .home .hero-logo:hover{transform:translate(-50%,-2px)}
+}
+@media(max-width:800px){
+  .home .sitehead{top:34px;height:56px;min-height:56px;background:transparent;border:0}
+  .home .sitehead .nav-row{width:100%;height:100%;padding-inline:9px}
+  .home .sitehead .main-nav{grid-template-columns:repeat(4,minmax(0,1fr));width:100%;max-width:none;gap:6px}
+  .home .sitehead .main-nav a{min-height:40px;padding:5px 5px;font-size:clamp(.57rem,1.55vw,.68rem);line-height:1.08;white-space:normal}
+  .home .hero{height:calc(100svh - 34px);min-height:650px}
+  .hero-sky img{object-position:center top}
+  .hero-scene img{object-position:center bottom}
+  .home .hero-logo{top:70px;width:min(62vw,470px)}
+}
+@media(max-width:560px){
+  .home .sitehead{height:96px;min-height:96px}
+  .home .sitehead .nav-row{padding:7px 9px}
+  .home .sitehead .main-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+  .home .sitehead .main-nav a{min-height:38px;padding:4px 7px;font-size:.64rem}
+  .home .hero{height:calc(100svh - 34px);min-height:690px}
+  .home .hero-logo{top:108px;width:min(86vw,390px)}
+  .home .hero-quote-tile{bottom:22px}
+}
+@media(prefers-reduced-motion:reduce){.hero-logo{transition:none}}

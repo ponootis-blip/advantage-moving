@@ -15,7 +15,8 @@ if(typeof document!=="undefined"){
   var quoteStep1=document.getElementById("quoteStep1"),quoteStep2=document.getElementById("quoteStep2"),quoteNext=document.getElementById("quoteNext"),quoteBack=document.getElementById("quoteBack"),quoteForm=document.getElementById("quoteForm");
   document.getElementById("qDate").min=localDateInputValue(new Date());
   function value(id){return document.getElementById(id).value.trim()}
-  function showStep(step){quoteStep1.hidden=step!==1;quoteStep2.hidden=step!==2;(step===2?document.getElementById("qName"):document.getElementById("qFrom")).focus()}
+  var quoteKicker=document.getElementById("quoteKicker"),quoteBars=document.querySelectorAll(".quote-progress span");
+  function showStep(step){quoteStep1.hidden=step!==1;quoteStep2.hidden=step!==2;if(quoteKicker){quoteKicker.textContent="Step "+step+" of 2 · Free, no obligation"}Array.prototype.forEach.call(quoteBars,function(bar,i){bar.classList.toggle("is-on",i<step)});(step===2?document.getElementById("qName"):document.getElementById("qFrom")).focus()}
   quoteNext.addEventListener("click",function(){var error=document.getElementById("qErr1");error.textContent="";if(!value("qFrom")||!value("qTo")||!value("qType")){error.textContent="Add your starting point, destination and move type.";return}showStep(2)});
   quoteBack.addEventListener("click",function(){showStep(1)});
   quoteForm.addEventListener("submit",async function(event){

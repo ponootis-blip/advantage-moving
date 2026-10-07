@@ -3,9 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
+<!-- seo:head -->
 <title>Launch Checklist | Advantage Moving (private — delete when done)</title>
-<link rel="stylesheet" href="styles.css?v=21">
+<meta name="description" content="Private owner checklist for launching the Advantage Moving website.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://advantagemovingaustin.com/launch-checklist.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Advantage Moving Austin">
+<meta property="og:title" content="Launch Checklist | Advantage Moving (private — delete when done)">
+<meta property="og:description" content="Private owner checklist for launching the Advantage Moving website.">
+<meta property="og:url" content="https://advantagemovingaustin.com/launch-checklist.html">
+<meta property="og:image" content="https://advantagemovingaustin.com/assets/hero-mosaic-desktop-v3.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /seo:head -->
+<link rel="stylesheet" href="styles.css?v=22">
 <style>
   .cl-head{padding:clamp(40px,6vw,72px) 0 28px;background:var(--navy);color:#e3eef5}
   .cl-head h1{margin:0 0 14px;color:#fff;font-size:clamp(2.2rem,4.4vw,3.4rem)}
@@ -71,6 +82,25 @@
 </header>
 
 <main id="main" class="cl-main"><div class="wrap">
+
+<h2 class="cl-group">0 · Site admin</h2>
+
+<section class="cl-item" data-id="admin">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-admin"><h3 id="t-admin">Sign in to the admin and replace the default password</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> One person manages the website. They sign in at <code>/admin/</code> with <code>admin</code> / <code>admin</code>, choose a new password straight away, and connect a GitHub token so changes can be published.</div>
+    <ol>
+      <li>Open the admin and sign in. You’ll be asked for a new password (10+ characters).</li>
+      <li>Create a fine-grained GitHub token for <b>this repository only</b> with <b>Contents: Read and write</b>, and paste it under <b>Publish</b>.</li>
+      <li>Click <b>Publish</b>. Your new password is now the only one that works.</li>
+    </ol>
+    <ul class="cl-links">
+      <li><a href="admin/">Open the admin</a></li>
+      <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">Create a GitHub token ↗</a></li>
+    </ul>
+    <div class="cl-fix"><strong>Good to know</strong>Most items below can be fixed from the admin—business details, page titles, FAQ, review and profile links—without editing code.</div>
+  </div>
+</section>
 
 <h2 class="cl-group">1 · Business facts shown on every page</h2>
 

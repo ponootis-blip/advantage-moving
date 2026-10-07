@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "site": {
+    "baseUrl": "https://advantagemovingaustin.com/",
+    "name": "Advantage Moving Austin",
+    "logo": "assets/logo-mosaic-v4.png",
+    "defaultOgImage": "assets/hero-mosaic-desktop-v3.jpg"
+  },
+  "business": {
+    "name": "Advantage Moving Austin",
+    "alternateName": "Advantage Moving",
+    "tagline": "Get the Advantage",
+    "owner": "The Cousins family",
+    "phone": "5124436141",
+    "smsNumber": "",
+    "email": "service@advantagemovingaustin.com",
+    "street": "2462 Satterwhite Rd.",
+    "city": "Buda",
+    "region": "TX",
+    "postalCode": "78610",
+    "country": "US",
+    "foundingYear": 2001,
+    "txdmv": "000572890B",
+    "usdot": "",
+    "priceRange": "$$",
+    "hours": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    "areaServed": [
+      {
+        "type": "City",
+        "name": "Austin, TX"
+      },
+      {
+        "type": "City",
+        "name": "Buda, TX"
+      },
+      {
+        "type": "City",
+        "name": "Kyle, TX"
+      },
+      {
+        "type": "City",
+        "name": "Dripping Springs, TX"
+      },
+      {
+        "type": "State",
+        "name": "Texas"
+      }
+    ],
+    "photo": "assets/bg.jpg",
+    "googleBusinessUrl": "",
+    "googleReviewUrl": "",
+    "sameAs": []
+  },
+  "pages": [
+    {
+      "file": "index.html",
+      "path": "",
+      "title": "South Austin Movers | Advantage Moving — Family Owned Since 2001",
+      "description": "South Austin movers serving 78704, South Congress, South Lamar, Manchaca, Buda and Central Texas. Family owned since 2001. Free estimate: 512-443-6141.",
+      "ogTitle": "South Austin Movers | Advantage Moving",
+      "index": true,
+      "priority": "1.0",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "south-austin-movers.html",
+      "path": "south-austin-movers.html",
+      "title": "South Austin Movers | Local Moving Company Since 2001",
+      "description": "South Austin movers for homes, apartments, offices, packing and pianos. Serving 78704, South Congress, South Lamar, Manchaca and nearby areas. Free quote.",
+      "index": true,
+      "priority": "0.9",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "local-moving-austin.html",
+      "path": "local-moving-austin.html",
+      "title": "Local Movers South Austin | Home & Apartment Moving",
+      "description": "Local South Austin movers for apartments, condos and homes. Careful crews, packing help and clear estimates from Advantage Moving. Family owned since 2001.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "austin-movers.html",
+      "path": "austin-movers.html",
+      "title": "Texas Movers from South Austin | Intrastate Moving",
+      "description": "Texas intrastate movers from South Austin to San Antonio, Houston, Dallas, El Paso and statewide destinations. Family owned since 2001.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "commercial-movers-austin.html",
+      "path": "commercial-movers-austin.html",
+      "title": "Commercial Movers South Austin | Office & Business Moves",
+      "description": "South Austin commercial movers for offices, retail and restaurants. Coordinated scheduling, equipment protection and clear estimates. Call 512-443-6141.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "packing-services-austin.html",
+      "path": "packing-services-austin.html",
+      "title": "Packing Services South Austin | Advantage Moving",
+      "description": "Packing services in South Austin for homes, apartments, offices, fragile items and full moves. Materials and careful crews from Advantage Moving.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "piano-moving-austin.html",
+      "path": "piano-moving-austin.html",
+      "title": "Piano Movers South Austin | Upright & Grand Piano Moving",
+      "description": "South Austin piano movers for uprights, baby grands, organs, clocks, antiques and valuables. Experienced, unrushed handling. Free estimate.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "buda-movers.html",
+      "path": "buda-movers.html",
+      "title": "Buda Movers | Local Moving Company Near South Austin",
+      "description": "Buda movers for homes, apartments, offices, packing and Texas moves. Advantage Moving is based on Satterwhite Road in Buda. Family owned since 2001.",
+      "index": true,
+      "priority": "0.75",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "kyle-movers.html",
+      "path": "kyle-movers.html",
+      "title": "Kyle Movers | Local Moving Company in Kyle TX",
+      "description": "Kyle TX movers for homes, apartments, offices, packing and statewide moves. Family-owned Advantage Moving serves Kyle from nearby Buda. Free estimates.",
+      "index": true,
+      "priority": "0.75",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "dripping-springs-movers.html",
+      "path": "dripping-springs-movers.html",
+      "title": "Dripping Springs Movers | Hill Country Moving Company",
+      "description": "Dripping Springs movers for Hill Country homes, acreage, packing, pianos and Texas moves. Family-owned Advantage Moving provides free estimates.",
+      "index": true,
+      "priority": "0.75",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "moving-guide-south-austin.html",
+      "path": "moving-guide-south-austin.html",
+      "title": "South Austin Moving Guide | Checklist, Timing & Mover Tips",
+      "description": "Plan a South Austin move with a practical checklist for licensed movers, estimates, packing, apartments, move day and Texas consumer protections.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "advantage-movers.html",
+      "path": "advantage-movers.html",
+      "title": "About Advantage Moving | South Austin Family Movers",
+      "description": "Meet Advantage Moving, the Cousins family moving company serving South Austin and Central Texas since 2001. Licensed, insured and based in Buda.",
+      "index": true,
+      "priority": "0.6",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "privacy-policy.html",
+      "path": "privacy-policy.html",
+      "title": "Privacy Policy — Advantage Moving Austin",
+      "description": "How Advantage Moving Austin handles your quote-request information. Questions? Call (512) 443-6141.",
+      "index": true,
+      "priority": "0.2",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "launch-checklist.html",
+      "path": "launch-checklist.html",
+      "title": "Launch Checklist | Advantage Moving (private — delete when done)",
+      "description": "Private owner checklist for launching the Advantage Moving website.",
+      "index": false,
+      "sitemap": false,
+      "lastmod": "2026-10-07"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What kinds of moves do you handle?",
+      "a": "We handle local residential moves, Texas intrastate moves, office and commercial relocations, packing, short-term storage and specialty items including pianos and antiques."
+    },
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Yes. Advantage Moving is licensed and insured. Our Texas Department of Motor Vehicles number is 000572890B."
+    },
+    {
+      "q": "How is my estimate calculated?",
+      "a": "We consider the size of your move, access at both locations, travel distance, crew needs and optional services. Call or send your details for a personalized estimate."
+    },
+    {
+      "q": "Do you move outside Austin?",
+      "a": "Yes. We serve Greater Austin and Central Texas, and we move customers anywhere within the state of Texas."
+    },
+    {
+      "q": "Can you help with packing?",
+      "a": "Yes. Our crews arrive with moving essentials and can help with packing, shrink-wrapping and protecting floors, walls and delicate belongings."
+    }
+  ],
+  "admin": {
+    "user": "admin",
+    "salt": "6267749ec4440ec0",
+    "hash": "03052628760e9f35a5dad4ca9a3b62ff358d5880b8171869cb1d3885eb0e6262",
+    "mustChange": true
+  }
+}

@@ -236,7 +236,7 @@ p{text-wrap:pretty}
 
 /* story */
 .story{display:grid;grid-template-columns:1fr 1fr;background:var(--navy);color:#e6f0f6}
-.story-image{min-height:560px;background:#3c97d6 url("assets/mosaic-banner.jpg") 30% center/cover no-repeat}
+.story-image{min-height:560px;background:#3c97d6 url("assets/hero-austin-skyline-mosaic.jpg") 30% center/cover no-repeat}
 .story-copy{display:flex;flex-direction:column;justify-content:center;padding:var(--section) clamp(24px,6vw,96px)}
 .story-copy h2{margin:0 0 20px;color:#fff;font-size:clamp(2.3rem,4vw,3.6rem)}
 .story-copy>p{max-width:540px;margin-bottom:32px;color:#d3e3ed;font-size:1.04rem}
@@ -322,6 +322,38 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
 .footer-bottom{display:flex;justify-content:space-between;gap:20px;margin-top:48px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem}
 .footer-bottom a{text-decoration:none}
 .footer-bottom a:hover{color:#fff}
+
+/* real crew snapshot pinned over the mosaic art */
+.story-image{position:relative;display:grid;place-items:center;padding:clamp(24px,4vw,56px)}
+.crew-photo{margin:0;width:min(100%,520px);padding:12px 12px 14px;border-radius:6px;background:#fffdf8;box-shadow:0 2px 6px rgba(0,0,0,.18),0 24px 60px rgba(3,40,64,.45);transform:rotate(-2deg)}
+.crew-photo img{display:block;width:100%;height:auto;border-radius:3px}
+.crew-photo figcaption{padding:12px 4px 0;color:var(--navy);font-family:var(--serif);font-size:1.05rem;font-weight:700;text-align:center}
+
+/* review beside the first decision point */
+.intro-review{margin:32px 0 0;padding:20px 22px;max-width:520px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--white)}
+.intro-review .stars{margin-bottom:8px;font-size:.9rem}
+.intro-review blockquote{margin:0 0 8px;font-family:var(--serif);font-size:1.12rem;line-height:1.45;color:var(--ink)}
+.intro-review figcaption{color:var(--muted);font-size:.84rem}
+.intro-review a{color:var(--blue-dark);font-weight:700}
+
+.trust-grid span a{color:var(--blue-dark);font-weight:700;text-decoration:none;white-space:nowrap}
+.trust-grid span a:hover{text-decoration:underline}
+#estToQuote{margin-top:12px}
+
+/* optional review + profile links (rendered by the admin builder when URLs exist) */
+.reviews-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:32px}
+.footer-profiles{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:4px}
+
+/* hire smart */
+.hire-smart{background:var(--paper);border-top:1px solid var(--line)}
+.smart-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:0;padding:0;list-style:none}
+.smart-grid li{padding:28px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--white)}
+.smart-grid li>span{display:grid;place-items:center;width:40px;height:40px;margin-bottom:18px;border-radius:12px;background:var(--navy);color:#fff;font-family:var(--serif);font-size:1.2rem;font-weight:700}
+.smart-grid h3{margin-bottom:10px;font-size:1.3rem}
+.smart-grid p{margin:0;color:var(--muted);font-size:.94rem}
+.smart-grid strong{color:var(--ink)}
+.smart-source{margin:24px 0 0;color:var(--muted);font-size:.88rem}
+.smart-source a{color:var(--blue-dark);font-weight:700}
 
 /* sticky mobile actions */
 .mobile-actions{display:none}
@@ -439,7 +471,7 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
   .inner-hero-grid,.content-grid{grid-template-columns:1fr}
   .hero-contact{max-width:520px}
   .side-card{position:static}
-  .process-grid,.related-grid{grid-template-columns:1fr}
+  .process-grid,.related-grid,.smart-grid{grid-template-columns:1fr}
   .local-band-grid{grid-template-columns:1fr}
 }
 

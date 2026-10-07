@@ -81,6 +81,11 @@
     if (b.usdot) ids.push({ "@type": "PropertyValue", "propertyID": "USDOT", "value": b.usdot });
     if (ids.length) o.identifier = ids;
     if (b.priceRange) o.priceRange = b.priceRange;
+    if (data.services && data.services.length) {
+      o.hasOfferCatalog = { "@type": "OfferCatalog", "name": "Moving services", "itemListElement": data.services.map(function (sv) {
+        return { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": base + sv.file + "#service", "name": sv.name, "url": base + sv.file } };
+      }) };
+    }
     var same = profileUrls(b);
     if (same.length) o.sameAs = same;
     return '<script type="application/ld+json" id="ld-business">' + JSON.stringify(o) + "</script>";

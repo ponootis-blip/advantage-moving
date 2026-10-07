@@ -219,5 +219,27 @@
     "salt": "6267749ec4440ec0",
     "hash": "03052628760e9f35a5dad4ca9a3b62ff358d5880b8171869cb1d3885eb0e6262",
     "mustChange": true
-  }
+  },
+  "services": [
+    {
+      "name": "Local moving",
+      "file": "local-moving-austin.html"
+    },
+    {
+      "name": "Commercial moving",
+      "file": "commercial-movers-austin.html"
+    },
+    {
+      "name": "Packing services",
+      "file": "packing-services-austin.html"
+    },
+    {
+      "name": "Piano and specialty moving",
+      "file": "piano-moving-austin.html"
+    },
+    {
+      "name": "Texas intrastate moving",
+      "file": "austin-movers.html"
+    }
+  ]
 }

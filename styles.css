@@ -244,7 +244,7 @@ main{background:
 /* Layered scene and separate text slabs keep copy crawlable and art responsive. */
 .interior .inner-hero{min-height:720px;padding:34px 0 72px;background:#0877c9;color:#fff}
 .interior .inner-hero>.wrap{display:flex;min-height:614px;flex-direction:column}
-.interior .inner-hero:before{inset:0;transform:none;background-image:url("assets/hero-scene-mosaic-desktop-v4.png"),url("assets/hero-sky-mosaic-desktop-v4.jpg");background-position:center bottom,center top;background-repeat:no-repeat;background-size:contain,cover}
+.interior .inner-hero:before{inset:0;transform:none;background-image:url("assets/hero-scene-mosaic-desktop-v5.png"),url("assets/hero-sky-mosaic-desktop-v4.jpg");background-position:center bottom,center top;background-repeat:no-repeat;background-size:contain,cover}
 .interior .inner-hero:after{background:linear-gradient(90deg,rgba(2,45,68,.34),rgba(2,45,68,.08) 54%,rgba(2,45,68,.02)),linear-gradient(0deg,rgba(3,48,65,.64),transparent 58%)}
 .interior .breadcrumbs{align-self:flex-start;margin:0;padding:8px 12px;border:1px solid rgba(255,240,209,.74);border-radius:7px;background:rgba(5,75,130,.88);box-shadow:0 3px 0 rgba(3,47,81,.78);color:#fff;font-weight:800;backdrop-filter:blur(4px)}
 .interior .inner-hero-grid{margin-top:auto;grid-template-columns:minmax(0,1fr) 350px;gap:28px;align-items:end}
@@ -295,7 +295,7 @@ main{background:
 .service-card:hover{box-shadow:0 10px 0 #efc987,0 24px 42px rgba(6,75,135,.16)}
 .service-art:after{background-image:linear-gradient(90deg,rgba(255,244,216,.13) 1px,transparent 1px),linear-gradient(rgba(255,244,216,.12) 1px,transparent 1px);background-size:19px 19px}
 .story{width:min(100%,1920px);margin-inline:auto;border-block:8px solid var(--gold)}
-.story-image{background-image:url("assets/hero-scene-mosaic-desktop-v4.png"),url("assets/hero-sky-mosaic-desktop-v4.jpg");background-position:center bottom,center;background-repeat:no-repeat;background-size:contain,cover;border-right:8px solid var(--gold)}
+.story-image{background-image:url("assets/hero-scene-mosaic-desktop-v5.png"),url("assets/hero-sky-mosaic-desktop-v4.jpg");background-position:center bottom,center;background-repeat:no-repeat;background-size:contain,cover;border-right:8px solid var(--gold)}
 .story-copy{background:radial-gradient(circle at 10px 10px,rgba(255,255,255,.055) 0 5px,transparent 5.5px),linear-gradient(145deg,#064b76,#073d42);background-size:22px 22px,auto}
 .promise-list li{margin-bottom:9px;padding:16px;border:1px solid rgba(255,242,210,.24);border-radius:8px;background:rgba(3,43,59,.42);box-shadow:0 3px 0 rgba(2,29,41,.28)}
 .estimate-section{background:linear-gradient(135deg,#e5f6ff,#fff0d5)}
@@ -355,7 +355,7 @@ footer{background:radial-gradient(circle at 10px 10px,rgba(255,255,255,.045) 0 4
   .interior .sitehead .main-nav a{min-height:40px;padding:5px 7px;font-size:.65rem;white-space:normal}
   .interior .inner-hero{min-height:790px;padding:20px 0 30px}
   .interior .inner-hero>.wrap{min-height:740px}
-  .interior .inner-hero:before{background-image:url("assets/hero-scene-mosaic-portrait-v4.png"),url("assets/hero-sky-mosaic-portrait-v4.jpg");background-position:center bottom,center top;background-size:contain,cover}
+  .interior .inner-hero:before{background-image:url("assets/hero-scene-mosaic-portrait-v5.png"),url("assets/hero-sky-mosaic-portrait-v4.jpg");background-position:center bottom,center top;background-size:contain,cover}
   .interior .inner-hero:after{background:linear-gradient(0deg,rgba(2,41,58,.8),rgba(2,41,58,.08) 68%)}
   .interior .breadcrumbs{font-size:.62rem;padding:7px 9px}
   .interior .inner-hero-grid>div:first-child{padding:21px 20px 23px;border-left-width:5px}
@@ -380,3 +380,87 @@ footer{background:radial-gradient(circle at 10px 10px,rgba(255,255,255,.045) 0 4
 @media(prefers-reduced-motion:reduce){
   .side-card a,.service-card,.hero-logo,.button{transition:none}
 }
+
+/* v18: quiet ceramic surfaces. Repeating dots read as buttons rather than tile,
+   so controls and supporting slabs use one continuous glaze and a low relief. */
+body{background-image:none}
+main{background:linear-gradient(180deg,#fffaf0,#fff7e9)}
+
+.main-nav a,.phone-link,.service-number,.texas-accent{
+  border:1px solid rgba(255,239,207,.82);
+  border-radius:9px;
+  background:
+    linear-gradient(120deg,rgba(255,255,255,.17),transparent 38%),
+    linear-gradient(145deg,#0b6c9f 0%,#075986 52%,#06466e 100%);
+  background-size:auto;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.38),
+    inset 0 -3px 5px rgba(1,38,61,.2),
+    0 4px 0 #043a5c,
+    0 11px 22px rgba(2,35,46,.24)
+}
+.main-nav a:nth-child(2n){
+  background:
+    linear-gradient(120deg,rgba(255,255,255,.16),transparent 38%),
+    linear-gradient(145deg,#238b59 0%,#177747 52%,#0d6138 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.35),
+    inset 0 -3px 5px rgba(1,50,29,.2),
+    0 4px 0 #08482b,
+    0 11px 22px rgba(2,35,46,.22)
+}
+.main-nav a:hover,.phone-link:hover,.texas-accent:hover{
+  filter:saturate(1.04) brightness(1.035);
+  transform:translateY(-2px)
+}
+.sitehead .button-small,.interior .sitehead .button-small{
+  border:1px solid rgba(255,230,196,.72);
+  border-radius:9px;
+  background:
+    radial-gradient(ellipse at 20% 8%,rgba(255,255,255,.16),transparent 48%),
+    linear-gradient(145deg,#ef741f 0%,#e45e12 52%,#d74d0c 100%);
+  background-size:auto;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.42),
+    inset 0 -3px 5px rgba(116,36,3,.18),
+    0 4px 0 #a63b0b,
+    0 12px 24px rgba(2,35,46,.22)
+}
+.service-number{border-radius:8px}
+.texas-accent{border-radius:9px}
+.service-body{background:linear-gradient(145deg,#fffdf8,#fff8ec);background-size:auto}
+
+.trust-grid>div,.trust-grid>div:first-child{
+  background:linear-gradient(120deg,rgba(255,255,255,.15),transparent 40%),linear-gradient(145deg,#0a6b9e,#075884);
+  background-size:auto;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.34),inset 0 -3px 5px rgba(1,38,61,.16),0 5px 0 rgba(3,49,80,.65)
+}
+.trust-grid>div:nth-child(2n){
+  background:linear-gradient(120deg,rgba(255,255,255,.14),transparent 40%),linear-gradient(145deg,#198651,#106b42);
+  background-size:auto;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -3px 5px rgba(1,50,29,.16),0 5px 0 rgba(6,77,46,.67)
+}
+.story-copy,.review-card.featured,.local-band-grid,footer{
+  background-image:linear-gradient(120deg,rgba(255,255,255,.055),transparent 38%),linear-gradient(145deg,#064b76,#073d42);
+  background-size:auto
+}
+.review-card.featured{background-image:linear-gradient(120deg,rgba(255,255,255,.07),transparent 38%),linear-gradient(145deg,#075b88,#073d60)}
+.local-band-grid{background-image:linear-gradient(120deg,rgba(255,255,255,.08),transparent 40%),linear-gradient(145deg,#075985,#063f65)}
+.content-section{background:linear-gradient(180deg,#fffaf0,#fff7e9);background-size:auto}
+.final-cta:after{background-image:linear-gradient(90deg,rgba(255,243,215,.11) 1px,transparent 1px),linear-gradient(rgba(255,243,215,.09) 1px,transparent 1px);background-size:28px 28px}
+
+.footer-brand img{
+  display:block;
+  width:210px;
+  height:auto;
+  aspect-ratio:1100/367;
+  object-fit:contain
+}
+
+@media(max-width:1180px){
+  .sitehead,.interior .sitehead{
+    background-image:linear-gradient(120deg,rgba(255,255,255,.055),transparent 42%),linear-gradient(180deg,#075f94,#064f7d);
+    background-size:auto
+  }
+}
+@media(max-width:560px){.footer-brand img{width:190px;height:auto}}

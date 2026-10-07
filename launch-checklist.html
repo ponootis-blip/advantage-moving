@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Launch Checklist | Advantage Moving (private — delete when done)</title>
+<link rel="stylesheet" href="styles.css?v=21">
+<style>
+  .cl-head{padding:clamp(40px,6vw,72px) 0 28px;background:var(--navy);color:#e3eef5}
+  .cl-head h1{margin:0 0 14px;color:#fff;font-size:clamp(2.2rem,4.4vw,3.4rem)}
+  .cl-head p{max-width:760px;margin:0 0 10px;color:#cfe0eb}
+  .cl-head .eyebrow{color:#ffd58a}
+  .cl-progress{display:flex;align-items:center;gap:14px;margin-top:22px;font-weight:700}
+  .cl-bar{flex:1;max-width:420px;height:10px;border-radius:10px;background:rgba(255,255,255,.15);overflow:hidden}
+  .cl-bar i{display:block;height:100%;width:0;background:var(--gold);transition:width .3s ease}
+  .cl-legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin:26px 0 0;padding:0;list-style:none;font-size:.86rem}
+  .cl-main{padding:40px 0 96px}
+  .cl-group{margin:44px 0 14px;font-size:1.6rem}
+  .cl-item{margin:0 0 16px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--white);box-shadow:var(--shadow-sm)}
+  .cl-item[data-done="true"]{opacity:.62}
+  .cl-item[data-done="true"] h3{text-decoration:line-through}
+  .cl-top{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:start;padding:22px 24px 0}
+  .cl-top input{width:24px;height:24px;margin:4px 0 0;accent-color:var(--green);cursor:pointer}
+  .cl-top h3{margin:0;font-size:1.3rem}
+  .cl-tag{padding:4px 10px;border-radius:999px;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+  .cl-tag.now{background:#fde8dc;color:var(--orange-dark)}
+  .cl-tag.launch{background:var(--blue-tint);color:var(--blue-dark)}
+  .cl-tag.after{background:#e8f5ee;color:var(--green)}
+  .cl-body{padding:12px 24px 22px 64px;font-size:.95rem}
+  .cl-body p{margin:0 0 10px}
+  .cl-assume{margin:0 0 14px;padding:12px 14px;border-left:4px solid var(--gold);border-radius:0 var(--r-sm) var(--r-sm) 0;background:var(--cream)}
+  .cl-assume b{color:var(--orange-dark)}
+  .cl-links{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0;list-style:none}
+  .cl-links a{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border:1px solid #c9dfeb;border-radius:999px;background:var(--blue-tint);color:var(--blue-dark);font-size:.84rem;font-weight:700;text-decoration:none}
+  .cl-links a:hover{border-color:var(--blue);background:#fff}
+  .cl-fix{margin:0;padding:12px 14px;border:1px dashed var(--line-strong);border-radius:var(--r-sm);background:var(--paper)}
+  .cl-fix strong{display:block;margin-bottom:4px;color:var(--navy)}
+  .cl-fix ul,.cl-body ol{margin:6px 0 0;padding-left:1.2em}
+  .cl-fix li,.cl-body ol li{margin-bottom:4px}
+  code{padding:1px 6px;border-radius:5px;background:#f1ece2;font-size:.86em;word-break:break-word}
+  table.cl-table{width:100%;margin:8px 0 12px;border-collapse:collapse;font-size:.88rem}
+  .cl-table th,.cl-table td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  .cl-table th{color:var(--muted);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase}
+  .cl-delete{margin-top:48px;padding:26px;border-radius:var(--r-lg);background:#fdf1f0;border:1px solid #e6b3ae}
+  .cl-delete h2{margin:0 0 8px;font-size:1.5rem;color:#7d1f1a}
+  @media (max-width:720px){
+    body{padding-bottom:0}
+    .cl-top{grid-template-columns:auto 1fr;padding:18px 18px 0}
+    .cl-tag{grid-column:2;justify-self:start}
+    .cl-body{padding:12px 18px 18px}
+    .cl-table{display:block;overflow-x:auto}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="cl-head">
+  <div class="wrap">
+    <p class="eyebrow">Private owner page · not linked · hidden from search</p>
+    <h1>Advantage Moving — launch checklist</h1>
+    <p>Each item below shows what the website <strong>currently assumes</strong>. Use the links to confirm it. If an assumption is right, tick the box. If it’s wrong, follow the “If this is wrong” steps—or send the correct details to your web developer.</p>
+    <p>Your ticks are saved in this browser only. When everything is done, delete this page (instructions at the bottom).</p>
+    <div class="cl-progress"><div class="cl-bar"><i id="clBar"></i></div><span id="clCount">0 of 0 confirmed</span></div>
+    <ul class="cl-legend">
+      <li><span class="cl-tag now">Before launch</span> confirm facts</li>
+      <li><span class="cl-tag launch">Launch</span> switch the domain</li>
+      <li><span class="cl-tag after">After launch</span> register &amp; measure</li>
+    </ul>
+  </div>
+</header>
+
+<main id="main" class="cl-main"><div class="wrap">
+
+<h2 class="cl-group">1 · Business facts shown on every page</h2>
+
+<section class="cl-item" data-id="nap">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-nap"><h3 id="t-nap">Name, phone, address, hours and email</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> Advantage Moving Austin · (512) 443-6141 · 2462 Satterwhite Rd., Buda, TX 78610 · open every day 8am–5pm · service@advantagemovingaustin.com. These appear in the header, footer and the hidden business data that Google and AI tools read.</div>
+    <p>Search engines and AI tools trust a business more when these details match exactly everywhere: your site, Google Maps, Yelp and directories.</p>
+    <ul class="cl-links">
+      <li><a href="https://www.google.com/maps/search/Advantage+Moving+2462+Satterwhite+Rd+Buda+TX" target="_blank" rel="noopener">Check Google Maps listing ↗</a></li>
+      <li><a href="tel:+15124436141">Call the number</a></li>
+      <li><a href="mailto:service@advantagemovingaustin.com?subject=Website%20email%20test">Send a test email</a></li>
+    </ul>
+    <div class="cl-fix"><strong>If this is wrong</strong>Send the correct details to your developer. Each value is a find-and-replace across all <code>.html</code> files (including the <code>application/ld+json</code> block at the top of <code>index.html</code>). Holiday or seasonal hours should be updated on Google Maps too.</div>
+  </div>
+</section>
+
+<section class="cl-item" data-id="txdmv">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-txdmv"><h3 id="t-txdmv">TXDMV #000572890B and “licensed &amp; insured”</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> TXDMV certificate 000572890B is current and active, and the company carries the cargo/liability insurance Texas requires. The site does not list a USDOT number (only needed for moves that cross state lines).</div>
+    <ul class="cl-links">
+      <li><a href="https://apps.txdmv.gov/apps/mccs/truckstop/" target="_blank" rel="noopener">TxDMV motor carrier lookup ↗</a></li>
+      <li><a href="https://safer.fmcsa.dot.gov/CompanySnapshot.aspx" target="_blank" rel="noopener">FMCSA / USDOT lookup ↗</a></li>
+    </ul>
+    <div class="cl-fix"><strong>If this is wrong</strong><ul><li>Different number: replace <code>000572890B</code> in every <code>.html</code> file.</li><li>You also hold a USDOT number: send it to your developer to add next to the TXDMV number.</li><li>The certificate has lapsed: remove “licensed &amp; insured” wording until it’s renewed.</li></ul></div>
+  </div>
+</section>
+
+<section class="cl-item" data-id="owner">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-owner"><h3 id="t-owner">“Family owned since 2001 — the Cousins family”</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> The Cousins family founded and still owns Advantage Moving, and the business started in 2001. This appears on the home page (“We know Austin” section) and the About page.</div>
+    <ul class="cl-links">
+      <li><a href="index.html#why-us">See home page wording</a></li>
+      <li><a href="advantage-movers.html">See About page</a></li>
+      <li><a href="https://mycpa.cpa.state.tx.us/coa/" target="_blank" rel="noopener">Texas business entity search ↗</a></li>
+    </ul>
+    <div class="cl-fix"><strong>If this is wrong</strong>Edit the paragraph starting “Plenty has changed south of the river” in <code>index.html</code> and the story section in <code>advantage-movers.html</code>. If you’d rather not name the family, replace “The Cousins family” with “Our family”.</div>
+  </div>
+</section>
+
+<h2 class="cl-group">2 · Claims a customer (or an AI) might repeat</h2>
+
+<section class="cl-item" data-id="reviews">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-reviews"><h3 id="t-reviews">Customer reviews on the home page</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> The three quotes (Mark C. — Austin, Chris V. — Pflugerville, Marilyn K. — Keller) are genuine customer reviews carried over from the original website. They are shown <em>without</em> a source, and no star-rating data is sent to Google.</div>
+    <p>A review that names where it came from (for example “Google review”) is easier for people and AI tools to verify.</p>
+    <ul class="cl-links">
+      <li><a href="https://www.google.com/search?q=%22Advantage+Moving%22+Buda+TX+reviews" target="_blank" rel="noopener">Find Google reviews ↗</a></li>
+      <li><a href="https://www.yelp.com/search?find_desc=Advantage+Moving&amp;find_loc=Buda%2C+TX" target="_blank" rel="noopener">Find Yelp reviews ↗</a></li>
+      <li><a href="index.html#reviews">See reviews on site</a></li>
+    </ul>
+    <div class="cl-fix"><strong>If this is wrong</strong><ul><li>Reviews came from Google or Yelp: tell your developer the source so a small “Google review” label can be added under each name.</li><li>You can’t confirm a review is real: replace it with a current review you can link to, or remove it. Never edit a customer’s wording.</li></ul></div>
+  </div>
+</section>
+
+<section class="cl-item" data-id="estimator">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-estimator"><h3 id="t-estimator">Prices used by the “ballpark” estimator</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> These are reasonable planning numbers, <em>not</em> official prices. The tool labels results “not a binding quote” and shows a range from 10% below to 20% above the total.</div>
+    <table class="cl-table">
+      <thead><tr><th>Item</th><th>Number currently used</th></tr></thead>
+      <tbody>
+        <tr><td>Hourly crew rate</td><td>2 movers $140 · 3 movers $180 · 4 movers $220 · 5 movers $260</td></tr>
+        <tr><td>Crew &amp; hours by size</td><td>Studio 2 movers/3 h · 1 BR 2/4 h · 2 BR 3/6 h · 3 BR 4/8 h · 4+ BR 5/10 h · Office 4/8 h</td></tr>
+        <tr><td>Packing add-on</td><td>$250 · $300 · $450 · $650 · $900 · office $700</td></tr>
+        <tr><td>Piano add-on</td><td>$250</td></tr>
+        <tr><td>Texas haul</td><td>$150 + $2.50 per mile (20–900 miles)</td></tr>
+      </tbody>
+    </table>
+    <ul class="cl-links"><li><a href="index.html#estimate">Try the estimator</a></li></ul>
+    <div class="cl-fix"><strong>If this is wrong</strong><ul><li>Different rates: send your real numbers. They live in lines 2–5 of <code>site.js</code>.</li><li>You don’t want any prices online: ask your developer to remove the section with <code>id="estimate"</code> from <code>index.html</code>. The rest of the site keeps working.</li></ul></div>
+  </div>
+</section>
+
+<section class="cl-item" data-id="services">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-services"><h3 id="t-services">Services and service areas</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> Advantage offers local residential, commercial, packing, piano/specialty and Texas intrastate moves, plus short-term storage <em>coordination</em> (not owning storage). It serves South Austin, Buda, Kyle, Dripping Springs and moves anywhere within Texas—but <em>not</em> out of state.</div>
+    <ul class="cl-links">
+      <li><a href="local-moving-austin.html">Local</a></li><li><a href="commercial-movers-austin.html">Commercial</a></li><li><a href="packing-services-austin.html">Packing</a></li><li><a href="piano-moving-austin.html">Piano</a></li><li><a href="austin-movers.html">Texas intrastate</a></li><li><a href="buda-movers.html">Buda</a></li><li><a href="kyle-movers.html">Kyle</a></li><li><a href="dripping-springs-movers.html">Dripping Springs</a></li>
+    </ul>
+    <div class="cl-fix"><strong>If this is wrong</strong>Tell your developer which service or area to add or remove. Removing a page also means removing it from <code>sitemap.xml</code> and from the footer and side menus.</div>
+  </div>
+</section>
+
+<h2 class="cl-group">3 · Connect the site to the rest of the web</h2>
+
+<section class="cl-item" data-id="profiles">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-profiles"><h3 id="t-profiles">Google Business, Yelp, BBB and Facebook profiles</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> The business has profiles on these sites, but their addresses are not known yet, so the website doesn’t link to any of them.</div>
+    <p>Listing your official profiles in the site’s business data (<code>sameAs</code>) helps Google and AI tools connect your reviews and listings to this website. Make sure each profile shows the same name, phone and address as item 1, and links back to the website.</p>
+    <ul class="cl-links">
+      <li><a href="https://business.google.com/" target="_blank" rel="noopener">Google Business Profile ↗</a></li>
+      <li><a href="https://biz.yelp.com/" target="_blank" rel="noopener">Yelp for Business ↗</a></li>
+      <li><a href="https://www.bbb.org/search?find_text=Advantage%20Moving&amp;find_loc=Buda%2C%20TX" target="_blank" rel="noopener">Find on BBB ↗</a></li>
+      <li><a href="https://www.facebook.com/search/pages/?q=Advantage%20Moving%20Austin" target="_blank" rel="noopener">Find on Facebook ↗</a></li>
+    </ul>
+    <div class="cl-fix"><strong>To finish</strong>Copy each profile’s web address and send them to your developer. They go in the first <code>application/ld+json</code> block in <code>index.html</code> as <code>"sameAs":["https://…","https://…"]</code>. Profiles you don’t have can simply be skipped.</div>
+  </div>
+</section>
+
+<section class="cl-item" data-id="form">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-form"><h3 id="t-form">Quote form delivers to the right inbox</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> The Formspree form <code>mwlvegvv</code> belongs to the company and emails every quote request to service@advantagemovingaustin.com. The free plan handles about 50 requests a month.</div>
+    <ol>
+      <li>Submit a test quote on the live site using your own name and a note like “TEST”.</li>
+      <li>Confirm it arrives by email and in the Formspree inbox, then reply to it—your reply should go to the address you typed in the form.</li>
+    </ol>
+    <ul class="cl-links">
+      <li><a href="index.html#quote">Open the quote form</a></li>
+      <li><a href="https://formspree.io/forms" target="_blank" rel="noopener">Formspree dashboard ↗</a></li>
+    </ul>
+    <div class="cl-fix"><strong>If this is wrong</strong>Create a form in the company’s own Formspree account and replace the address in <code>site-config.js</code>. More than 50 leads a month: upgrade the Formspree plan so alerts aren’t held back. Full details in <code>HOSTING.md</code> and <code>RECOVERY.md</code>.</div>
+  </div>
+</section>
+
+<h2 class="cl-group">4 · Go live on advantagemovingaustin.com</h2>
+
+<section class="cl-item" data-id="baseline">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-baseline"><h3 id="t-baseline">Record a “before” snapshot of AI answers</h3><span class="cl-tag now">Before launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> You want to know whether the new site changes how ChatGPT, Google and others describe Advantage. AI answers vary each time, so ask each question <strong>three times</strong> in each tool and note the results.</div>
+    <table class="cl-table">
+      <thead><tr><th>Ask this</th><th>Write down</th></tr></thead>
+      <tbody>
+        <tr><td>Who are the best movers in South Austin?</td><td rowspan="5">Was Advantage mentioned? In what position? Were the details correct (phone, Buda, since 2001)? Which websites were cited?</td></tr>
+        <tr><td>Recommend a family-owned moving company near Buda, TX</td></tr>
+        <tr><td>Who can move a piano in Austin?</td></tr>
+        <tr><td>Is Advantage Moving in Buda licensed?</td></tr>
+        <tr><td>What do customers say about Advantage Moving Austin?</td></tr>
+      </tbody>
+    </table>
+    <ul class="cl-links">
+      <li><a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT ↗</a></li>
+      <li><a href="https://www.google.com/search?q=best+movers+in+South+Austin&amp;udm=50" target="_blank" rel="noopener">Google AI Mode ↗</a></li>
+      <li><a href="https://www.perplexity.ai/" target="_blank" rel="noopener">Perplexity ↗</a></li>
+      <li><a href="https://copilot.microsoft.com/" target="_blank" rel="noopener">Copilot ↗</a></li>
+    </ul>
+    <div class="cl-fix"><strong>Then</strong>Repeat the same questions about four weeks after launch and compare. Keep the questions identical so the results are comparable.</div>
+  </div>
+</section>
+
+<section class="cl-item" data-id="domain">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-domain"><h3 id="t-domain">Point advantagemovingaustin.com at the new site</h3><span class="cl-tag launch">Launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> The business owns advantagemovingaustin.com, the old website lives there today, and the new site should replace it. Company email (service@…) also uses this domain and <strong>must keep working</strong>.</div>
+    <ol>
+      <li>In GitHub, open Pages settings and type <code>advantagemovingaustin.com</code> as the custom domain. Verify the domain first if GitHub asks.</li>
+      <li>At the domain registrar (wherever the domain was bought), add four <strong>A</strong> records for the bare domain: <code>185.199.108.153</code>, <code>185.199.109.153</code>, <code>185.199.110.153</code>, <code>185.199.111.153</code>.</li>
+      <li>Add a <strong>CNAME</strong> record: <code>www</code> → <code>ponootis-blip.github.io</code>.</li>
+      <li><strong>Do not change MX or TXT records</strong>—those run your email.</li>
+      <li>When GitHub shows the certificate is ready (can take up to 24 hours), tick <strong>Enforce HTTPS</strong>.</li>
+      <li>In Formspree, change the allowed domain to <code>advantagemovingaustin.com</code>, then send one more test quote.</li>
+    </ol>
+    <ul class="cl-links">
+      <li><a href="https://github.com/ponootis-blip/advantage-moving/settings/pages" target="_blank" rel="noopener">GitHub Pages settings ↗</a></li>
+      <li><a href="https://github.com/settings/pages" target="_blank" rel="noopener">Verify domain in GitHub ↗</a></li>
+      <li><a href="https://www.whatsmydns.net/#A/advantagemovingaustin.com" target="_blank" rel="noopener">Check DNS has updated ↗</a></li>
+    </ul>
+    <div class="cl-fix"><strong>If this is wrong</strong><ul><li>The site should live on a different domain: replace <code>advantagemovingaustin.com</code> in every file’s “canonical” and “og:url” tags, plus <code>sitemap.xml</code> and <code>robots.txt</code>.</li><li>The old site had pages with other addresses that people bookmarked: list them so they can be mapped to the new pages.</li></ul></div>
+  </div>
+</section>
+
+<h2 class="cl-group">5 · After launch</h2>
+
+<section class="cl-item" data-id="search">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-search"><h3 id="t-search">Register with Google and Bing</h3><span class="cl-tag after">After launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> Nobody has set up Google Search Console or Bing Webmaster Tools for the new site yet. Bing also powers ChatGPT search and Microsoft Copilot.</div>
+    <ol>
+      <li>Add <code>advantagemovingaustin.com</code> as a domain property in Search Console (it verifies with a DNS TXT record—add it, don’t replace existing ones).</li>
+      <li>Submit the sitemap: <code>https://advantagemovingaustin.com/sitemap.xml</code>.</li>
+      <li>In Bing Webmaster Tools, choose “Import from Google Search Console”.</li>
+    </ol>
+    <ul class="cl-links">
+      <li><a href="https://search.google.com/search-console" target="_blank" rel="noopener">Google Search Console ↗</a></li>
+      <li><a href="https://www.bing.com/webmasters" target="_blank" rel="noopener">Bing Webmaster Tools ↗</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="cl-item" data-id="tests">
+  <div class="cl-top"><input type="checkbox" aria-labelledby="t-tests"><h3 id="t-tests">Run the free health checks</h3><span class="cl-tag after">After launch</span></div>
+  <div class="cl-body">
+    <div class="cl-assume"><b>Assumed:</b> The business data, FAQ data and breadcrumbs pass Google’s checks with no errors, and the home page loads quickly on phones.</div>
+    <ul class="cl-links">
+      <li><a href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fadvantagemovingaustin.com%2F" target="_blank" rel="noopener">Rich Results Test ↗</a></li>
+      <li><a href="https://validator.schema.org/#url=https%3A%2F%2Fadvantagemovingaustin.com%2F" target="_blank" rel="noopener">Schema validator ↗</a></li>
+      <li><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fadvantagemovingaustin.com%2F" target="_blank" rel="noopener">PageSpeed Insights ↗</a></li>
+    </ul>
+    <div class="cl-fix"><strong>If something fails</strong>Send a screenshot of the error to your developer. A known follow-up: the hero artwork files are large (about 2 MB) and should be converted to WebP to speed up the first load.</div>
+  </div>
+</section>
+
+<section class="cl-delete" aria-labelledby="t-delete">
+  <h2 id="t-delete">When everything is ticked: delete this page</h2>
+  <p>Nothing links to this page and search engines are told to ignore it, but it should still be removed once you’re done.</p>
+  <ol>
+    <li>Open <a href="https://github.com/ponootis-blip/advantage-moving/blob/main/launch-checklist.html" target="_blank" rel="noopener">launch-checklist.html on GitHub ↗</a>.</li>
+    <li>Click the <strong>⋯</strong> menu (top right of the file) → <strong>Delete file</strong> → <strong>Commit changes</strong>.</li>
+  </ol>
+</section>
+
+</div></main>
+
+<script>
+(function(){
+  var KEY="advantage-launch-checklist";
+  var saved={};
+  try{saved=JSON.parse(localStorage.getItem(KEY)||"{}")||{}}catch(e){}
+  var items=document.querySelectorAll(".cl-item"),bar=document.getElementById("clBar"),count=document.getElementById("clCount");
+  function update(){
+    var done=0;
+    items.forEach(function(item){var box=item.querySelector("input");item.dataset.done=box.checked;if(box.checked)done++});
+    bar.style.width=(done/items.length*100)+"%";
+    count.textContent=done+" of "+items.length+" confirmed";
+  }
+  items.forEach(function(item){
+    var box=item.querySelector("input"),id=item.dataset.id;
+    box.checked=!!saved[id];
+    box.addEventListener("change",function(){saved[id]=box.checked;try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){}update()});
+  });
+  update();
+})();
+</script>
+</body>
+</html>

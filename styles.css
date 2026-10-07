@@ -657,3 +657,31 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
   .p2{left:40%;top:44%;width:42%}
   .p3{left:72%;top:5%;width:24%}
 }
+
+/* header dropdowns (Services, Service areas) */
+.nav-drop{position:relative;display:flex;align-items:center}
+.nav-drop>a{padding-right:4px!important}
+.nav-toggle{display:grid;place-items:center;width:26px;height:34px;margin-left:-2px;padding:0;border:0;border-radius:6px;background:none;color:var(--muted);cursor:pointer}
+.nav-toggle::before{content:"";width:8px;height:8px;margin-top:-4px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .2s ease,margin .2s ease}
+.nav-drop.is-open .nav-toggle::before{margin-top:4px;transform:rotate(-135deg)}
+.nav-toggle:hover{background:var(--blue-tint);color:var(--blue-dark)}
+.nav-drop.is-active>a{color:var(--blue-dark)}
+.mega{position:absolute;left:0;right:0;top:100%;z-index:45;padding:26px 0 30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fffdf8;box-shadow:0 24px 48px rgba(6,63,99,.16)}
+.mega-inner{display:flex;flex-direction:column;gap:18px}
+.mega-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px 32px}
+.mega-col{display:flex;flex-direction:column;gap:2px}
+.mega-head{margin:0 0 8px;color:var(--orange-dark);font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.mega-col a{padding:6px 0;color:var(--ink);font-size:.94rem;font-weight:600;text-decoration:none}
+.mega-col a:hover,.mega-col a[aria-current]{color:var(--blue-dark);text-decoration:underline;text-underline-offset:3px}
+.mega-all{align-self:flex-start;color:var(--orange-dark);font-weight:800;text-decoration:none}
+.mega-all:hover{text-decoration:underline}
+@media (max-width:960px){
+  .nav-drop{flex:0 0 auto}
+  .nav-drop>a{border-top-right-radius:0!important;border-bottom-right-radius:0!important;border-right:0!important}
+  .nav-toggle{width:34px;height:auto;align-self:stretch;margin:0;border:1px solid var(--line);border-left:0;border-radius:0 999px 999px 0;background:var(--white)}
+  .mega{position:absolute;max-height:70vh;overflow:auto;padding:18px 0 22px}
+  .mega-cols{grid-template-columns:1fr 1fr;gap:16px 20px}
+  .mega-col a{padding:8px 0}
+}
+@media (max-width:420px){.mega-cols{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.nav-toggle::before{transition:none}}

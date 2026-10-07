@@ -101,7 +101,7 @@
     state.store = await pickStore();
     if (state.store === GitHubStore) state.baseSha = await GitHubStore.head();
     var data = JSON.parse(await state.store.read("data/site.json"));
-    var paths = data.pages.map(function (p) { return p.file; }).concat(["sitemap.xml", "robots.txt"]);
+    var paths = data.pages.map(function (p) { return p.file; }).concat(["sitemap.xml", "robots.txt", "admin/page-template.html"]);
     var files = {};
     await Promise.all(paths.map(async function (p) { try { files[p] = await state.store.read(p); } catch (e) { files[p] = ""; } }));
     state.original = data; state.draft = clone(data); state.files = files;
@@ -246,6 +246,55 @@
     return rows.length ? '<ul class="search-results">' + rows.join("") + "</ul>" : '<p class="muted">No matches.</p>';
   }
 
+  var KIND_MENU = { service: "services", location: "areas", guide: "guides" };
+  function slugify(t) { return String(t).toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""); }
+  function addPageCard() {
+    var groups = function (menu) { var seen = {}; return ((state.draft.menus || {})[menu] || []).map(function (i) { return i.group; }).filter(function (g) { if (seen[g]) return false; seen[g] = 1; return true; }); };
+    var opts = function (menu) { return groups(menu).map(function (g) { return "<option>" + esc(g) + "</option>"; }).join(""); };
+    return '<form class="card" data-add-page><h2>Add a new page</h2><p class="muted">Creates a page from the site template, adds it to the menus, the links on every page and the sitemap. Edit the starter text before publishing.</p>' +
+      '<div class="grid-3"><label class="field"><span>Page type</span><select name="kind"><option value="location">Service area (town or neighborhood)</option><option value="service">Service</option><option value="guide">Guide or tool</option></select></label>' +
+      '<label class="field"><span>Name</span><input name="name" required placeholder="e.g. Bastrop or Appliance moving"></label>' +
+      '<label class="field"><span>Menu group</span><select name="group"><optgroup label="Service areas">' + opts("areas") + '</optgroup><optgroup label="Services">' + opts("services") + '</optgroup><optgroup label="Guides">' + opts("guides") + "</optgroup></select></label></div>" +
+      '<label class="field"><span>Web address</span><input name="slug" placeholder="filled in automatically"><small>Lowercase words and hyphens. “-movers” is added for service areas.</small></label>' +
+      '<button class="button btn-sm" type="submit">Create page</button></form>';
+  }
+  function starter(kind, name) {
+    var town = kind === "location";
+    return {
+      kind: kind, crumb: name,
+      eyebrow: town ? name + ", Texas moving company" : kind === "service" ? name : "Moving guide",
+      h1: town ? name + " movers who know the area." : kind === "service" ? name + ", done right." : name + ".",
+      lede: town ? "Full-service moving in and around " + name + ", from a family-owned crew serving Austin and every town south along I-35 since 2001." : "Describe in one sentence what this page helps customers with.",
+      article: (town ? "## Moving in " + name : "## About " + name.toLowerCase()) + "\n\nReplace this starter text: describe what makes this " + (town ? "area" : "topic") + " different—specific, true details customers will recognize.\n\n### Details customers ask about\n\n- Add a specific detail\n- Add another\n\nFull service means we pack, protect, load, move and set up. See [all moving services](services.html).",
+      side: { title: "For an accurate quote", text: "Details that help us plan.", items: ["Both addresses", "Size of the move", "Stairs and access", "Your preferred date"] },
+      faqTitle: name + " questions",
+      faq: [{ q: town ? "Do you serve " + name + "?" : "Do you offer " + name.toLowerCase() + "?", a: town ? "Yes. " + name + " is within the area we serve." : "Yes. Call (512) 443-6141 or request a free estimate." }],
+      schema: kind === "guide" ? { type: "Article" } : { type: "Service", name: town ? "Moving services in " + name : name, areaServed: town ? [name + ", TX"] : ["Austin, TX", "Buda, TX", "Kyle, TX", "San Marcos, TX"] }
+    };
+  }
+  function createPage(form) {
+    var kind = form.kind.value, name = form.name.value.trim();
+    if (!name) return;
+    var slug = slugify(form.slug.value || name);
+    if (kind === "location" && !/-movers$/.test(slug)) slug += "-movers";
+    var file = slug + ".html";
+    if (state.draft.pages.some(function (p) { return p.file === file; })) { toast("A page with that address already exists.", true); return; }
+    var menu = KIND_MENU[kind];
+    state.draft.content = state.draft.content || {};
+    state.draft.content[file] = starter(kind, name);
+    var idx = state.draft.pages.findIndex(function (p) { return p.file === "privacy-policy.html"; });
+    var title = kind === "location" ? name + " Movers | Full-Service Moving | Advantage" : name + " | Advantage Moving";
+    state.draft.pages.splice(idx < 0 ? state.draft.pages.length : idx, 0, { file: file, path: file, title: title, description: "Replace with a one- or two-sentence description of this page (70–160 characters).", index: true, priority: "0.6", lastmod: today() });
+    state.draft.menus = state.draft.menus || {};
+    var groupName = form.group.value;
+    var menuGroups = (state.draft.menus[menu] || []).map(function (i) { return i.group; });
+    if (menuGroups.indexOf(groupName) === -1) groupName = menuGroups[0] || "More";
+    (state.draft.menus[menu] = state.draft.menus[menu] || []).push({ label: name, file: file, group: groupName });
+    state.contentFile = file;
+    toast("Page created. Replace the starter text, then publish.");
+    render();
+  }
+
   views.content = function () {
     var content = state.draft.content || {}, files = Object.keys(content);
     var file = state.contentFile && content[state.contentFile] ? state.contentFile : files[0];
@@ -259,6 +308,7 @@
       return '<label class="field"><span>' + label + "</span>" + input + (opts.help ? "<small>" + opts.help + "</small>" : "") + "</label>";
     };
     return '<div class="view-head"><div><h1>Page copy &amp; search</h1><p>Search every page’s text, and edit the copy on service and guide pages. Everything publishes as plain HTML that search engines and AI assistants can read.</p></div></div>' +
+      addPageCard() +
       '<div class="card"><h2>Search the site</h2><label class="field"><span>Find text on any page</span><input data-content-search value="' + esc(state.contentQuery || "") + '" placeholder="e.g. stairs, TXDMV, San Marcos"></label><div id="searchOut">' + searchResults(state.contentQuery || "") + "</div></div>" +
       '<div class="card"><div class="view-head" style="margin-bottom:12px"><h2 style="margin:0">Edit a page</h2><label class="field" style="min-width:300px;margin:0"><span>Page</span><select data-content-select>' +
       files.map(function (f) { var p = state.draft.pages.filter(function (x) { return x.file === f; })[0]; return '<option value="' + f + '"' + (f === file ? " selected" : "") + ">" + esc((p && p.title) || f) + "</option>"; }).join("") +
@@ -400,6 +450,9 @@
       var p2 = t.dataset.cfaq.split(":");
       state.draft.content[state.contentFile].faq[Number(p2[0])][p2[1]] = t.value;
       refreshBadge();
+    } else if (t.name === "name" && t.form && t.form.hasAttribute("data-add-page")) {
+      var k = t.form.kind.value, sl = slugify(t.value);
+      t.form.slug.placeholder = (k === "location" && sl && !/-movers$/.test(sl) ? sl + "-movers" : sl) + ".html";
     } else if (t.hasAttribute("data-areas")) {
       state.draft.business.areaServed = t.value.split("\n").map(function (s) { return s.trim(); }).filter(Boolean).map(function (n) { return { type: /^texas$/i.test(n) ? "State" : "City", name: n }; });
       refreshBadge();
@@ -454,6 +507,7 @@
 
   document.addEventListener("submit", async function (e) {
     var f = e.target;
+    if (f.hasAttribute("data-add-page")) { e.preventDefault(); createPage(f); return; }
     if (f.hasAttribute("data-ai-form")) {
       e.preventDefault();
       var fd = Object.fromEntries(new FormData(f)), log = store("adv-ai-log") || [];
@@ -484,6 +538,8 @@
     if (state.draft.admin.mustChange) { toast("Change the default password first (Account).", true); return go("account"); }
     var p = pending(), names = Object.keys(p.changed);
     if (!names.length) return;
+    var starterPages = AdvAudit.auditSite(p.data, p.built).pages.filter(function (r) { return r.issues.some(function (i) { return /Starter text/.test(i.msg); }); });
+    if (starterPages.length) { toast("Replace the starter text on " + starterPages.map(function (r) { return r.file; }).join(", ") + " before publishing.", true); return; }
     var msgInput = $("#pubMsg"), note = msgInput && msgInput.value.trim();
     btn.disabled = true; btn.textContent = "Publishing…";
     try {

@@ -170,6 +170,11 @@
     var plain = function (t) { return String(t || "").replace(/\*\*(.+?)\*\*/g, "$1").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1"); };
     var faq = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": (c.faq || []).map(function (f) { return { "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": plain(f.a) } }; }) };
     html = html.replace(/<script type="application\/ld\+json" id="ld-page-faq">[\s\S]*?<\/script>/, function () { return '<script type="application/ld+json" id="ld-page-faq">' + JSON.stringify(faq) + "</script>"; });
+    if (html.indexOf("<!--content:crumb-->") !== -1) {
+      var bc = breadcrumbs(data, file, c);
+      html = replaceRegion(html, "<!--content:crumb-->", "<!--/content:crumb-->", bc.html);
+      html = html.replace(/<script type="application\/ld\+json" id="ld-breadcrumb">[\s\S]*?<\/script>/, function () { return '<script type="application/ld+json" id="ld-breadcrumb">' + JSON.stringify(bc.ld) + "</script>"; });
+    }
     var sc = c.schema || {}, main;
     if (sc.type === "Article") {
       main = { "@context": "https://schema.org", "@type": "Article", "@id": base + file + "#article", "headline": c.h1, "description": plain(c.lede), "url": base + file, "author": { "@id": base + "#business" }, "publisher": { "@id": base + "#business" } };
@@ -180,6 +185,61 @@
     }
     html = html.replace(/<script type="application\/ld\+json" id="ld-page-main">[\s\S]*?<\/script>/, function () { return '<script type="application/ld+json" id="ld-page-main">' + JSON.stringify(main) + "</script>"; });
     return html;
+  }
+
+  /* data.menus = { services: [{label,file,group}], areas: [...], guides: [...] } drives the header
+     dropdowns, the link band on every page and new-page breadcrumbs. */
+  function menuLink(item, file) {
+    return item.file === file ? '<a href="' + item.file + '" aria-current="page">' + esc(item.label) + "</a>" : '<a href="' + item.file + '">' + esc(item.label) + "</a>";
+  }
+  function grouped(list) {
+    var groups = [], by = {};
+    (list || []).forEach(function (i) { var g = i.group || "More"; if (!by[g]) { by[g] = []; groups.push(g); } by[g].push(i); });
+    return groups.map(function (g) { return { name: g, items: by[g] }; });
+  }
+  function megaPanel(id, title, hub, hubLabel, list, file) {
+    return '<div class="mega" id="' + id + '" hidden><div class="wrap mega-inner"><div class="mega-cols">' +
+      grouped(list).map(function (g) {
+        return '<div class="mega-col"><p class="mega-head">' + esc(g.name) + "</p>" + g.items.map(function (i) { return menuLink(i, file); }).join("") + "</div>";
+      }).join("") + '</div><a class="mega-all" href="' + hub + '">' + esc(hubLabel) + " →</a></div></div>";
+  }
+  function navMain(data, file) {
+    var m = data.menus || {}, cur = function (f) { return f === file ? ' aria-current="page"' : ""; };
+    var inServices = (m.services || []).some(function (i) { return i.file === file; }) || file === "services.html";
+    var inAreas = (m.areas || []).some(function (i) { return i.file === file; }) || file === "areas.html";
+    var drop = function (id, href, label, active) {
+      return '<div class="nav-drop' + (active ? " is-active" : "") + '"><a href="' + href + '"' + cur(href) + ">" + label + '</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="' + id + '"><span class="sr-only">Show ' + label.toLowerCase() + '</span></button></div>';
+    };
+    return '<nav class="main-nav" aria-label="Main navigation">' +
+      drop("menu-services", "services.html", "Services", inServices) +
+      drop("menu-areas", "areas.html", "Service areas", inAreas) +
+      '<a href="moving-guides.html"' + cur("moving-guides.html") + ">Guides &amp; tools</a>" +
+      '<a href="advantage-movers.html"' + cur("advantage-movers.html") + ">About</a>" +
+      '<a href="index.html#reviews">Reviews</a></nav>';
+  }
+  function navPanels(data, file) {
+    var m = data.menus || {};
+    return megaPanel("menu-services", "Services", "services.html", "All moving services", m.services, file) +
+      megaPanel("menu-areas", "Service areas", "areas.html", "All service areas", m.areas, file);
+  }
+  function linkBand(data, file) {
+    var m = data.menus || {};
+    var line = function (list, hub, hubLabel) {
+      return [{ label: hubLabel, file: hub }].concat(list || []).map(function (i) {
+        return i.file === file ? '<span aria-current="page">' + esc(i.label) + "</span>" : '<a href="' + i.file + '">' + esc(i.label) + "</a>";
+      }).join(" · ");
+    };
+    return '<div class="wrap link-band-grid"><div><h2>Areas we serve</h2><p>' + line(m.areas, "areas.html", "All areas") + "</p></div>" +
+      '<div><h2>Services</h2><p>' + line(m.services, "services.html", "All services") + '</p><h2 class="link-band-sub">Guides &amp; free tools</h2><p>' + line(m.guides, "moving-guides.html", "All guides") + "</p></div></div>";
+  }
+  function breadcrumbs(data, file, c) {
+    var parent = c.kind === "location" ? { file: "areas.html", label: "Service areas" } : c.kind === "service" ? { file: "services.html", label: "Services" } : c.kind === "guide" ? { file: "moving-guides.html", label: "Moving guides" } : null;
+    var label = c.crumb || c.h1;
+    var visible = '<a href="index.html">Home</a><span>/</span>' + (parent ? '<a href="' + parent.file + '">' + esc(parent.label) + "</a><span>/</span>" : "") + "<span>" + esc(label) + "</span>";
+    var items = [{ "@type": "ListItem", "position": 1, "name": "Home", "item": data.site.baseUrl }];
+    if (parent) items.push({ "@type": "ListItem", "position": 2, "name": parent.label, "item": data.site.baseUrl + parent.file });
+    items.push({ "@type": "ListItem", "position": items.length + 1, "name": label, "item": data.site.baseUrl + file });
+    return { html: visible, ld: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items } };
   }
 
   var SLOTS = {
@@ -193,6 +253,9 @@
       if (/^https:\/\//.test(b.googleReviewUrl || "")) out.push('<a class="button button-cream" href="' + esc(b.googleReviewUrl) + '" target="_blank" rel="noopener">Moved with us? Leave a review ↗</a>');
       return out.length ? '<div class="reviews-cta">' + out.join("") + "</div>" : "";
     },
+    "nav-main": navMain,
+    "nav-panels": navPanels,
+    "link-band": linkBand,
     "footer-profiles": function (data) {
       var urls = profileUrls(data.business);
       if (!urls.length) return "";
@@ -242,7 +305,7 @@
     html = html.replace(/<script type="application\/ld\+json" id="ld-faq">[\s\S]*?<\/script>/, function () { return faqLd(data); });
     html = replaceRegion(html, "<!--seo:faq-->", "<!--/seo:faq-->", "\n    " + faqHtml(data) + "\n    ");
     Object.keys(SLOTS).forEach(function (name) {
-      html = replaceRegion(html, "<!--slot:" + name + "-->", "<!--/slot:" + name + "-->", SLOTS[name](data));
+      html = replaceRegion(html, "<!--slot:" + name + "-->", "<!--/slot:" + name + "-->", SLOTS[name](data, file));
     });
     return html;
   }
@@ -264,9 +327,16 @@
     var data = JSON.parse(JSON.stringify(nextData));
     if (data.content) data.content = JSON.parse(replaceFacts(JSON.stringify(data.content), prevData.business, data.business));
     var out = {};
-    Object.keys(files).forEach(function (file) {
+    var template = files["admin/page-template.html"];
+    var work = Object.assign({}, files);
+    if (template) {
+      Object.keys(data.content || {}).forEach(function (file) {
+        if (!(file in work) && /^[a-z0-9-]+\.html$/.test(file)) work[file] = template;
+      });
+    }
+    Object.keys(work).forEach(function (file) {
       if (!/\.html$/.test(file) || file.indexOf("/") !== -1) return;
-      var next = buildPage(prevData, data, file, files[file]);
+      var next = buildPage(prevData, data, file, work[file]);
       if (next !== files[file]) {
         out[file] = next;
         data.pages.forEach(function (p) { if (p.file === file) p.lastmod = today; });

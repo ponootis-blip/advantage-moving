@@ -43,6 +43,18 @@
       },
       {
         "type": "City",
+        "name": "Sunset Valley, TX"
+      },
+      {
+        "type": "City",
+        "name": "Manchaca, TX"
+      },
+      {
+        "type": "City",
+        "name": "Del Valle, TX"
+      },
+      {
+        "type": "City",
         "name": "Buda, TX"
       },
       {
@@ -55,7 +67,7 @@
       },
       {
         "type": "City",
-        "name": "Manchaca, TX"
+        "name": "Martindale, TX"
       },
       {
         "type": "City",
@@ -71,7 +83,7 @@
       },
       {
         "type": "City",
-        "name": "Lockhart, TX"
+        "name": "Woodcreek, TX"
       },
       {
         "type": "City",
@@ -79,11 +91,15 @@
       },
       {
         "type": "City",
+        "name": "Uhland, TX"
+      },
+      {
+        "type": "City",
         "name": "Niederwald, TX"
       },
       {
         "type": "City",
-        "name": "Uhland, TX"
+        "name": "Lockhart, TX"
       },
       {
         "type": "State",
@@ -446,6 +462,159 @@
       "lastmod": "2026-10-07"
     },
     {
+      "file": "manchaca-movers.html",
+      "path": "manchaca-movers.html",
+      "title": "Manchaca Movers | Full-Service Moving South of Austin | Advantage",
+      "description": "Family-owned, full-service Manchaca movers: acreage, older ranch homes and new subdivisions between South Austin and Buda. Licensed TxDMV #000572890B.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "sunset-valley-movers.html",
+      "path": "sunset-valley-movers.html",
+      "title": "Sunset Valley Movers | Homes & Businesses | Advantage Moving",
+      "description": "Full-service movers for Sunset Valley, the small city surrounded by southwest Austin—homes on quiet streets and businesses along US 290. Family owned.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "oak-hill-movers.html",
+      "path": "oak-hill-movers.html",
+      "title": "Oak Hill Movers in Southwest Austin | Advantage Moving",
+      "description": "Full-service Oak Hill movers for southwest Austin homes near US 290 and SH 71—hillside lots, stairs and Hill Country views. Family owned since 2001.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "circle-c-movers.html",
+      "path": "circle-c-movers.html",
+      "title": "Circle C Ranch Movers | Southwest Austin | Advantage Moving",
+      "description": "Movers for Circle C Ranch in southwest Austin: HOA-friendly scheduling, careful family-home moves and full-service packing. Family owned since 2001.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "driftwood-movers.html",
+      "path": "driftwood-movers.html",
+      "title": "Driftwood TX Movers | Hill Country Homes & Ranches | Advantage",
+      "description": "Full-service Driftwood movers for Hill Country homes and acreage along FM 1826 and FM 150: gravel drives, gates and long carries handled.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "wimberley-movers.html",
+      "path": "wimberley-movers.html",
+      "title": "Wimberley & Woodcreek Movers | Hill Country | Advantage",
+      "description": "Full-service movers for Wimberley and Woodcreek: hillside homes, narrow roads and river properties in the Hill Country. Family owned since 2001.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "lockhart-movers.html",
+      "path": "lockhart-movers.html",
+      "title": "Lockhart Movers | Caldwell County Moving | Advantage Moving",
+      "description": "Full-service Lockhart movers for historic homes near the courthouse square and newer subdivisions across Caldwell County. Family owned since 2001.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "del-valle-movers.html",
+      "path": "del-valle-movers.html",
+      "title": "Del Valle Movers | Southeast Austin | Advantage Moving",
+      "description": "Full-service Del Valle movers for southeast Travis County near the airport and SH 71/SH 130: new subdivisions, apartments and homes. Family owned.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "mustang-ridge-movers.html",
+      "path": "mustang-ridge-movers.html",
+      "title": "Mustang Ridge Movers | US 183 South of Austin | Advantage",
+      "description": "Full-service movers for Mustang Ridge along US 183 south of Austin: homes on larger lots, new neighborhoods and moves across Texas. Family owned.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "niederwald-movers.html",
+      "path": "niederwald-movers.html",
+      "title": "Niederwald Movers | SH 21 Between Kyle & Lockhart | Advantage",
+      "description": "Full-service movers for Niederwald on SH 21 in Hays and Caldwell counties: country homes, acreage and moves across Central Texas. Family owned.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "uhland-movers.html",
+      "path": "uhland-movers.html",
+      "title": "Uhland Movers | Hays & Caldwell County Moving | Advantage",
+      "description": "Full-service Uhland movers on SH 21 and FM 2720 near Kyle and Lockhart: homes on acreage and new subdivisions. Family owned since 2001.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "martindale-movers.html",
+      "path": "martindale-movers.html",
+      "title": "Martindale Movers | San Marcos River Area | Advantage Moving",
+      "description": "Full-service movers for Martindale on the San Marcos River, just east of San Marcos: homes, river properties and moves across Texas. Family owned.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "corporate-relocation-austin.html",
+      "path": "corporate-relocation-austin.html",
+      "title": "Corporate Relocation in Texas | Employee Moves | Advantage Moving",
+      "description": "Corporate and employee relocation within Texas: coordinated household moves for new hires and transfers to and from Austin. Family owned since 2001.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "military-movers-texas.html",
+      "path": "military-movers-texas.html",
+      "title": "Military Movers in Texas | PCS & PPM Moves | Advantage Moving",
+      "description": "Military moving help within Texas: personally procured moves (PPM), local moves around installations and careful household moves for service members.",
+      "index": true,
+      "priority": "0.6",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "heavy-item-movers-austin.html",
+      "path": "heavy-item-movers-austin.html",
+      "title": "Heavy Item Movers in Austin | Safes & Appliances | Advantage",
+      "description": "Movers for heavy and awkward items in Austin: gun safes, appliances, pool tables, gym equipment and more—planned, padded and moved safely.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "white-glove-moving-austin.html",
+      "path": "white-glove-moving-austin.html",
+      "title": "White-Glove Movers in Austin | Advantage Moving",
+      "description": "White-glove moving in Austin: extra protection, full packing and unpacking, furniture placement and a crew that treats your home like theirs.",
+      "index": true,
+      "priority": "0.6",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "areas.html",
+      "path": "areas.html",
+      "title": "Service Areas | Austin, Buda, Kyle, San Marcos & More | Advantage",
+      "description": "Advantage Moving serves Austin and every town south along I-35—Buda, Kyle, San Marcos—plus Hill Country and Caldwell County towns within about 30 miles.",
+      "index": true,
+      "priority": "0.9",
+      "lastmod": "2026-10-07"
+    },
+    {
       "file": "privacy-policy.html",
       "path": "privacy-policy.html",
       "title": "Privacy Policy — Advantage Moving Austin",
@@ -459,6 +628,15 @@
       "path": "launch-checklist.html",
       "title": "Launch Checklist | Advantage Moving (private — delete when done)",
       "description": "Private owner checklist for launching the Advantage Moving website.",
+      "index": false,
+      "sitemap": false,
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "404.html",
+      "path": "404.html",
+      "title": "Page not found | Advantage Moving Austin",
+      "description": "",
       "index": false,
       "sitemap": false,
       "lastmod": "2026-10-07"
@@ -514,7 +692,7 @@
       "file": "house-movers-austin.html"
     },
     {
-      "name": "Apartment and condo moving",
+      "name": "Apartments & condos",
       "file": "apartment-movers-austin.html"
     },
     {
@@ -526,7 +704,7 @@
       "file": "last-minute-movers-austin.html"
     },
     {
-      "name": "Senior moving and downsizing",
+      "name": "Senior moving",
       "file": "senior-moving-austin.html"
     },
     {
@@ -534,39 +712,55 @@
       "file": "student-movers.html"
     },
     {
-      "name": "Commercial moving",
+      "name": "Military moves",
+      "file": "military-movers-texas.html"
+    },
+    {
+      "name": "Commercial & office",
       "file": "commercial-movers-austin.html"
     },
     {
-      "name": "Texas intrastate moving",
+      "name": "Corporate relocation",
+      "file": "corporate-relocation-austin.html"
+    },
+    {
+      "name": "Long distance in Texas",
       "file": "austin-movers.html"
     },
     {
-      "name": "Packing services",
+      "name": "Packing",
       "file": "packing-services-austin.html"
     },
     {
-      "name": "Unpacking and setup",
+      "name": "Unpacking & setup",
       "file": "unpacking-services-austin.html"
     },
     {
-      "name": "Furniture moving and assembly",
+      "name": "Furniture & assembly",
       "file": "furniture-movers-austin.html"
     },
     {
-      "name": "Piano and specialty moving",
+      "name": "Pianos",
       "file": "piano-moving-austin.html"
     },
     {
-      "name": "Antique and art moving",
+      "name": "Antiques & art",
       "file": "antique-art-movers-austin.html"
     },
     {
-      "name": "Loading and unloading help",
+      "name": "Heavy items",
+      "file": "heavy-item-movers-austin.html"
+    },
+    {
+      "name": "White-glove moving",
+      "file": "white-glove-moving-austin.html"
+    },
+    {
+      "name": "Loading & unloading help",
       "file": "loading-unloading-help.html"
     },
     {
-      "name": "In-home furniture moving",
+      "name": "In-home moves",
       "file": "in-home-furniture-moving.html"
     },
     {
@@ -615,7 +809,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Apartments & condos"
     },
     "furniture-movers-austin.html": {
       "eyebrow": "Furniture moving",
@@ -657,7 +853,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Furniture & assembly"
     },
     "moving-storage-austin.html": {
       "eyebrow": "Moving & storage",
@@ -699,7 +897,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Storage between homes"
     },
     "moving-quotes-texas.html": {
       "eyebrow": "Moving guide",
@@ -739,7 +939,9 @@
       ],
       "schema": {
         "type": "Article"
-      }
+      },
+      "kind": "guide",
+      "crumb": "How quotes work"
     },
     "questions-to-ask-movers.html": {
       "eyebrow": "Moving guide",
@@ -775,7 +977,9 @@
       ],
       "schema": {
         "type": "Article"
-      }
+      },
+      "kind": "guide",
+      "crumb": "Questions to ask"
     },
     "moving-glossary.html": {
       "eyebrow": "Moving guide",
@@ -806,7 +1010,9 @@
       ],
       "schema": {
         "type": "Article"
-      }
+      },
+      "kind": "guide",
+      "crumb": "Moving glossary"
     },
     "moving-guides.html": {
       "eyebrow": "Moving guides & tips",
@@ -837,7 +1043,9 @@
       ],
       "schema": {
         "type": "Article"
-      }
+      },
+      "kind": "hub",
+      "crumb": "Moving guides and free planning tools"
     },
     "house-movers-austin.html": {
       "eyebrow": "Residential moving",
@@ -879,7 +1087,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "House moving"
     },
     "small-moves-austin.html": {
       "eyebrow": "Small moves",
@@ -920,7 +1130,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Small moves"
     },
     "last-minute-movers-austin.html": {
       "eyebrow": "Short-notice moves",
@@ -962,7 +1174,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Last-minute moves"
     },
     "loading-unloading-help.html": {
       "eyebrow": "Moving labor",
@@ -1004,7 +1218,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Loading & unloading help"
     },
     "senior-moving-austin.html": {
       "eyebrow": "Senior moves & downsizing",
@@ -1046,7 +1262,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Senior moving"
     },
     "student-movers.html": {
       "eyebrow": "Student moving",
@@ -1088,7 +1306,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Student moving"
     },
     "unpacking-services-austin.html": {
       "eyebrow": "Unpacking & setup",
@@ -1129,7 +1349,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Unpacking & setup"
     },
     "antique-art-movers-austin.html": {
       "eyebrow": "Antiques, art & heirlooms",
@@ -1171,7 +1393,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "Antiques & art"
     },
     "in-home-furniture-moving.html": {
       "eyebrow": "In-home moves",
@@ -1213,7 +1437,9 @@
           "Kyle, TX",
           "San Marcos, TX"
         ]
-      }
+      },
+      "kind": "service",
+      "crumb": "In-home moves"
     },
     "services.html": {
       "eyebrow": "All moving services",
@@ -1248,7 +1474,9 @@
       ],
       "schema": {
         "type": "Article"
-      }
+      },
+      "kind": "hub",
+      "crumb": "Every service, one family-owned crew"
     },
     "moving-checklist.html": {
       "eyebrow": "Free moving tool",
@@ -1283,7 +1511,9 @@
       ],
       "schema": {
         "type": "Article"
-      }
+      },
+      "kind": "guide",
+      "crumb": "Moving checklist"
     },
     "moving-box-calculator.html": {
       "eyebrow": "Free moving tool",
@@ -1319,7 +1549,9 @@
       ],
       "schema": {
         "type": "Article"
-      }
+      },
+      "kind": "guide",
+      "crumb": "Box calculator"
     },
     "moving-cost-calculator.html": {
       "eyebrow": "Free moving tool",
@@ -1355,7 +1587,9 @@
       ],
       "schema": {
         "type": "Article"
-      }
+      },
+      "kind": "guide",
+      "crumb": "Cost calculator"
     },
     "change-of-address-checklist-texas.html": {
       "eyebrow": "Free moving guide",
@@ -1391,7 +1625,977 @@
       ],
       "schema": {
         "type": "Article"
-      }
+      },
+      "kind": "guide",
+      "crumb": "Change of address"
+    },
+    "manchaca-movers.html": {
+      "eyebrow": "Manchaca, Texas moving company",
+      "h1": "Manchaca movers for country lots and new neighborhoods.",
+      "lede": "Between South Austin and Buda, Manchaca mixes acreage and older ranch-style homes with newer subdivisions. We move all of them.",
+      "article": "## Moving in Manchaca\n\nManchaca sits just south of Austin's city limits, along Manchaca Road and FM 1626 between South Austin and Buda. It's close enough to the city for an easy commute and far enough out for bigger lots—which is exactly what shapes a move here.\n\n### Country lots and long driveways\n\nHomes set back on acreage often mean a longer carry from the truck to the door, gravel drives and gates. Tell us about the driveway and where a truck can park, and we'll plan the crew and timing around it.\n\n### Newer subdivisions\n\nNewer neighborhoods bring HOA move-hour rules and limits on where trucks can park. Ask your HOA for its guidelines before moving day.\n\n### Barns, workshops and outbuildings\n\nTools, equipment and outdoor furniture take longer than most people expect. Include them when you request your quote so they're in the plan.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Manchaca move.",
+        "items": [
+          "Driveway and gate access",
+          "Distance from parking to door",
+          "Outbuildings and workshop items",
+          "HOA rules",
+          "Heavy or delicate pieces"
+        ]
+      },
+      "faqTitle": "Manchaca moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Manchaca?",
+          "a": "Yes. Manchaca is right in the middle of the area we serve, between South Austin and Buda."
+        },
+        {
+          "q": "Can a moving truck get down my driveway?",
+          "a": "Tell us about the drive—surface, gate width, slope and turns. Photos help us choose the right truck and plan the carry."
+        },
+        {
+          "q": "Do you move workshop and outdoor items?",
+          "a": "Yes. List what's in the garage, barn or workshop so it's included in the plan."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Manchaca",
+        "areaServed": [
+          "Manchaca, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Manchaca"
+    },
+    "sunset-valley-movers.html": {
+      "eyebrow": "Sunset Valley moving company",
+      "h1": "Sunset Valley movers for homes and storefronts.",
+      "lede": "A small city wrapped inside southwest Austin, with quiet residential streets and a busy retail corridor along US 290. We move both.",
+      "article": "## Moving in Sunset Valley\n\nSunset Valley is its own small city, surrounded by southwest Austin near US 290 and Brodie Lane. Residential streets are quiet and lots are generous, while the shopping areas along US 290 bring constant traffic.\n\n### Homes on quiet streets\n\nLarger lots usually make parking easy, but long front walks and multi-level homes add carry time. Let us know about stairs and the path to the door.\n\n### Retail and office moves\n\nBusinesses along the US 290 corridor often need moves scheduled around opening hours and deliveries. See [commercial moving](commercial-movers-austin.html) for how we plan around your business.\n\n### Traffic timing\n\nWeekend and holiday shopping traffic can slow loading near the retail areas. We plan arrival times with that in mind.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Sunset Valley move.",
+        "items": [
+          "Stairs and long walks",
+          "Business hours to avoid",
+          "Loading area for storefronts",
+          "Large furniture",
+          "Your preferred date"
+        ]
+      },
+      "faqTitle": "Sunset Valley moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Sunset Valley?",
+          "a": "Yes. Sunset Valley is surrounded by southwest Austin and is part of our everyday service area."
+        },
+        {
+          "q": "Can you move a store or office in Sunset Valley?",
+          "a": "Yes. We schedule commercial moves around your business hours—tell us when you can and can't be closed."
+        },
+        {
+          "q": "How do I get a quote?",
+          "a": "Share both addresses, the size of the move and any stairs, and we'll prepare a written estimate."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Sunset Valley",
+        "areaServed": [
+          "Sunset Valley, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Sunset Valley"
+    },
+    "oak-hill-movers.html": {
+      "eyebrow": "Southwest Austin moving",
+      "h1": "Oak Hill movers for hillside homes and busy roads.",
+      "lede": "Where US 290 and SH 71 meet at the edge of the Hill Country, Oak Hill homes come with slopes, stairs and views—and traffic worth planning around.",
+      "article": "## Moving in Oak Hill\n\nOak Hill is the southwest Austin area around the meeting of US 290 and SH 71, known locally as the Y. It's where Austin starts to climb into the Hill Country, and many homes sit on sloped lots with stairs inside and out.\n\n### Slopes and stairs\n\nHillside lots can mean steps from the street, split-level floor plans and steep driveways. Tell us about them so the crew and equipment match the house.\n\n### Traffic around the Y\n\nUS 290 and SH 71 carry heavy commuter traffic. We schedule arrival and drive times to avoid the slowest hours where we can.\n\n### Established and newer neighborhoods\n\nOak Hill includes long-established neighborhoods with mature trees and newer communities with HOA guidelines. Low branches and HOA truck rules are both worth mentioning when you book.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Oak Hill move.",
+        "items": [
+          "Steps from the street",
+          "Split levels and stairs",
+          "Driveway slope",
+          "Low branches or tight streets",
+          "HOA rules"
+        ]
+      },
+      "faqTitle": "Oak Hill moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Oak Hill?",
+          "a": "Yes. Oak Hill and the rest of southwest Austin are part of our everyday service area."
+        },
+        {
+          "q": "Can you handle steep driveways and outdoor steps?",
+          "a": "Yes—difficult access is where an experienced crew shows. Tell us about slopes and steps so we plan the right crew."
+        },
+        {
+          "q": "When is the best time to move around the Y?",
+          "a": "Mid-morning and early afternoon usually avoid the worst commuter traffic. We'll plan timing with you."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Oak Hill",
+        "areaServed": [
+          "Oak Hill, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Oak Hill"
+    },
+    "circle-c-movers.html": {
+      "eyebrow": "Southwest Austin moving",
+      "h1": "Circle C Ranch movers who plan around the HOA.",
+      "lede": "A master-planned southwest Austin community off Slaughter Lane and MoPac—family homes, parks and HOA guidelines that shape moving day.",
+      "article": "## Moving in Circle C Ranch\n\nCircle C Ranch is a large master-planned community in southwest Austin, near Slaughter Lane and the southern end of MoPac. Most moves here are family homes—full of bedrooms, playrooms, garages and patio furniture.\n\n### HOA guidelines\n\nMaster-planned communities often set rules for moving trucks, parking and times of day. Check with your HOA and share the guidelines when you book.\n\n### Family-home moves\n\nMultiple bedrooms, kids' rooms and a full garage add up. Packing help for the kitchen and fragile items is a popular way to save time. See [packing services](packing-services-austin.html).\n\n### Moving within the neighborhood\n\nUpsizing or downsizing without leaving Circle C? Short local moves still benefit from the same planning and protection as any other move.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Circle C Ranch move.",
+        "items": [
+          "HOA moving guidelines",
+          "Bedrooms and garage",
+          "Packing help wanted",
+          "Patio and play equipment",
+          "Your preferred date"
+        ]
+      },
+      "faqTitle": "Circle C Ranch moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Circle C Ranch?",
+          "a": "Yes. Circle C and the rest of southwest Austin are part of our everyday service area."
+        },
+        {
+          "q": "Will the HOA restrict my moving truck?",
+          "a": "Many HOAs set parking or time rules for moving trucks. Ask yours, then share the rules with us so we plan around them."
+        },
+        {
+          "q": "Can you move us within Circle C?",
+          "a": "Yes. Moves within the same neighborhood get the same careful planning."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Circle C Ranch",
+        "areaServed": [
+          "Circle C Ranch, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Circle C Ranch"
+    },
+    "driftwood-movers.html": {
+      "eyebrow": "Hill Country moving",
+      "h1": "Driftwood movers for gravel roads and big views.",
+      "lede": "Driftwood's Hill Country homes, ranch properties and acreage along FM 1826 and FM 150 need a crew that plans for the drive in.",
+      "article": "## Moving in Driftwood\n\nDriftwood is a Hill Country community in Hays County, spread along FM 1826 and FM 150 between Austin, Dripping Springs and Buda. Properties tend to be large, private and set well back from the road.\n\n### Gates, gravel and grades\n\nNarrow gates, gravel or caliche drives and steep grades decide what size truck can reach the house. Photos of the drive and the turnaround help us plan.\n\n### Weather and unpaved drives\n\nHeavy rain can soften unpaved roads. Keep a backup parking spot in mind and talk to us if the forecast turns.\n\n### Outdoor living\n\nPatio furniture, outdoor kitchens, planters and equipment are part of most Driftwood moves. Include them in your quote request.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Driftwood move.",
+        "items": [
+          "Gate width and codes",
+          "Driveway surface and grade",
+          "Truck turnaround space",
+          "Outdoor furniture and equipment",
+          "Distance to the door"
+        ]
+      },
+      "faqTitle": "Driftwood moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Driftwood?",
+          "a": "Yes. Driftwood is within our 30-mile service area, between Austin, Buda and Dripping Springs."
+        },
+        {
+          "q": "What if a big truck can't reach the house?",
+          "a": "Tell us before moving day. Access determines the truck, crew and timing, and it's far easier to plan for than to discover on the day."
+        },
+        {
+          "q": "Do you move outdoor furniture and equipment?",
+          "a": "Yes. List outdoor pieces when you request your quote so they're included."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Driftwood",
+        "areaServed": [
+          "Driftwood, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Driftwood"
+    },
+    "wimberley-movers.html": {
+      "eyebrow": "Wimberley & Woodcreek moving",
+      "h1": "Wimberley movers for hills, creeks and narrow roads.",
+      "lede": "From Woodcreek to homes along Cypress Creek and the Blanco River, Wimberley moves call for careful planning and a crew that's comfortable off the main road.",
+      "article": "## Moving in Wimberley and Woodcreek\n\nWimberley and neighboring Woodcreek sit in the Hays County Hill Country along RR 12, where Cypress Creek meets the Blanco River. Homes range from in-town cottages to houses on wooded hillsides and river lots.\n\n### Narrow roads and hillsides\n\nWinding roads, steep driveways and limited turnaround space are common. Let us know what the road in looks like so we can bring the right truck.\n\n### Low-water crossings\n\nSome neighborhoods are reached by crossings that close during heavy rain. If storms are forecast, we'll talk through timing and routes with you.\n\n### Small-town logistics\n\nWimberley's square and main roads get busy on market days and weekends. We plan arrival times to avoid the crowds where we can.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Wimberley move.",
+        "items": [
+          "Road and driveway access",
+          "Low-water crossings on the route",
+          "Hillside stairs",
+          "Truck turnaround space",
+          "Large or fragile pieces"
+        ]
+      },
+      "faqTitle": "Wimberley moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Wimberley and Woodcreek?",
+          "a": "Yes. Both are within the area we serve in the Hays County Hill Country."
+        },
+        {
+          "q": "What happens if heavy rain closes a crossing?",
+          "a": "Safety comes first. We'll keep an eye on the forecast with you and adjust timing or routes if a crossing is closed."
+        },
+        {
+          "q": "Can you move a house on a steep lot?",
+          "a": "Yes. Tell us about the slope, stairs and parking so we plan the right crew and equipment."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Wimberley",
+        "areaServed": [
+          "Wimberley, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Wimberley & Woodcreek"
+    },
+    "lockhart-movers.html": {
+      "eyebrow": "Lockhart, Texas moving company",
+      "h1": "Lockhart movers for historic homes and new neighborhoods.",
+      "lede": "Southeast of Austin in Caldwell County, Lockhart pairs older homes around its historic courthouse square with fast-growing new subdivisions.",
+      "article": "## Moving in Lockhart\n\nLockhart is the Caldwell County seat, southeast of Austin by US 183 or SH 130. It's known for its historic courthouse square—and for barbecue—and it has grown quickly as people look for more space within reach of Austin.\n\n### Older homes near the square\n\nHistoric homes often have narrow doorways, steep stairs and porches. Measure tight spots and tell us about them so large furniture goes in smoothly.\n\n### New subdivisions\n\nNewer neighborhoods bring HOA rules and, sometimes, unfinished streets or landscaping. Ask the builder or HOA about access before moving day.\n\n### Commuting moves\n\nIf you're moving between Lockhart and Austin, plan around commuter traffic on US 183 and SH 130. We'll time the drive with you.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Lockhart move.",
+        "items": [
+          "Doorways and stairs in older homes",
+          "HOA or builder access rules",
+          "Both addresses",
+          "Large furniture",
+          "Your preferred date"
+        ]
+      },
+      "faqTitle": "Lockhart moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Lockhart?",
+          "a": "Yes. Lockhart is within the 30-mile area we serve southeast of Austin."
+        },
+        {
+          "q": "Can you move furniture into an older home with narrow doors?",
+          "a": "Yes. Measure the doorways and stairs ahead of time; we can take pieces apart when that's safer."
+        },
+        {
+          "q": "Do you move between Lockhart and Austin?",
+          "a": "Yes, often. We'll plan around traffic on US 183 and SH 130."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Lockhart",
+        "areaServed": [
+          "Lockhart, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Lockhart"
+    },
+    "del-valle-movers.html": {
+      "eyebrow": "Southeast Austin moving",
+      "h1": "Del Valle movers for one of Austin’s fastest-growing areas.",
+      "lede": "Near Austin-Bergstrom International Airport and Circuit of the Americas, Del Valle's new subdivisions and apartments are filling up fast. We help people move in.",
+      "article": "## Moving in Del Valle\n\nDel Valle covers much of southeast Travis County around SH 71 and SH 130, near Austin-Bergstrom International Airport and Circuit of the Americas. New neighborhoods and apartment communities have brought a wave of first-time moves.\n\n### New-build neighborhoods\n\nMoving into a new home often means unfinished landscaping, construction traffic and builder rules about where trucks can park. Check with the builder before moving day.\n\n### Event traffic\n\nBig events at Circuit of the Americas and airport traffic can slow nearby roads. Tell us your date and we'll check timing.\n\n### Apartments\n\nMany new apartment communities set move-in hours and elevator or gate reservations. See [apartment moving](apartment-movers-austin.html).\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Del Valle move.",
+        "items": [
+          "Builder or HOA access rules",
+          "Apartment move-in hours",
+          "Gate codes",
+          "Both addresses",
+          "Your preferred date"
+        ]
+      },
+      "faqTitle": "Del Valle moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Del Valle?",
+          "a": "Yes. Del Valle and southeast Austin are part of our everyday service area."
+        },
+        {
+          "q": "Can you move us into a brand-new home?",
+          "a": "Yes. Share your closing date and any builder rules; if dates slip, we can coordinate short-term storage."
+        },
+        {
+          "q": "Does event traffic affect moving day?",
+          "a": "Large events near Circuit of the Americas can slow roads. We'll check your date and plan around it."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Del Valle",
+        "areaServed": [
+          "Del Valle, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Del Valle"
+    },
+    "mustang-ridge-movers.html": {
+      "eyebrow": "Mustang Ridge moving company",
+      "h1": "Mustang Ridge movers just down US 183.",
+      "lede": "A small city along US 183 south of Austin, near the SH 130 and SH 45 toll roads—with room to spread out and an easy run into town.",
+      "article": "## Moving in Mustang Ridge\n\nMustang Ridge is a small city along US 183 south of Austin, close to the SH 130 and SH 45 toll roads. Many homes sit on larger lots, and new neighborhoods continue to grow along the corridor.\n\n### Larger lots\n\nMore space usually means easy parking—but longer carries, outbuildings and outdoor furniture. Include everything outside in your quote request.\n\n### Toll roads and timing\n\nSH 130 and SH 45 make for a quicker drive to many destinations. We plan routes and timing for each move.\n\n### Moving to or from Austin\n\nMustang Ridge moves often connect with Austin, Buda, Kyle or Lockhart. We serve all of them.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Mustang Ridge move.",
+        "items": [
+          "Distance from parking to door",
+          "Outbuildings and outdoor items",
+          "Both addresses",
+          "Large furniture",
+          "Your preferred date"
+        ]
+      },
+      "faqTitle": "Mustang Ridge moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Mustang Ridge?",
+          "a": "Yes. Mustang Ridge is within our service area south of Austin along US 183."
+        },
+        {
+          "q": "Do you move outdoor and workshop items?",
+          "a": "Yes. List them when you request a quote so they're in the plan."
+        },
+        {
+          "q": "Can you move me from Mustang Ridge to another Texas city?",
+          "a": "Yes. We handle local moves and moves anywhere within Texas."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Mustang Ridge",
+        "areaServed": [
+          "Mustang Ridge, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Mustang Ridge"
+    },
+    "niederwald-movers.html": {
+      "eyebrow": "Niederwald, Texas moving",
+      "h1": "Niederwald movers for country homes on SH 21.",
+      "lede": "A small city in Hays and Caldwell counties, settled by German immigrants and still spread out along SH 21 between San Marcos and Bastrop.",
+      "article": "## Moving in Niederwald\n\nNiederwald is a small city that straddles Hays and Caldwell counties, with SH 21 as its main road. Like nearby Uhland, it was settled by German immigrants in the 1800s, and it still has a rural feel—homes on acreage and newer houses on the open land between Kyle and Lockhart.\n\n### Acreage and long drives\n\nCountry properties often mean gravel driveways, gates and a long walk from truck to door. Photos of the approach help us plan.\n\n### Connected to the corridor\n\nNiederwald is a short drive to Kyle, Buda and San Marcos on I-35 and to Lockhart by SH 21. We serve all of them.\n\n### Outdoor items\n\nTools, equipment and patio furniture are part of most country moves. List them when you request your quote.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Niederwald move.",
+        "items": [
+          "Driveway and gate access",
+          "Distance from parking to door",
+          "Outdoor and workshop items",
+          "Both addresses",
+          "Your preferred date"
+        ]
+      },
+      "faqTitle": "Niederwald moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Niederwald?",
+          "a": "Yes. Niederwald is within the area we serve between Kyle and Lockhart."
+        },
+        {
+          "q": "Can a moving truck reach a home on acreage?",
+          "a": "Usually, yes. Tell us about the drive, gate and turnaround so we bring the right truck."
+        },
+        {
+          "q": "Do you move to and from Kyle and San Marcos?",
+          "a": "Yes. Moves along SH 21 and I-35 are part of our everyday work."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Niederwald",
+        "areaServed": [
+          "Niederwald, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Niederwald"
+    },
+    "uhland-movers.html": {
+      "eyebrow": "Uhland, Texas moving",
+      "h1": "Uhland movers between Kyle and Lockhart.",
+      "lede": "On SH 21 and FM 2720, about seven miles from Lockhart, Uhland blends wide-open acreage with new subdivisions spilling over from Kyle.",
+      "article": "## Moving in Uhland\n\nUhland is a small city in Hays and Caldwell counties, on SH 21 and FM 2720 about seven miles northwest of Lockhart. Settled by German immigrants, it has grown with new neighborhoods as Kyle expands eastward.\n\n### New subdivisions\n\nBuilder and HOA rules on truck parking and move times are common in new neighborhoods. Check before moving day.\n\n### Country properties\n\nAcreage brings long carries, gates and outbuildings. Include everything that's moving, inside and out.\n\n### Close to Kyle and Lockhart\n\nMost Uhland moves connect with Kyle, Buda, San Marcos or Lockhart—all within our service area.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Uhland move.",
+        "items": [
+          "HOA or builder rules",
+          "Driveway and gate access",
+          "Outdoor items",
+          "Both addresses",
+          "Your preferred date"
+        ]
+      },
+      "faqTitle": "Uhland moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Uhland?",
+          "a": "Yes. Uhland is within our service area near Kyle and Lockhart."
+        },
+        {
+          "q": "Can you move us into a new subdivision?",
+          "a": "Yes. Share your closing date and any builder rules, and we can coordinate storage if dates slip."
+        },
+        {
+          "q": "Do you move between Uhland and Austin?",
+          "a": "Yes. Local moves across the Austin area are what we do every day."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Uhland",
+        "areaServed": [
+          "Uhland, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Uhland"
+    },
+    "martindale-movers.html": {
+      "eyebrow": "Martindale, Texas moving",
+      "h1": "Martindale movers on the San Marcos River.",
+      "lede": "Just east of San Marcos in Caldwell County, Martindale’s river town setting means quiet streets, country lots and a short hop to I-35.",
+      "article": "## Moving in Martindale\n\nMartindale is a small Caldwell County city on the San Marcos River, a short drive east of San Marcos and I-35. It's a quiet river town with older homes, country lots and properties near the water.\n\n### River and country properties\n\nHomes near the river or on larger lots can have long carries, soft ground after rain and limited turnaround space. Tell us about the approach.\n\n### Close to San Marcos\n\nMany Martindale moves start or end in San Marcos or along I-35. See [San Marcos movers](san-marcos-movers.html).\n\n### Plan for the weather\n\nAfter heavy rain, unpaved drives and low areas can be soft. Have a backup parking plan and talk to us if storms are forecast.\n\nFull service means we pack, protect, load, move and set up—or handle just the parts you need. See [all moving services](services.html). Moves anywhere within Texas are part of what we do, too—see [moving anywhere in Texas](austin-movers.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "Details that shape a Martindale move.",
+        "items": [
+          "Driveway and parking",
+          "Distance to the door",
+          "Soft or unpaved ground",
+          "Both addresses",
+          "Your preferred date"
+        ]
+      },
+      "faqTitle": "Martindale moving questions",
+      "faq": [
+        {
+          "q": "Do you serve Martindale?",
+          "a": "Yes. Martindale is within our service area, just east of San Marcos."
+        },
+        {
+          "q": "What if rain softens my driveway?",
+          "a": "Tell us ahead of time. We'll plan a safe parking spot and adjust timing if needed."
+        },
+        {
+          "q": "Do you move between Martindale and San Marcos?",
+          "a": "Yes. Moves along the I-35 corridor are an everyday part of our work."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving services in Martindale",
+        "areaServed": [
+          "Martindale, TX"
+        ]
+      },
+      "kind": "location",
+      "crumb": "Martindale"
+    },
+    "corporate-relocation-austin.html": {
+      "eyebrow": "Corporate relocation",
+      "h1": "Employee relocation within Texas, handled smoothly.",
+      "lede": "For HR teams and relocating employees: coordinated household moves to and from Austin and anywhere in Texas, with clear paperwork and one point of contact.",
+      "article": "## Moves that start with a job\n\nA relocating employee is juggling a new role, a new home and often a family. A smooth move gets them productive sooner.\n\n### For HR and hiring managers\n\n- One contact for scheduling and questions\n- A written proposal before anything is loaded—binding or not-to-exceed\n- Clear invoices for reimbursement or direct billing arrangements\n\n### For the employee\n\nFull-service packing, careful loading and setup at the new home, plus storage coordination if the new place isn't ready.\n\n### Texas-only\n\nWe move households anywhere within Texas, including Houston, San Antonio, Dallas–Fort Worth and points between. See [Texas moves](austin-movers.html).",
+      "side": {
+        "title": "To set up a relocation",
+        "text": "Share these details.",
+        "items": [
+          "Employee's name and contact",
+          "Both addresses",
+          "Target move dates",
+          "Packing and storage needs",
+          "Billing contact"
+        ]
+      },
+      "faqTitle": "Corporate relocation questions",
+      "faq": [
+        {
+          "q": "Do you handle employee relocations?",
+          "a": "Yes, for moves within Texas. We coordinate with the employee and your HR contact from estimate to delivery."
+        },
+        {
+          "q": "Can the company be billed directly?",
+          "a": "Ask when you book and we'll set out billing in the written proposal."
+        },
+        {
+          "q": "Do you move employees out of state?",
+          "a": "No. Our moves stay within Texas."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Corporate and employee relocation within Texas",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      },
+      "kind": "service",
+      "crumb": "Corporate relocation"
+    },
+    "military-movers-texas.html": {
+      "eyebrow": "Military moves",
+      "h1": "Military moves within Texas, done right.",
+      "lede": "For service members and families relocating within Texas—including personally procured moves where you hire your own mover.",
+      "article": "## Moving on orders within Texas\n\nMilitary moves come with deadlines, paperwork and a lot of uncertainty. When your move stays inside Texas, we can help.\n\n### Personally procured moves (PPM)\n\nWith a PPM, you arrange your own move and are reimbursed under military rules. Before you book, confirm what your transportation office requires—such as weight tickets, receipts and the type of paperwork you'll need from the mover—so nothing is missed.\n\n### Local moves\n\nMoving off base, between homes near an installation, or into a new rental? Local moves get the same full-service care as any other.\n\n### Our limits\n\nWe move households within Texas only. For moves out of state, your transportation office can explain your options.",
+      "side": {
+        "title": "Before you book",
+        "text": "Check with your transportation office.",
+        "items": [
+          "Your move type (PPM or other)",
+          "Required receipts and weight tickets",
+          "Report and move dates",
+          "Both addresses",
+          "Storage needs"
+        ]
+      },
+      "faqTitle": "Military moving questions",
+      "faq": [
+        {
+          "q": "Do you help with personally procured moves (PPM)?",
+          "a": "Yes, for moves within Texas. Confirm your transportation office's paperwork requirements first so we can provide what you need."
+        },
+        {
+          "q": "Can you move us between homes near an installation?",
+          "a": "Yes. Local moves are part of our everyday work."
+        },
+        {
+          "q": "Do you handle out-of-state military moves?",
+          "a": "No. We move households within Texas only."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Military moving within Texas",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      },
+      "kind": "service",
+      "crumb": "Military moves"
+    },
+    "heavy-item-movers-austin.html": {
+      "eyebrow": "Heavy item moving",
+      "h1": "Safes, appliances and other heavy lifts.",
+      "lede": "Gun safes, refrigerators, washers, pool tables and gym equipment—moved with the right crew size, equipment and a plan for every step.",
+      "article": "## Heavy items need a plan, not just muscle\n\nMost injuries and damage with heavy items happen on stairs, thresholds and turns. The safe way is to know the weight, measure the path and bring the right equipment.\n\n### Common heavy items\n\n- Gun safes and document safes\n- Refrigerators, washers, dryers and freezers\n- Pool tables and arcade cabinets\n- Treadmills, home gyms and weight sets\n- Large stone or marble furniture\n\n### Tell us before moving day\n\nShare the item's make, size and approximate weight, plus stairs, slopes and surfaces along the path at both homes. We'll plan the crew and equipment.\n\n### Prepare appliances\n\nEmpty and defrost freezers and refrigerators a day ahead, disconnect water lines, and secure washer drums if your model requires it. Gas appliances should be disconnected by a qualified professional.\n\nFor pianos, see [piano moving](piano-moving-austin.html).",
+      "side": {
+        "title": "Tell us",
+        "text": "Weight and path decide everything.",
+        "items": [
+          "Item type and model",
+          "Approximate weight",
+          "Stairs and slopes",
+          "Doorway widths",
+          "Surfaces to protect"
+        ]
+      },
+      "faqTitle": "Heavy item questions",
+      "faq": [
+        {
+          "q": "Do you move gun safes?",
+          "a": "Yes. Tell us the size, weight and the path at both homes so we bring the right crew and equipment."
+        },
+        {
+          "q": "Can you move appliances?",
+          "a": "Yes. Empty and defrost freezers ahead of time, and have gas appliances disconnected by a qualified professional."
+        },
+        {
+          "q": "Do you move pool tables and gym equipment?",
+          "a": "Yes. Some pieces need to come apart—tell us the make and model when you request your quote."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Heavy item moving",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      },
+      "kind": "service",
+      "crumb": "Heavy items"
+    },
+    "white-glove-moving-austin.html": {
+      "eyebrow": "White-glove moving",
+      "h1": "White-glove moving for homes that deserve extra care.",
+      "lede": "Every step handled—packing, protection, placement and unpacking—with extra attention to finishes, art and the details that make a house feel like yours.",
+      "article": "## What white-glove means\n\nWhite-glove moving is a full-service move with more care and fewer decisions left to you. It's popular for larger homes, fine furniture and busy families who want to walk into a finished home.\n\n### Typically included\n\n- Full packing with extra protection for fragile and valuable items\n- Furniture disassembly, reassembly and placement to your floor plan\n- Unpacking and setup of the rooms you choose\n- Removal of packing materials\n\n### Protecting the home\n\nFloors, door frames, banisters and walls get protection at both homes, and pieces are carried—never dragged.\n\n### Plan it together\n\nWalk us through the home and point out what matters most. The details go into your written proposal so expectations are clear.\n\nSee also [antiques and art](antique-art-movers-austin.html) and [unpacking and setup](unpacking-services-austin.html).",
+      "side": {
+        "title": "Tell us",
+        "text": "So we can tailor the move.",
+        "items": [
+          "Items needing special care",
+          "Rooms to unpack",
+          "Floor plan for furniture",
+          "Building rules",
+          "Preferred dates"
+        ]
+      },
+      "faqTitle": "White-glove moving questions",
+      "faq": [
+        {
+          "q": "What's included in a white-glove move?",
+          "a": "Full packing, extra protection, furniture placement, unpacking of the rooms you choose and removal of packing materials. Your written proposal spells out the details."
+        },
+        {
+          "q": "Is white-glove moving only for large homes?",
+          "a": "No. Any move where you want every step handled with extra care can be white-glove."
+        },
+        {
+          "q": "Can you set up furniture where I want it?",
+          "a": "Yes. Share a simple floor plan and the crew places and reassembles furniture accordingly."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "White-glove moving",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      },
+      "kind": "service",
+      "crumb": "White-glove moving"
+    },
+    "areas.html": {
+      "eyebrow": "Service areas",
+      "h1": "Austin and every town south along I-35.",
+      "lede": "One family-owned crew serving Austin, Buda, Kyle, San Marcos and the Hill Country and Caldwell County towns within about 30 miles—plus moves anywhere in Texas.",
+      "article": "## Austin neighborhoods\n\n- [South Austin](south-austin-movers.html): 78704, 78745, 78748 and every neighborhood south of the river\n- [Oak Hill](oak-hill-movers.html): hillside homes around US 290 and SH 71\n- [Circle C Ranch](circle-c-movers.html): southwest Austin's master-planned community\n- [Sunset Valley](sunset-valley-movers.html): the small city inside southwest Austin\n- [Del Valle](del-valle-movers.html): southeast Austin near the airport\n\n## Along I-35 south\n\n- [Manchaca](manchaca-movers.html): country lots between South Austin and Buda\n- [Buda](buda-movers.html): homes, apartments and businesses across Hays County\n- [Kyle](kyle-movers.html): fast-growing neighborhoods on the I-35 corridor\n- [San Marcos](san-marcos-movers.html): apartments, student housing and homes\n- [Martindale](martindale-movers.html): river-town homes east of San Marcos\n\n## Hill Country\n\n- [Dripping Springs](dripping-springs-movers.html): long driveways and acreage west of Austin\n- [Driftwood](driftwood-movers.html): ranch properties along FM 1826 and FM 150\n- [Wimberley and Woodcreek](wimberley-movers.html): hillsides, creeks and narrow roads\n\n## East along SH 21, US 183 and SH 130\n\n- [Mustang Ridge](mustang-ridge-movers.html): larger lots along US 183\n- [Uhland](uhland-movers.html): acreage and new subdivisions near Kyle\n- [Niederwald](niederwald-movers.html): country homes on SH 21\n- [Lockhart](lockhart-movers.html): historic homes and new neighborhoods\n\n## Anywhere in Texas\n\n- [Moving anywhere in Texas](austin-movers.html), including [Houston](austin-to-houston-movers.html), [San Antonio](austin-to-san-antonio-movers.html) and [Dallas–Fort Worth](austin-to-dallas-movers.html)",
+      "side": {
+        "title": "Why local matters",
+        "text": "A crew that knows the roads.",
+        "items": [
+          "Family owned since 2001",
+          "Austin to Kyle along I-35",
+          "About 30 miles around",
+          "Moves anywhere in Texas",
+          "Easy to reach, daily 8–5"
+        ]
+      },
+      "faqTitle": "Service area questions",
+      "faq": [
+        {
+          "q": "What areas do you serve?",
+          "a": "Austin and every town south along I-35—including Buda, Kyle and San Marcos—plus communities within about 30 miles, and moves anywhere within Texas."
+        },
+        {
+          "q": "My town isn't listed. Do you still serve it?",
+          "a": "Probably—call (512) 443-6141 and we'll tell you right away."
+        },
+        {
+          "q": "Do you move out of state?",
+          "a": "No. Our moves stay within Texas."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      },
+      "kind": "hub",
+      "crumb": "Austin and every town south along I-35"
     }
+  },
+  "menus": {
+    "services": [
+      {
+        "label": "Local moving",
+        "file": "local-moving-austin.html",
+        "group": "Residential"
+      },
+      {
+        "label": "House moving",
+        "file": "house-movers-austin.html",
+        "group": "Residential"
+      },
+      {
+        "label": "Apartments & condos",
+        "file": "apartment-movers-austin.html",
+        "group": "Residential"
+      },
+      {
+        "label": "Small moves",
+        "file": "small-moves-austin.html",
+        "group": "Residential"
+      },
+      {
+        "label": "Last-minute moves",
+        "file": "last-minute-movers-austin.html",
+        "group": "Residential"
+      },
+      {
+        "label": "Senior moving",
+        "file": "senior-moving-austin.html",
+        "group": "Residential"
+      },
+      {
+        "label": "Student moving",
+        "file": "student-movers.html",
+        "group": "Residential"
+      },
+      {
+        "label": "Military moves",
+        "file": "military-movers-texas.html",
+        "group": "Residential"
+      },
+      {
+        "label": "Commercial & office",
+        "file": "commercial-movers-austin.html",
+        "group": "Business"
+      },
+      {
+        "label": "Corporate relocation",
+        "file": "corporate-relocation-austin.html",
+        "group": "Business"
+      },
+      {
+        "label": "Long distance in Texas",
+        "file": "austin-movers.html",
+        "group": "Business"
+      },
+      {
+        "label": "Packing",
+        "file": "packing-services-austin.html",
+        "group": "Packing & special items"
+      },
+      {
+        "label": "Unpacking & setup",
+        "file": "unpacking-services-austin.html",
+        "group": "Packing & special items"
+      },
+      {
+        "label": "Furniture & assembly",
+        "file": "furniture-movers-austin.html",
+        "group": "Packing & special items"
+      },
+      {
+        "label": "Pianos",
+        "file": "piano-moving-austin.html",
+        "group": "Packing & special items"
+      },
+      {
+        "label": "Antiques & art",
+        "file": "antique-art-movers-austin.html",
+        "group": "Packing & special items"
+      },
+      {
+        "label": "Heavy items",
+        "file": "heavy-item-movers-austin.html",
+        "group": "Packing & special items"
+      },
+      {
+        "label": "White-glove moving",
+        "file": "white-glove-moving-austin.html",
+        "group": "Packing & special items"
+      },
+      {
+        "label": "Loading & unloading help",
+        "file": "loading-unloading-help.html",
+        "group": "Labor & storage"
+      },
+      {
+        "label": "In-home moves",
+        "file": "in-home-furniture-moving.html",
+        "group": "Labor & storage"
+      },
+      {
+        "label": "Storage between homes",
+        "file": "moving-storage-austin.html",
+        "group": "Labor & storage"
+      }
+    ],
+    "areas": [
+      {
+        "label": "South Austin",
+        "file": "south-austin-movers.html",
+        "group": "Austin neighborhoods"
+      },
+      {
+        "label": "Oak Hill",
+        "file": "oak-hill-movers.html",
+        "group": "Austin neighborhoods"
+      },
+      {
+        "label": "Circle C Ranch",
+        "file": "circle-c-movers.html",
+        "group": "Austin neighborhoods"
+      },
+      {
+        "label": "Sunset Valley",
+        "file": "sunset-valley-movers.html",
+        "group": "Austin neighborhoods"
+      },
+      {
+        "label": "Del Valle",
+        "file": "del-valle-movers.html",
+        "group": "Austin neighborhoods"
+      },
+      {
+        "label": "Manchaca",
+        "file": "manchaca-movers.html",
+        "group": "Along I-35 south"
+      },
+      {
+        "label": "Buda",
+        "file": "buda-movers.html",
+        "group": "Along I-35 south"
+      },
+      {
+        "label": "Kyle",
+        "file": "kyle-movers.html",
+        "group": "Along I-35 south"
+      },
+      {
+        "label": "San Marcos",
+        "file": "san-marcos-movers.html",
+        "group": "Along I-35 south"
+      },
+      {
+        "label": "Martindale",
+        "file": "martindale-movers.html",
+        "group": "Along I-35 south"
+      },
+      {
+        "label": "Dripping Springs",
+        "file": "dripping-springs-movers.html",
+        "group": "Hill Country"
+      },
+      {
+        "label": "Driftwood",
+        "file": "driftwood-movers.html",
+        "group": "Hill Country"
+      },
+      {
+        "label": "Wimberley & Woodcreek",
+        "file": "wimberley-movers.html",
+        "group": "Hill Country"
+      },
+      {
+        "label": "Mustang Ridge",
+        "file": "mustang-ridge-movers.html",
+        "group": "East of I-35"
+      },
+      {
+        "label": "Uhland",
+        "file": "uhland-movers.html",
+        "group": "East of I-35"
+      },
+      {
+        "label": "Niederwald",
+        "file": "niederwald-movers.html",
+        "group": "East of I-35"
+      },
+      {
+        "label": "Lockhart",
+        "file": "lockhart-movers.html",
+        "group": "East of I-35"
+      },
+      {
+        "label": "Houston",
+        "file": "austin-to-houston-movers.html",
+        "group": "Texas moves"
+      },
+      {
+        "label": "San Antonio",
+        "file": "austin-to-san-antonio-movers.html",
+        "group": "Texas moves"
+      },
+      {
+        "label": "Dallas–Fort Worth",
+        "file": "austin-to-dallas-movers.html",
+        "group": "Texas moves"
+      },
+      {
+        "label": "Anywhere in Texas",
+        "file": "austin-movers.html",
+        "group": "Texas moves"
+      }
+    ],
+    "guides": [
+      {
+        "label": "Moving checklist",
+        "file": "moving-checklist.html",
+        "group": "Tools"
+      },
+      {
+        "label": "Box calculator",
+        "file": "moving-box-calculator.html",
+        "group": "Tools"
+      },
+      {
+        "label": "Cost calculator",
+        "file": "moving-cost-calculator.html",
+        "group": "Tools"
+      },
+      {
+        "label": "Change of address",
+        "file": "change-of-address-checklist-texas.html",
+        "group": "Tools"
+      },
+      {
+        "label": "Moving day guide",
+        "file": "move-day-guide.html",
+        "group": "Guides"
+      },
+      {
+        "label": "How quotes work",
+        "file": "moving-quotes-texas.html",
+        "group": "Guides"
+      },
+      {
+        "label": "Questions to ask",
+        "file": "questions-to-ask-movers.html",
+        "group": "Guides"
+      },
+      {
+        "label": "Moving glossary",
+        "file": "moving-glossary.html",
+        "group": "Guides"
+      },
+      {
+        "label": "South Austin guide",
+        "file": "moving-guide-south-austin.html",
+        "group": "Guides"
+      }
+    ]
   }
 }

@@ -73,10 +73,12 @@
       if (target && /\.html$/.test(target) && !(target in allFiles)) add("error", "Broken internal link to " + target + ".");
     });
 
+    if (/Replace this starter text|Add a specific detail|Replace with a one- or two-sentence/.test(text + " " + desc)) add("error", "Starter text is still on this page. Edit it under Page copy before publishing.");
+
     // Decorative strings that read like data (the "Art. 49fk" problem)
     var known = [b.txdmv, b.usdot, b.postalCode, String(b.foundingYear)].filter(Boolean);
     var codeLike = (text.match(/\b[A-Z]{1,4}[.\-#]?\s?\d{2,}[a-z]{0,3}\b/g) || []).filter(function (t) {
-      return !known.some(function (k) { return t.indexOf(k) !== -1; }) && !/^(?:I|IH|US|SH|FM|RM|CR|TX|SR)[-\s]?\d+$/.test(t) && !/^\d/.test(t);
+      return !known.some(function (k) { return t.indexOf(k) !== -1; }) && !/^(?:I|IH|US|SH|FM|RM|RR|CR|TX|SR|Loop)[-\s]?\d+$/.test(t) && !/^\d/.test(t);
     });
     if (codeLike.length) add("warn", "Code-like text an AI might treat as a fact: " + codeLike.slice(0, 4).join(", ") + ".");
 
@@ -97,7 +99,7 @@
   }
 
   function auditSite(data, files) {
-    var results = (data.pages || []).filter(function (p) { return files[p.file]; }).map(function (p) {
+    var results = (data.pages || []).filter(function (p) { return files[p.file] && p.index !== false; }).map(function (p) {
       return auditPage(data, p.file, files[p.file], files);
     });
     var site = [];

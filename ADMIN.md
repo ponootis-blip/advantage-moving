@@ -20,6 +20,8 @@ write*). Without a token nobody can change the live site.
 | Business details | `ld-business` JSON-LD on the home page; phone, email, TXDMV and street are replaced on every page |
 | Pages & SEO | the `<!-- seo:head -->` block in each page, `sitemap.xml` |
 | FAQ | the home page FAQ **and** its FAQ JSON-LD (always identical) |
+| Page copy & search | copy, FAQs and schema on every service, area and guide page; site-wide text search; **Add a new page** (service, service area or guide) |
+| Menus (`data.menus`) | the Services and Service areas dropdowns, the link band on every page and new-page breadcrumbs |
 | Reviews & profiles | review buttons, footer profile links, `sameAs` |
 | AI visibility | browser-only log of AI answers (CSV export) |
 | Growth playbook | review-request templates and local marketing priorities |
@@ -34,5 +36,7 @@ page audit is `admin/audit.js`.
   <http://localhost:8123/admin/>, and publishing writes files to disk.
 - **Offline:** download `site.json` and commit it by hand.
 
-Hand edits to page copy are fine; just leave the `seo:head`, `seo:faq` and
+New pages are created from `admin/page-template.html` and appear in the menus, the link band on every page and the sitemap. Publishing is blocked while a page still has starter text.
+
+Hand edits to page copy are fine; just leave the `seo:head`, `seo:faq`, `content:*` and
 `slot:*` markers and the `ld-business` / `ld-faq` script tags in place.

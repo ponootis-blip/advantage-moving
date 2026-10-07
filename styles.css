@@ -567,3 +567,23 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
 .guide-list strong{color:var(--navy)}
 .guide-faq h2{font-size:1.6rem}
 @media (max-width:960px){.guide-grid{grid-template-columns:1fr}}
+
+/* difficult moves + extended area note */
+.hard-moves{background:var(--paper);border-top:1px solid var(--line)}
+.hard-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0;padding:0;list-style:none;counter-reset:hard}
+.hard-grid li{position:relative;padding:26px 24px;border-radius:var(--r-lg);background:var(--navy);color:#d3e3ed}
+.hard-grid li::before{counter-increment:hard;content:"0" counter(hard);display:block;margin-bottom:14px;color:var(--gold);font-family:var(--serif);font-size:1.1rem;font-weight:700}
+.hard-grid h3{margin-bottom:8px;color:#fff;font-size:1.25rem}
+.hard-grid p{margin:0;font-size:.92rem}
+.hard-cta{margin:24px 0 0;color:var(--muted)}
+.area-more{margin:20px 0 0;color:var(--muted);font-size:.94rem}
+.area-more a{color:var(--blue-dark);font-weight:700}
+@media (max-width:1120px){.hard-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.hard-grid{grid-template-columns:1fr}}
+.link-band-sub{margin-top:18px!important}
+.steps{display:grid;gap:4px;margin:24px 0;padding:0;list-style:none;counter-reset:step}
+.steps li{position:relative;padding:18px 0 18px 58px;border-top:1px solid var(--line)}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:18px;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--navy);color:#fff;font-family:var(--serif);font-weight:700}
+.steps h3{margin:0 0 4px!important;padding:0!important;border:0!important;font-size:1.2rem!important}
+.steps p{margin:0}
+@media (min-width:1121px){.area-grid{grid-template-columns:repeat(3,1fr)}}

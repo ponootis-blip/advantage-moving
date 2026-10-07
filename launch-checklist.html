@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://advantagemovingaustin.com/assets/hero-mosaic-desktop-v3.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <!-- /seo:head -->
-<link rel="stylesheet" href="styles.css?v=24">
+<link rel="stylesheet" href="styles.css?v=26">
 <style>
   .cl-head{padding:clamp(40px,6vw,72px) 0 28px;background:var(--navy);color:#e3eef5}
   .cl-head h1{margin:0 0 14px;color:#fff;font-size:clamp(2.2rem,4.4vw,3.4rem)}
@@ -71,6 +71,7 @@
     <p class="eyebrow">Private owner page · not linked · hidden from search</p>
     <h1>Advantage Moving — launch checklist</h1>
     <p>Each item below shows what the website <strong>currently assumes</strong>. Use the links to confirm it. If an assumption is right, tick the box. If it’s wrong, follow the “If this is wrong” steps—or send the correct details to your web developer.</p>
+    <p><strong>Already confirmed by the owner:</strong> every claim on the site is accurate or understated—full-service moving, experience with difficult moves, the Cousins family ownership since 2001, the service area (Austin and every town south along I-35, such as Buda and Kyle, plus about 30 miles around) and more than 20 years of reviews.</p>
     <p>Your ticks are saved in this browser only. When everything is done, delete this page (instructions at the bottom).</p>
     <div class="cl-progress"><div class="cl-bar"><i id="clBar"></i></div><span id="clCount">0 of 0 confirmed</span></div>
     <ul class="cl-legend">
@@ -130,25 +131,12 @@
   </div>
 </section>
 
-<section class="cl-item" data-id="owner">
-  <div class="cl-top"><input type="checkbox" aria-labelledby="t-owner"><h3 id="t-owner">“Family owned since 2001 — the Cousins family”</h3><span class="cl-tag now">Before launch</span></div>
-  <div class="cl-body">
-    <div class="cl-assume"><b>Assumed:</b> The Cousins family founded and still owns Advantage Moving, and the business started in 2001. This appears on the home page (“We know Austin” section) and the About page.</div>
-    <ul class="cl-links">
-      <li><a href="index.html#why-us">See home page wording</a></li>
-      <li><a href="advantage-movers.html">See About page</a></li>
-      <li><a href="https://mycpa.cpa.state.tx.us/coa/" target="_blank" rel="noopener">Texas business entity search ↗</a></li>
-    </ul>
-    <div class="cl-fix"><strong>If this is wrong</strong>Edit the paragraph starting “Plenty has changed south of the river” in <code>index.html</code> and the story section in <code>advantage-movers.html</code>. If you’d rather not name the family, replace “The Cousins family” with “Our family”.</div>
-  </div>
-</section>
-
 <h2 class="cl-group">2 · Claims a customer (or an AI) might repeat</h2>
 
 <section class="cl-item" data-id="reviews">
   <div class="cl-top"><input type="checkbox" aria-labelledby="t-reviews"><h3 id="t-reviews">Customer reviews on the home page</h3><span class="cl-tag now">Before launch</span></div>
   <div class="cl-body">
-    <div class="cl-assume"><b>Assumed:</b> The three quotes (Mark C. — Austin, Chris V. — Pflugerville, Marilyn K. — Keller) are genuine customer reviews carried over from the original website. They are shown <em>without</em> a source, and no star-rating data is sent to Google.</div>
+    <div class="cl-assume"><b>Confirmed by owner (Oct 2026):</b> The reviews are genuine and go back more than 20 years. What’s left is linking them: a review that names its source (for example “Google review”) is easier for people and AI tools to verify.</div>
     <p>A review that names where it came from (for example “Google review”) is easier for people and AI tools to verify.</p>
     <ul class="cl-links">
       <li><a href="https://www.google.com/search?q=%22Advantage+Moving%22+Buda+TX+reviews" target="_blank" rel="noopener">Find Google reviews ↗</a></li>
@@ -175,26 +163,6 @@
     </table>
     <ul class="cl-links"><li><a href="index.html#estimate">Try the estimator</a></li></ul>
     <div class="cl-fix"><strong>If this is wrong</strong><ul><li>Different rates: send your real numbers. They live in lines 2–5 of <code>site.js</code>.</li><li>You don’t want any prices online: ask your developer to remove the section with <code>id="estimate"</code> from <code>index.html</code>. The rest of the site keeps working.</li></ul></div>
-  </div>
-</section>
-
-<section class="cl-item" data-id="claims">
-  <div class="cl-top"><input type="checkbox" aria-labelledby="t-claims"><h3 id="t-claims">Specific claims on service pages</h3><span class="cl-tag now">Before launch</span></div>
-  <div class="cl-body">
-    <div class="cl-assume"><b>Assumed:</b> The piano page’s line “Advantage Moving has relocated hundreds of pianos, organs and valuable pieces” is accurate, and the team can offer partial packing, evening or weekend commercial moves, and short-term storage coordination as the service pages describe.</div>
-    <ul class="cl-links"><li><a href="piano-moving-austin.html">Piano page</a></li><li><a href="packing-services-austin.html">Packing page</a></li><li><a href="commercial-movers-austin.html">Commercial page</a></li></ul>
-    <div class="cl-fix"><strong>If this is wrong</strong>Tell your developer which sentence to change. A specific, true number (“over 300 pianos since 2001”) is stronger than a vague one—AI answers repeat specifics.</div>
-  </div>
-</section>
-
-<section class="cl-item" data-id="services">
-  <div class="cl-top"><input type="checkbox" aria-labelledby="t-services"><h3 id="t-services">Services and service areas</h3><span class="cl-tag now">Before launch</span></div>
-  <div class="cl-body">
-    <div class="cl-assume"><b>Assumed:</b> Advantage offers local residential, commercial, packing, piano/specialty and Texas intrastate moves, plus short-term storage <em>coordination</em> (not owning storage). It serves South Austin, Buda, Kyle, Dripping Springs and moves anywhere within Texas—but <em>not</em> out of state.</div>
-    <ul class="cl-links">
-      <li><a href="local-moving-austin.html">Local</a></li><li><a href="commercial-movers-austin.html">Commercial</a></li><li><a href="packing-services-austin.html">Packing</a></li><li><a href="piano-moving-austin.html">Piano</a></li><li><a href="austin-movers.html">Texas intrastate</a></li><li><a href="buda-movers.html">Buda</a></li><li><a href="kyle-movers.html">Kyle</a></li><li><a href="dripping-springs-movers.html">Dripping Springs</a></li>
-    </ul>
-    <div class="cl-fix"><strong>If this is wrong</strong>Tell your developer which service or area to add or remove. Removing a page also means removing it from <code>sitemap.xml</code> and from the footer and side menus.</div>
   </div>
 </section>
 

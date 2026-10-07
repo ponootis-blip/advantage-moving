@@ -185,7 +185,8 @@
       field("Tagline", "business.tagline", { help: "Shown on your truck: “Get the Advantage”." }) +
       field("Owners", "business.owner") +
       field("Year founded", "business.foundingYear", { type: "number" }) +
-      field("Price range", "business.priceRange", { help: "$, $$ or $$$ — as listed on Google." }) + "</div></div>" +
+      field("Price range", "business.priceRange", { help: "$, $$ or $$$ — as listed on Google." }) + "</div>" +
+      field("One-sentence description", "business.description", { textarea: true, max: 250, help: "How you’d describe the business to a stranger. AI assistants often reuse this wording." }) + "</div>" +
       '<div class="card"><h2>Contact</h2><div class="grid-2">' +
       field("Phone", "business.phone", { help: "Any format. Changing it updates every page." }) +
       field("Text-message number (optional)", "business.smsNumber", { help: "Only if this line can receive texts. Adds a “Prefer to text?” link next to the call button." }) +
@@ -200,7 +201,8 @@
       '<div class="card"><h2>Licensing</h2><div class="grid-2">' +
       field("TXDMV certificate", "business.txdmv", { help: '<a href="https://apps.txdmv.gov/apps/mccs/truckstop/" target="_blank" rel="noopener">Check it’s ACTIVE ↗</a>' }) +
       field("USDOT number (optional)", "business.usdot", { help: "Only needed for moves that cross state lines." }) + "</div></div>" +
-      '<div class="card"><h2>Service area</h2><label class="field"><span>One place per line</span><textarea data-areas>' + esc(b.areaServed.map(function (a) { return a.name; }).join("\n")) + "</textarea><small>Cities as “City, TX”. A line that is just “Texas” is treated as statewide.</small></label></div>";
+      '<div class="card"><h2>Service area</h2><div class="grid-3">' + field("Service radius (miles)", "business.serviceRadiusMiles", { type: "number" }) + field("Center latitude", "business.serviceCenter.lat", { help: "Center of the service radius (Buda)." }) + field("Center longitude", "business.serviceCenter.lng") + "</div>" +
+      '<label class="field"><span>One place per line</span><textarea data-areas>' + esc(b.areaServed.map(function (a) { return a.name; }).join("\n")) + "</textarea><small>Cities as “City, TX”. A line that is just “Texas” is treated as statewide.</small></label></div>";
   };
 
   views.pages = function () {

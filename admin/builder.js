@@ -63,6 +63,7 @@
     var o = { "@context": "https://schema.org", "@type": "MovingCompany", "@id": base + "#business", "name": b.name };
     if (b.alternateName) o.alternateName = b.alternateName;
     if (b.tagline) o.slogan = b.tagline;
+    if (b.description) o.description = b.description;
     o.url = base;
     o.logo = base + data.site.logo;
     o.image = [base + data.site.defaultOgImage].concat(b.photo ? [base + b.photo] : []);
@@ -75,6 +76,10 @@
     }
     if (b.areaServed && b.areaServed.length) {
       o.areaServed = b.areaServed.map(function (a) { return { "@type": a.type || "City", "name": a.name }; });
+    }
+    var c = b.serviceCenter;
+    if (c && c.lat && c.lng && b.serviceRadiusMiles) {
+      o.areaServed = (o.areaServed || []).concat([{ "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": Number(c.lat), "longitude": Number(c.lng) }, "geoRadius": String(Math.round(Number(b.serviceRadiusMiles) * 1609.34)) }]);
     }
     var ids = [];
     if (b.txdmv) ids.push({ "@type": "PropertyValue", "propertyID": "TXDMV", "value": b.txdmv });
@@ -89,6 +94,12 @@
     var same = profileUrls(b);
     if (same.length) o.sameAs = same;
     return '<script type="application/ld+json" id="ld-business">' + JSON.stringify(o) + "</script>";
+  }
+
+  function websiteLd(data) {
+    var base = data.site.baseUrl;
+    var o = { "@context": "https://schema.org", "@type": "WebSite", "@id": base + "#website", "name": data.site.name, "url": base, "inLanguage": "en-US", "publisher": { "@id": base + "#business" } };
+    return '<script type="application/ld+json" id="ld-website">' + JSON.stringify(o) + "</script>";
   }
 
   function faqLd(data) {
@@ -166,6 +177,7 @@
       html = html.replace(/<!-- seo:head -->[\s\S]*?<!-- \/seo:head -->/, function () { return headBlock(data, page); });
     }
     html = html.replace(/<script type="application\/ld\+json" id="ld-business">[\s\S]*?<\/script>/, function () { return businessLd(data); });
+    html = html.replace(/<script type="application\/ld\+json" id="ld-website">[\s\S]*?<\/script>/, function () { return websiteLd(data); });
     html = html.replace(/<script type="application\/ld\+json" id="ld-faq">[\s\S]*?<\/script>/, function () { return faqLd(data); });
     html = replaceRegion(html, "<!--seo:faq-->", "<!--/seo:faq-->", "\n    " + faqHtml(data) + "\n    ");
     Object.keys(SLOTS).forEach(function (name) {

@@ -51,7 +51,39 @@
       },
       {
         "type": "City",
+        "name": "San Marcos, TX"
+      },
+      {
+        "type": "City",
+        "name": "Manchaca, TX"
+      },
+      {
+        "type": "City",
         "name": "Dripping Springs, TX"
+      },
+      {
+        "type": "City",
+        "name": "Driftwood, TX"
+      },
+      {
+        "type": "City",
+        "name": "Wimberley, TX"
+      },
+      {
+        "type": "City",
+        "name": "Lockhart, TX"
+      },
+      {
+        "type": "City",
+        "name": "Mustang Ridge, TX"
+      },
+      {
+        "type": "City",
+        "name": "Niederwald, TX"
+      },
+      {
+        "type": "City",
+        "name": "Uhland, TX"
       },
       {
         "type": "State",
@@ -61,14 +93,20 @@
     "photo": "assets/bg.jpg",
     "googleBusinessUrl": "",
     "googleReviewUrl": "",
-    "sameAs": []
+    "sameAs": [],
+    "description": "Family-owned, full-service movers based in Buda, Texas since 2001, serving Austin and every town south along I-35—including Buda and Kyle—within about 30 miles, plus moves anywhere in Texas.",
+    "serviceRadiusMiles": 30,
+    "serviceCenter": {
+      "lat": 30.0852,
+      "lng": -97.8403
+    }
   },
   "pages": [
     {
       "file": "index.html",
       "path": "",
-      "title": "South Austin Movers | Advantage Moving — Family Owned Since 2001",
-      "description": "South Austin movers serving 78704, South Congress, South Lamar, Manchaca, Buda and Central Texas. Family owned since 2001. Free estimate: 512-443-6141.",
+      "title": "Full-Service Movers in South Austin, Buda & Kyle | Advantage",
+      "description": "Family-owned, full-service movers since 2001. Austin, Buda, Kyle and towns within 30 miles along I-35. Easy to reach daily 8–5: (512) 443-6141.",
       "ogTitle": "South Austin Movers | Advantage Moving",
       "index": true,
       "priority": "1.0",
@@ -174,6 +212,51 @@
       "lastmod": "2026-10-07"
     },
     {
+      "file": "san-marcos-movers.html",
+      "path": "san-marcos-movers.html",
+      "title": "San Marcos Movers | Full-Service Moving on I-35 | Advantage",
+      "description": "Family-owned, full-service San Marcos movers since 2001. Apartments, student housing, homes and businesses along I-35. Call (512) 443-6141.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "austin-to-houston-movers.html",
+      "path": "austin-to-houston-movers.html",
+      "title": "Austin to Houston Movers | Texas Intrastate | Advantage",
+      "description": "Full-service Austin to Houston movers. One family-owned crew from packing to setup, licensed by TxDMV #000572890B. Free written estimate.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "austin-to-san-antonio-movers.html",
+      "path": "austin-to-san-antonio-movers.html",
+      "title": "Austin to San Antonio Movers | Advantage Moving",
+      "description": "Moving from Austin to San Antonio? Full-service, family-owned movers on the I-35 corridor since 2001. TxDMV licensed. Get a free estimate.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "austin-to-dallas-movers.html",
+      "path": "austin-to-dallas-movers.html",
+      "title": "Austin to Dallas–Fort Worth Movers | Advantage Moving",
+      "description": "Full-service movers from Austin to Dallas, Fort Worth and the Metroplex suburbs. Family owned since 2001, TxDMV licensed. Free estimate.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "move-day-guide.html",
+      "path": "move-day-guide.html",
+      "title": "Moving Day Guide: 12 Steps for Austin Moves | Advantage",
+      "description": "A step-by-step moving day guide for Austin: what to pack last, Texas paperwork, beating the heat and what to check before you sign.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
       "file": "privacy-policy.html",
       "path": "privacy-policy.html",
       "title": "Privacy Policy — Advantage Moving Austin",
@@ -198,12 +281,24 @@
       "a": "We handle local residential moves, Texas intrastate moves, office and commercial relocations, packing, short-term storage and specialty items including pianos and antiques."
     },
     {
+      "q": "Are you a full-service mover?",
+      "a": "Yes. We handle the whole job—packing, protecting furniture and floors, loading, transport, unloading and placing everything in the right rooms. You can also choose just the parts you need."
+    },
+    {
+      "q": "Can you handle a difficult move?",
+      "a": "Yes—hard moves are where an experienced crew shows. Third-floor walk-ups, narrow bungalow doors, small elevators, pianos and long Hill Country driveways are all part of the job. Tell us about the access at both ends and we plan the crew and equipment around it."
+    },
+    {
       "q": "Are you licensed and insured?",
       "a": "Yes. Advantage Moving is licensed and insured. Our Texas Department of Motor Vehicles number is 000572890B."
     },
     {
       "q": "How is my estimate calculated?",
       "a": "We consider the size of your move, access at both locations, travel distance, crew needs and optional services. Call or send your details for a personalized estimate."
+    },
+    {
+      "q": "How far do you travel for local moves?",
+      "a": "We serve Austin and every town south along I-35, including Buda and Kyle, plus communities within about 30 miles of our Buda office. For longer distances we handle moves anywhere within Texas."
     },
     {
       "q": "Do you move outside Austin?",

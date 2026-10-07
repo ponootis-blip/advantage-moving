@@ -122,6 +122,66 @@
     return host;
   }
 
+  /* ---------- Editable page copy ----------
+     data.content[file] = { eyebrow, h1, lede, article (simple formatting),
+       side: { title, text, items[] }, faqTitle, faq: [{q,a}], schema: {type, name, areaServed[]} }
+     Formatting: blank line = new paragraph, "## " / "### " headings, "- " bullets,
+     "1. " numbered steps, **bold**, [link text](page.html or https://…). */
+  function inline(text) {
+    return esc(text)
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (m, label, url) {
+        var raw = url.replace(/&amp;/g, "&");
+        if (!/^(https:\/\/|[a-z0-9-]+\.html(#[\w-]+)?$|#[\w-]+$|tel:\+?\d+$|mailto:)/i.test(raw)) return label;
+        var ext = /^https:/.test(raw);
+        return '<a href="' + url + '"' + (ext ? ' target="_blank" rel="noopener"' : "") + ">" + label + (ext ? " ↗" : "") + "</a>";
+      });
+  }
+
+  function renderText(src) {
+    var blocks = String(src || "").replace(/\r/g, "").split(/\n\s*\n/);
+    return blocks.map(function (block) {
+      var lines = block.split("\n").map(function (l) { return l.trim(); }).filter(Boolean);
+      if (!lines.length) return "";
+      if (/^###\s/.test(lines[0]) && lines.length === 1) return "<h3>" + inline(lines[0].replace(/^###\s+/, "")) + "</h3>";
+      if (/^##\s/.test(lines[0]) && lines.length === 1) return "<h2>" + inline(lines[0].replace(/^##\s+/, "")) + "</h2>";
+      if (/^###\s/.test(lines[0])) return "<h3>" + inline(lines[0].replace(/^###\s+/, "")) + "</h3>\n" + renderText(lines.slice(1).join("\n"));
+      if (/^##\s/.test(lines[0])) return "<h2>" + inline(lines[0].replace(/^##\s+/, "")) + "</h2>\n" + renderText(lines.slice(1).join("\n"));
+      if (lines.every(function (l) { return /^-\s/.test(l); })) return "<ul>" + lines.map(function (l) { return "<li>" + inline(l.replace(/^-\s+/, "")) + "</li>"; }).join("") + "</ul>";
+      if (lines.every(function (l) { return /^\d+\.\s/.test(l); })) return '<ol class="steps">' + lines.map(function (l) { return "<li><p>" + inline(l.replace(/^\d+\.\s+/, "")) + "</p></li>"; }).join("") + "</ol>";
+      return "<p>" + inline(lines.join(" ")) + "</p>";
+    }).join("\n");
+  }
+
+  function contentRegions(data, file, html) {
+    var c = (data.content || {})[file];
+    if (!c) return html;
+    var base = data.site.baseUrl;
+    html = replaceRegion(html, "<!--content:hero-->", "<!--/content:hero-->",
+      '<p class="eyebrow">' + esc(c.eyebrow) + "</p><h1>" + esc(c.h1) + '</h1><p class="lede">' + inline(c.lede) + "</p>");
+    html = replaceRegion(html, "<!--content:article-->", "<!--/content:article-->", "\n" + renderText(c.article) + "\n");
+    var side = c.side || {};
+    html = replaceRegion(html, "<!--content:side-->", "<!--/content:side-->",
+      "<h2>" + esc(side.title) + "</h2><p>" + inline(side.text) + "</p><ul>" + (side.items || []).map(function (i) { return "<li><span>" + esc(i) + "</span></li>"; }).join("") + "</ul>");
+    html = replaceRegion(html, "<!--content:faq-title-->", "<!--/content:faq-title-->", esc(c.faqTitle || "Common questions"));
+    html = replaceRegion(html, "<!--content:faq-->", "<!--/content:faq-->", "\n      " + (c.faq || []).map(function (f) {
+      return '<details><summary>' + esc(f.q) + '<span aria-hidden="true">+</span></summary><p>' + inline(f.a) + "</p></details>";
+    }).join("\n      ") + "\n    ");
+    var plain = function (t) { return String(t || "").replace(/\*\*(.+?)\*\*/g, "$1").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1"); };
+    var faq = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": (c.faq || []).map(function (f) { return { "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": plain(f.a) } }; }) };
+    html = html.replace(/<script type="application\/ld\+json" id="ld-page-faq">[\s\S]*?<\/script>/, function () { return '<script type="application/ld+json" id="ld-page-faq">' + JSON.stringify(faq) + "</script>"; });
+    var sc = c.schema || {}, main;
+    if (sc.type === "Article") {
+      main = { "@context": "https://schema.org", "@type": "Article", "@id": base + file + "#article", "headline": c.h1, "description": plain(c.lede), "url": base + file, "author": { "@id": base + "#business" }, "publisher": { "@id": base + "#business" } };
+      if (c.updated) main.dateModified = c.updated;
+    } else {
+      main = { "@context": "https://schema.org", "@type": "Service", "@id": base + file + "#service", "url": base + file, "name": sc.name || c.h1, "description": plain(c.lede), "provider": { "@type": "MovingCompany", "@id": base + "#business", "name": data.business.name } };
+      if (sc.areaServed) main.areaServed = sc.areaServed.map(function (n) { return { "@type": "City", "name": n }; });
+    }
+    html = html.replace(/<script type="application\/ld\+json" id="ld-page-main">[\s\S]*?<\/script>/, function () { return '<script type="application/ld+json" id="ld-page-main">' + JSON.stringify(main) + "</script>"; });
+    return html;
+  }
+
   var SLOTS = {
     "intro-contact": function (data) {
       var p = phoneForms(data.business.smsNumber);
@@ -173,6 +233,7 @@
   function buildPage(prevData, data, file, html) {
     var page = (data.pages || []).filter(function (p) { return p.file === file; })[0];
     html = replaceFacts(html, prevData.business, data.business);
+    html = contentRegions(data, file, html);
     if (page) {
       html = html.replace(/<!-- seo:head -->[\s\S]*?<!-- \/seo:head -->/, function () { return headBlock(data, page); });
     }
@@ -201,6 +262,7 @@
      only changed files, and data updated with lastmod dates for changed pages. */
   function build(prevData, nextData, files, today) {
     var data = JSON.parse(JSON.stringify(nextData));
+    if (data.content) data.content = JSON.parse(replaceFacts(JSON.stringify(data.content), prevData.business, data.business));
     var out = {};
     Object.keys(files).forEach(function (file) {
       if (!/\.html$/.test(file) || file.indexOf("/") !== -1) return;
@@ -217,7 +279,7 @@
     return { files: out, data: data };
   }
 
-  var api = { build: build, phoneForms: phoneForms, headBlock: headBlock, businessLd: businessLd, faqLd: faqLd, esc: esc, profileUrls: profileUrls };
+  var api = { build: build, renderText: renderText, phoneForms: phoneForms, headBlock: headBlock, businessLd: businessLd, faqLd: faqLd, esc: esc, profileUrls: profileUrls };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   root.AdvBuilder = api;
 })(typeof window !== "undefined" ? window : globalThis);

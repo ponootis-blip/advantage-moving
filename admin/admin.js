@@ -224,6 +224,56 @@
       '<div class="card"><h2>Audit for this page <span class="score ' + scoreClass(res.score) + '">' + res.score + "</span></h2>" + issueList(res.issues) + "</div>";
   };
 
+  /* ---------- Page copy: site-wide search + editor for builder-managed pages ---------- */
+  function pageText(html) {
+    var doc = new DOMParser().parseFromString(html, "text/html");
+    doc.querySelectorAll("script,style,noscript,header,footer,.mobile-actions,.utility").forEach(function (n) { n.remove(); });
+    return (doc.body ? doc.body.textContent : "").replace(/\s+/g, " ").trim();
+  }
+  function searchResults(q) {
+    q = q.trim().toLowerCase();
+    if (q.length < 2) return '<p class="muted">Type at least two letters to search every page’s visible text.</p>';
+    var built = pending().built, rows = [], content = state.draft.content || {};
+    state.draft.pages.forEach(function (p) {
+      var text = pageText(built[p.file] || ""), lower = text.toLowerCase(), i = lower.indexOf(q), hits = 0, snippets = [];
+      while (i !== -1 && hits < 50) {
+        if (snippets.length < 2) snippets.push(esc(text.slice(Math.max(0, i - 60), i)) + "<mark>" + esc(text.slice(i, i + q.length)) + "</mark>" + esc(text.slice(i + q.length, i + q.length + 60)));
+        hits++; i = lower.indexOf(q, i + q.length);
+      }
+      if (hits) rows.push('<li><div><b>' + esc(p.title || p.file) + '</b> <span class="muted">' + p.file + " · " + hits + " match" + (hits > 1 ? "es" : "") + "</span><p>…" + snippets.join("…<br>…") + "…</p></div>" +
+        (content[p.file] ? '<button class="button btn-sm" data-edit-content="' + p.file + '">Edit copy</button>' : '<a class="button button-outline btn-sm" href="../' + p.file + '" target="_blank" rel="noopener">View page ↗</a>') + "</li>");
+    });
+    return rows.length ? '<ul class="search-results">' + rows.join("") + "</ul>" : '<p class="muted">No matches.</p>';
+  }
+
+  views.content = function () {
+    var content = state.draft.content || {}, files = Object.keys(content);
+    var file = state.contentFile && content[state.contentFile] ? state.contentFile : files[0];
+    state.contentFile = file;
+    var c = content[file] || {}, side = c.side || {};
+    var cf = function (label, key, opts) {
+      opts = opts || {};
+      var v = key.split(".").reduce(function (o, k) { return o == null ? "" : o[k]; }, c); if (v == null) v = "";
+      var input = opts.textarea ? '<textarea data-cfield="' + key + '"' + (opts.tall ? ' style="min-height:420px;font-family:ui-monospace,Menlo,monospace;font-size:.88rem"' : "") + ">" + esc(v) + "</textarea>"
+        : '<input data-cfield="' + key + '" value="' + esc(v) + '">';
+      return '<label class="field"><span>' + label + "</span>" + input + (opts.help ? "<small>" + opts.help + "</small>" : "") + "</label>";
+    };
+    return '<div class="view-head"><div><h1>Page copy &amp; search</h1><p>Search every page’s text, and edit the copy on service and guide pages. Everything publishes as plain HTML that search engines and AI assistants can read.</p></div></div>' +
+      '<div class="card"><h2>Search the site</h2><label class="field"><span>Find text on any page</span><input data-content-search value="' + esc(state.contentQuery || "") + '" placeholder="e.g. stairs, TXDMV, San Marcos"></label><div id="searchOut">' + searchResults(state.contentQuery || "") + "</div></div>" +
+      '<div class="card"><div class="view-head" style="margin-bottom:12px"><h2 style="margin:0">Edit a page</h2><label class="field" style="min-width:300px;margin:0"><span>Page</span><select data-content-select>' +
+      files.map(function (f) { var p = state.draft.pages.filter(function (x) { return x.file === f; })[0]; return '<option value="' + f + '"' + (f === file ? " selected" : "") + ">" + esc((p && p.title) || f) + "</option>"; }).join("") +
+      '</select></label></div><p class="muted"><a href="../' + file + '" target="_blank" rel="noopener">View current page ↗</a> · Title and description are under <b>Pages &amp; SEO</b>.</p>' +
+      '<div class="grid-2">' + cf("Small heading above title", "eyebrow") + cf("Main headline (H1)", "h1") + "</div>" + cf("Intro sentence", "lede", { textarea: true }) +
+      '<div class="notice info"><b>Formatting:</b> blank line = new paragraph · <code>## Heading</code> · <code>### Smaller heading</code> · <code>- bullet</code> · <code>1. step</code> · <code>**bold**</code> · <code>[link text](page.html)</code></div>' +
+      '<div class="grid-2"><div>' + cf("Main copy", "article", { textarea: true, tall: true }) + '</div><div><span class="field"><span>Live preview</span></span><div class="copy-preview article" id="copyPreview">' + AdvBuilder.renderText(c.article) + "</div></div></div>" +
+      '<h3>Side box</h3><div class="grid-2">' + cf("Side box title", "side.title") + cf("Side box text", "side.text") + "</div>" +
+      '<label class="field"><span>Side box checklist (one per line)</span><textarea data-citems>' + esc((side.items || []).join("\n")) + "</textarea></label>" +
+      '<h3>Questions on this page</h3>' + cf("FAQ heading", "faqTitle") +
+      (c.faq || []).map(function (f, i) {
+        return '<div class="faq-item"><label class="field"><span>Question ' + (i + 1) + '</span><input data-cfaq="' + i + ':q" value="' + esc(f.q) + '"></label><label class="field"><span>Answer</span><textarea data-cfaq="' + i + ':a">' + esc(f.a) + '</textarea></label><div class="actions"><button class="link-btn" style="color:var(--danger)" data-cfaq-del="' + i + '">Delete question</button></div></div>';
+      }).join("") + '<button class="button button-outline btn-sm" data-cfaq-add>Add question</button></div>';
+  };
+
   views.faq = function () {
     var faq = state.draft.faq;
     return '<div class="view-head"><div><h1>FAQ</h1><p>Shown on the home page and published as FAQ structured data—always identical, so AI answers quote you accurately.</p></div><button class="button btn-sm" data-faq-add>Add question</button></div>' +
@@ -332,6 +382,24 @@
       setPath(state.draft, t.dataset.bind, v);
       if (t.dataset.max) { var c = t.parentElement.querySelector(".count"); if (c) { c.textContent = t.value.length + "/" + t.dataset.max; c.classList.toggle("bad", t.value.length > Number(t.dataset.max)); } }
       refreshBadge();
+    } else if (t.hasAttribute("data-content-search")) {
+      state.contentQuery = t.value;
+      clearTimeout(state.searchTimer);
+      state.searchTimer = setTimeout(function () { var out = document.getElementById("searchOut"); if (out) out.innerHTML = searchResults(state.contentQuery); }, 200);
+    } else if (t.dataset.cfield) {
+      var c = state.draft.content[state.contentFile], keys = t.dataset.cfield.split("."), last = keys.pop();
+      var target = keys.reduce(function (o, k) { o[k] = o[k] || {}; return o[k]; }, c);
+      target[last] = t.value;
+      if (t.dataset.cfield === "article") { var pv = document.getElementById("copyPreview"); if (pv) pv.innerHTML = AdvBuilder.renderText(t.value); }
+      refreshBadge();
+    } else if (t.hasAttribute("data-citems")) {
+      var cc = state.draft.content[state.contentFile]; cc.side = cc.side || {};
+      cc.side.items = t.value.split("\n").map(function (x) { return x.trim(); }).filter(Boolean);
+      refreshBadge();
+    } else if (t.dataset.cfaq) {
+      var p2 = t.dataset.cfaq.split(":");
+      state.draft.content[state.contentFile].faq[Number(p2[0])][p2[1]] = t.value;
+      refreshBadge();
     } else if (t.hasAttribute("data-areas")) {
       state.draft.business.areaServed = t.value.split("\n").map(function (s) { return s.trim(); }).filter(Boolean).map(function (n) { return { type: /^texas$/i.test(n) ? "State" : "City", name: n }; });
       refreshBadge();
@@ -347,6 +415,7 @@
       state.draft.business.hours.days = DAYS.filter(function (d) { return document.querySelector('[data-day="' + d + '"]').checked; });
       refreshBadge();
     } else if (t.hasAttribute("data-page-select")) { state.pageFile = t.value; render(); }
+    else if (t.hasAttribute("data-content-select")) { state.contentFile = t.value; render(); }
     else if (t.dataset.indexToggle) { state.draft.pages[Number(t.dataset.indexToggle)].index = t.checked; render(); }
     else if (t.dataset.bind && state.view === "pages") render();
   });
@@ -356,6 +425,9 @@
     if (!t) return;
     if (t.dataset.view) return go(t.dataset.view);
     if (t.dataset.openPage) { state.pageFile = t.dataset.openPage; return go("pages"); }
+    if (t.dataset.editContent) { state.contentFile = t.dataset.editContent; render(); var ed = document.querySelector("[data-content-select]"); if (ed) ed.scrollIntoView({ block: "start" }); return; }
+    if (t.hasAttribute("data-cfaq-add")) { var cfq = state.draft.content[state.contentFile]; cfq.faq = cfq.faq || []; cfq.faq.push({ q: "New question?", a: "Answer." }); return render(); }
+    if (t.dataset.cfaqDel) { if (confirm("Delete this question?")) { state.draft.content[state.contentFile].faq.splice(Number(t.dataset.cfaqDel), 1); render(); } return; }
     if (t.hasAttribute("data-faq-add")) { state.draft.faq.push({ q: "New question?", a: "Answer." }); return render(); }
     if (t.dataset.faqDel) { if (confirm("Delete this question?")) { state.draft.faq.splice(Number(t.dataset.faqDel), 1); render(); } return; }
     if (t.dataset.faqMove) {

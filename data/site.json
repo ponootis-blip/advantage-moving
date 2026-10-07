@@ -257,6 +257,69 @@
       "lastmod": "2026-10-07"
     },
     {
+      "file": "apartment-movers-austin.html",
+      "path": "apartment-movers-austin.html",
+      "title": "Apartment Movers in Austin | Walk-Ups & Condos | Advantage",
+      "description": "Full-service apartment and condo movers for Austin, Buda, Kyle and San Marcos. Walk-ups, elevators and tight halls handled. Family owned since 2001.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "furniture-movers-austin.html",
+      "path": "furniture-movers-austin.html",
+      "title": "Furniture Movers Austin | Disassembly & Reassembly | Advantage",
+      "description": "Careful furniture moving in Austin: sectionals, armoires, beds and heirlooms wrapped, protected, taken apart and reassembled when needed. Free estimate.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "moving-storage-austin.html",
+      "path": "moving-storage-austin.html",
+      "title": "Moving & Storage Between Homes in Austin | Advantage Moving",
+      "description": "Closing delayed or lease ending early? Advantage coordinates short-term storage between homes so your Austin-area move happens in two easy steps.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "moving-quotes-texas.html",
+      "path": "moving-quotes-texas.html",
+      "title": "How Moving Quotes Work in Texas | Stairs, Binding & More",
+      "description": "Binding vs not-to-exceed, what changes the price, and whether movers charge for stairs—how Texas moving quotes really work, from a TxDMV-licensed mover.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "questions-to-ask-movers.html",
+      "path": "questions-to-ask-movers.html",
+      "title": "10 Questions to Ask Before Hiring a Mover in Texas | Advantage",
+      "description": "The ten questions that separate professional movers from risky ones in Texas—license, written proposals, liability, claims—and the answers to listen for.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "moving-glossary.html",
+      "path": "moving-glossary.html",
+      "title": "Moving Glossary: Texas Moving Terms Explained | Advantage",
+      "description": "Binding proposal, not-to-exceed, TxDMV certificate, COI, long carry and more—plain-English definitions of the moving terms Texans run into.",
+      "index": true,
+      "priority": "0.6",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "moving-guides.html",
+      "path": "moving-guides.html",
+      "title": "Moving Guides & Tips for Austin and Texas | Advantage Moving",
+      "description": "Free moving guides from a family-owned Texas mover: moving day steps, quotes, questions to ask, packing, pianos, storage and Texas moving terms.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
       "file": "privacy-policy.html",
       "path": "privacy-policy.html",
       "title": "Privacy Policy — Advantage Moving Austin",
@@ -336,5 +399,271 @@
       "name": "Texas intrastate moving",
       "file": "austin-movers.html"
     }
-  ]
+  ],
+  "content": {
+    "apartment-movers-austin.html": {
+      "eyebrow": "Apartment & condo moving",
+      "h1": "Apartment movers who make the stairs look easy.",
+      "lede": "Full-service apartment and condo moves across Austin, Buda, Kyle and San Marcos—walk-ups, elevators, tight halls and all.",
+      "article": "## Apartment moves are access moves\n\nThe furniture in most apartments fits on one truck. What decides how long the move takes is everything between the truck and your door: the parking lot, the gate, the stairs or elevator, the hallway and the doorway. We plan around those details from the first call.\n\n### Walk-ups and stairs\n\nThird-floor walk-ups are routine for an experienced crew. We protect railings and landings, take heavy pieces apart when that's safer, and carry rather than drag. Tell us the floor and whether the stairs have tight turns.\n\n### Elevators and loading areas\n\nMany Austin apartment and condo buildings require you to reserve the elevator or loading dock for a set window, and some ask for a certificate of insurance from the mover before move day. Get the rules from the leasing office in writing and share them with us when you book.\n\n### Moving out without losing your deposit\n\n- Ask for floor and doorway protection in shared hallways\n- Photograph each room once it's empty\n- Return keys, gate remotes and parking tags the way your lease requires\n- Leave time for a final clean before the walkthrough\n\n### Apartment to house, or house to apartment\n\nMoving up to a house or downsizing into an apartment? We pack, move and place everything room by room, and can coordinate short-term storage if your dates don't line up. See [packing services](packing-services-austin.html) and [storage between homes](moving-storage-austin.html).",
+      "side": {
+        "title": "Tell us about your building",
+        "text": "These details set the crew size and timing.",
+        "items": [
+          "Floor number at both addresses",
+          "Elevator or stairs",
+          "Move window and reservations",
+          "Parking and gate access",
+          "Large or heavy furniture"
+        ]
+      },
+      "faqTitle": "Apartment moving questions",
+      "faq": [
+        {
+          "q": "Do you move studios and small apartments?",
+          "a": "Yes—studios, one-bedrooms and large condos across Austin and along I-35."
+        },
+        {
+          "q": "What if my building has no elevator?",
+          "a": "Stairs and walk-ups are routine for our crews. Tell us the floor and any tight turns when you request a quote so we plan the right crew."
+        },
+        {
+          "q": "What if my building needs a certificate of insurance?",
+          "a": "Share the building's requirements, including any exact wording they need, when you book. We'll confirm what's needed before moving day."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Apartment and condo moving",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "furniture-movers-austin.html": {
+      "eyebrow": "Furniture moving",
+      "h1": "Heavy, awkward and precious furniture, handled.",
+      "lede": "Sectionals, armoires, dining sets, beds and family heirlooms—wrapped, protected and, when it helps, taken apart and put back together.",
+      "article": "## The right way to move big furniture\n\nMost furniture damage happens at doorways, corners and on stairs—not on the road. Good furniture moving comes down to protection, the right equipment and knowing when a piece should come apart.\n\n### Wrapped before it moves\n\nUpholstery, wood finishes and glass are wrapped in moving pads or plastic before they leave the room, and floors and door frames along the path are protected.\n\n### Disassembly and reassembly\n\nBed frames, dining tables, desks and some sectionals travel more safely in pieces. Tell us in advance which items will need it so the crew brings the right tools and time. Hardware stays bagged and labeled with its piece.\n\n### When it won't fit\n\nMeasure doorways, hallways, stair turns and elevator depth at the new home before moving day. Removing legs, feet or doors often solves a tight fit—tell us about anything that looks close.\n\n### Heirlooms and antiques\n\nDelicate finishes, old joinery and pieces with sentimental value get extra padding and an unhurried carry. For pianos, clocks and fine china, see [piano and specialty moving](piano-moving-austin.html).",
+      "side": {
+        "title": "Measure before you move",
+        "text": "A tape measure now saves surprises later.",
+        "items": [
+          "Doorway widths",
+          "Stair turns and ceiling height",
+          "Elevator depth",
+          "Largest pieces (L × W × H)",
+          "Items that come apart"
+        ]
+      },
+      "faqTitle": "Furniture moving questions",
+      "faq": [
+        {
+          "q": "Do you take furniture apart and put it back together?",
+          "a": "Yes, when it makes the move safer. Tell us which pieces when you request a quote so we plan time and tools."
+        },
+        {
+          "q": "How is furniture protected during the move?",
+          "a": "Pieces are wrapped in pads or plastic before they move, and floors and doorways along the path are protected."
+        },
+        {
+          "q": "Can you move antiques and heirlooms?",
+          "a": "Yes. Delicate and valuable pieces get extra care—tell us about them up front so we can plan."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Furniture moving, disassembly and reassembly",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "moving-storage-austin.html": {
+      "eyebrow": "Moving & storage",
+      "h1": "When your moving dates don’t line up.",
+      "lede": "Closing delayed? Lease ending before the new place is ready? We coordinate short-term storage so your move happens in two easy steps instead of one stressful one.",
+      "article": "## Storage coordination for in-between moves\n\nMoves don't always happen on one clean date. A closing slips, a renovation runs long or a lease ends a week early. Instead of rushing, we coordinate short-term storage so your belongings are packed, protected and waiting until the new home is ready.\n\n### How it works\n\n1. Tell us both dates: when you need to be out and when you can move in.\n2. We plan the move-out and the delivery as two parts of the same job.\n3. Your belongings go into storage, then come to the new home when you're ready.\n\n### What to keep out of storage\n\n- Medication, documents and valuables\n- Anything you'll need in the meantime: seasonal clothes, work gear, school items\n- Perishable, flammable or hazardous items\n\n### Get it in writing\n\nStorage adds a second moving day. Ask how storage, access and delivery will be handled, and make sure every part is in your written proposal.",
+      "side": {
+        "title": "Tell us",
+        "text": "We'll plan both halves of the move together.",
+        "items": [
+          "Move-out date",
+          "Earliest move-in date",
+          "Size of the move",
+          "Items you'll need in the meantime",
+          "Both addresses"
+        ]
+      },
+      "faqTitle": "Storage questions",
+      "faq": [
+        {
+          "q": "Do you offer storage?",
+          "a": "We coordinate short-term storage between homes as part of your move. Tell us your dates and we'll plan the move-out and delivery together."
+        },
+        {
+          "q": "How long can my things stay in storage?",
+          "a": "It depends on your dates and the storage arrangement—ask when you request your quote so it's spelled out in writing."
+        },
+        {
+          "q": "What shouldn't go into storage?",
+          "a": "Medication, documents, valuables, anything you'll need before move-in, and perishable, flammable or hazardous items."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Short-term storage coordination between homes",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "moving-quotes-texas.html": {
+      "eyebrow": "Moving guide",
+      "h1": "How moving quotes work in Texas.",
+      "lede": "Binding or not-to-exceed, what changes the price, and why stairs and parking matter—explained by a licensed Texas mover.",
+      "updated": "2026-10-07",
+      "article": "## What Texas requires\n\nLicensed Texas movers must give you a written proposal before loading anything. It's either **binding**—the exact price of the move—or **not-to-exceed**—the most you can be charged. It should also say when payment is due and which payment methods are accepted. Source: [TxDMV](https://www.txdmv.gov/motorists/consumer-protection/dont-make-a-move).\n\n## What changes the price of a move\n\n- **How much is moving.** More furniture and boxes means more time, and sometimes a bigger crew or truck.\n- **Access at both homes.** Stairs, elevators, long walks from the truck and tight doorways all take time.\n- **Distance.** Local moves are mostly about time; Texas moves add the drive.\n- **Extra services.** Packing, disassembly and specialty items such as pianos.\n- **Timing.** End-of-month and summer dates are the busiest.\n\n## Do movers charge extra for stairs?\n\nStairs take more time and effort, so they usually affect the price—either as a line item or through the time the move takes. The fair way to handle it is up front: tell your mover about every staircase, elevator and long carry at both addresses so the written proposal reflects the real job.\n\n## How to get an accurate quote\n\nBe specific. List large furniture, mention anything heavy or fragile, share photos of tricky access and give both full addresses. Surprises on moving day are what make final prices differ from expectations.\n\n## Comparing quotes side by side\n\nIs each quote binding or not-to-exceed? Does it include packing materials, disassembly and the drive? Is the mover's TxDMV certificate active? The lowest number isn't the best deal if it leaves things out. For more, see [10 questions to ask a mover](questions-to-ask-movers.html).",
+      "side": {
+        "title": "Before you compare",
+        "text": "Check every quote for these.",
+        "items": [
+          "Binding or not-to-exceed?",
+          "What's included",
+          "Payment terms",
+          "Active TxDMV certificate",
+          "Liability agreed in writing"
+        ]
+      },
+      "faqTitle": "Moving quote questions",
+      "faq": [
+        {
+          "q": "What's the difference between a binding and a not-to-exceed proposal?",
+          "a": "A binding proposal states the exact price. A not-to-exceed proposal states the maximum you can be charged. Texas movers must give you one in writing before loading."
+        },
+        {
+          "q": "Do movers charge extra for stairs?",
+          "a": "Stairs add time and effort, so they usually affect the price. Mention every staircase and elevator at both addresses so your written proposal reflects the real job."
+        },
+        {
+          "q": "Why do moving quotes vary so much?",
+          "a": "Movers make different assumptions about time, crew size and access. The more detail you share, the closer quotes get to each other—and to the final price."
+        },
+        {
+          "q": "Is the ballpark estimator on this site a quote?",
+          "a": "No. It gives a planning range only. Your personal written estimate is based on the details of your move."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    },
+    "questions-to-ask-movers.html": {
+      "eyebrow": "Moving guide",
+      "h1": "Ten questions to ask before you hire a mover.",
+      "lede": "The right questions sort the professionals from the risks in a single phone call. Here's what to ask—and the answers to listen for.",
+      "updated": "2026-10-07",
+      "article": "### 1. What's your TxDMV certificate number?\n\nEvery household mover in Texas needs an active certificate. Check it in the state's Truck Stop database. Ours is #000572890B.\n\n### 2. Will I get a written proposal before you load?\n\nThe answer must be yes—Texas requires it. Be wary of anyone who only quotes by phone.\n\n### 3. Is the price binding or not-to-exceed?\n\nBinding is the exact price; not-to-exceed is the maximum. Either is fine, as long as you know which one you have.\n\n### 4. What could change the final price?\n\nListen for clear answers about time, stairs, access and extra services—not vague reassurance.\n\n### 5. What's your liability for damage, and can I increase it?\n\nTexas lets you and the mover agree on liability before the move. Some agreements limit it to 60 cents per pound per item. That isn't insurance, so ask about options and consider your own coverage.\n\n### 6. Who will actually do my move?\n\nAsk whether the company's own crew handles the job from start to finish.\n\n### 7. How do you protect my home and furniture?\n\nPads, wrap, floor and doorway protection should be standard answers.\n\n### 8. What happens if my dates change?\n\nClosings slip. Ask how changes are handled and whether storage can be coordinated.\n\n### 9. How do I reach you on moving day?\n\nYou want a real person on the phone, not a call center. Our phone is answered daily, 8am to 5pm.\n\n### 10. How do claims work if something is damaged?\n\nIn Texas you file a written claim within 90 days of delivery, and TxDMV offers free mediation if you and the mover can't agree. See [how Texas protects your move](austin-movers.html).",
+      "side": {
+        "title": "Red flags",
+        "text": "Walk away if you see these.",
+        "items": [
+          "No TxDMV number, or an inactive one",
+          "No written proposal",
+          "Pressure to sign quickly",
+          "Unmarked or rental trucks",
+          "A price far below everyone else's"
+        ]
+      },
+      "faqTitle": "Hiring a mover",
+      "faq": [
+        {
+          "q": "How do I check a mover's license in Texas?",
+          "a": "Ask for the TxDMV certificate number and look it up in TxDMV's Truck Stop database. It should say Active."
+        },
+        {
+          "q": "Where can I file a complaint about a mover?",
+          "a": "With TxDMV online, by calling 1-888-368-4689 or by emailing TruckStop@TxDMV.gov. Moves that cross state lines are handled by the federal FMCSA instead."
+        },
+        {
+          "q": "Should I pay a large deposit up front?",
+          "a": "Read the written proposal: it should state when payment is due and how. Be cautious with any mover that won't put payment terms in writing."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    },
+    "moving-glossary.html": {
+      "eyebrow": "Moving guide",
+      "h1": "Moving terms, in plain English.",
+      "lede": "The words you'll see on Texas moving quotes, contracts and building rules—explained without the jargon.",
+      "updated": "2026-10-07",
+      "article": "### Binding proposal\n\nA written price for the move that won't change, as long as the job matches what was described.\n\n### Not-to-exceed proposal\n\nA written proposal that sets the maximum you can be charged. The final bill can be lower, not higher.\n\n### Moving services contract\n\nThe agreement you sign before loading. In Texas, the written proposal becomes part of it, and you get a signed copy at delivery.\n\n### TxDMV certificate\n\nThe license every household mover operating within Texas must hold from the Texas Department of Motor Vehicles. Check it in the Truck Stop database.\n\n### Intrastate vs. interstate\n\nAn intrastate move stays inside Texas and is regulated by TxDMV. An interstate move crosses state lines and is regulated by the federal FMCSA.\n\n### Liability (valuation)\n\nHow much the mover will pay if something is lost or damaged. In Texas it's agreed before the move—some agreements limit it to 60 cents per pound per item. It isn't insurance.\n\n### Inventory\n\nAn optional list of items and their condition, signed before and after the move. Useful if you ever need to file a claim.\n\n### Claim\n\nA written request for payment for loss or damage. In Texas, file it within 90 days of delivery.\n\n### Certificate of insurance (COI)\n\nA document many apartment, condo and office buildings require from a mover before move day, showing the mover's insurance coverage.\n\n### Elevator or dock reservation\n\nA booked time window for using a building's freight elevator or loading dock.\n\n### Long carry\n\nWhen the truck has to park far from the door, so everything is carried a long way. Mention it when you request a quote.\n\n### Right-of-way permit\n\nIn Austin, a City permit that may be required to park a moving truck in a metered space, curb lane, alley or sidewalk. Call 3-1-1 for details.\n\n### Full-service move\n\nThe mover handles the whole job: packing, protection, loading, transport, unloading and placing items in the right rooms.\n\n### Partial packing\n\nThe crew packs only certain rooms or items—often the kitchen and fragile pieces—while you pack the rest.",
+      "side": {
+        "title": "Related guides",
+        "text": "Keep reading.",
+        "items": [
+          "How moving quotes work",
+          "10 questions to ask a mover",
+          "Moving day guide",
+          "South Austin moving guide"
+        ]
+      },
+      "faqTitle": "Glossary questions",
+      "faq": [
+        {
+          "q": "Is a moving company's liability the same as insurance?",
+          "a": "No. Liability is what the mover agrees to pay for loss or damage under your contract. You can buy separate insurance for more protection."
+        },
+        {
+          "q": "Which agency regulates my move?",
+          "a": "If it stays within Texas, the Texas Department of Motor Vehicles. If it crosses state lines, the federal FMCSA."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    },
+    "moving-guides.html": {
+      "eyebrow": "Moving guides & tips",
+      "h1": "Everything we’d tell a friend before they move.",
+      "lede": "Straight answers from a family-owned Texas mover that's been at it since 2001. Start wherever you are in the process.",
+      "updated": "2026-10-07",
+      "article": "## Planning your move\n\n- [South Austin moving guide](moving-guide-south-austin.html): a four-week plan and an access checklist\n- [How moving quotes work in Texas](moving-quotes-texas.html): binding vs. not-to-exceed, and do movers charge for stairs?\n- [10 questions to ask a mover](questions-to-ask-movers.html): what to ask and the answers to listen for\n- [Moving glossary](moving-glossary.html): Texas moving terms in plain English\n\n## Moving day\n\n- [Moving day guide](move-day-guide.html): twelve steps from the crew's arrival to your first night\n- [How Texas protects your move](austin-movers.html): your rights on any move inside Texas\n\n## Packing and special items\n\n- [Packing services and tips](packing-services-austin.html): how to pack like the pros\n- [Piano care before and after a move](piano-moving-austin.html): measuring, placement and tuning\n- [Furniture moving](furniture-movers-austin.html): protection, disassembly and tight fits\n\n## In-between moves\n\n- [Storage between homes](moving-storage-austin.html): when your move-out and move-in dates don't line up\n- [Apartment moving](apartment-movers-austin.html): walk-ups, elevators and getting your deposit back",
+      "side": {
+        "title": "Most-read",
+        "text": "Popular starting points.",
+        "items": [
+          "Moving day guide",
+          "How moving quotes work",
+          "10 questions to ask a mover",
+          "Moving glossary"
+        ]
+      },
+      "faqTitle": "Quick answers",
+      "faq": [
+        {
+          "q": "How far ahead should I book movers in Austin?",
+          "a": "Two to four weeks is comfortable for most dates. Book earlier for end-of-month dates and summer weekends."
+        },
+        {
+          "q": "What's the first step in planning a move?",
+          "a": "Pick your date range, then get a written estimate based on both addresses, the size of the move and access at each end."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    }
+  }
 }

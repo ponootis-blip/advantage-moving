@@ -76,14 +76,20 @@
     // Decorative strings that read like data (the "Art. 49fk" problem)
     var known = [b.txdmv, b.usdot, b.postalCode, String(b.foundingYear)].filter(Boolean);
     var codeLike = (text.match(/\b[A-Z]{1,4}[.\-#]?\s?\d{2,}[a-z]{0,3}\b/g) || []).filter(function (t) {
-      return !known.some(function (k) { return t.indexOf(k) !== -1; }) && !/^I-?\s?35$/.test(t) && !/^\d/.test(t);
+      return !known.some(function (k) { return t.indexOf(k) !== -1; }) && !/^(?:I|IH|US|SH|FM|RM|CR|TX|SR)[-\s]?\d+$/.test(t) && !/^\d/.test(t);
     });
     if (codeLike.length) add("warn", "Code-like text an AI might treat as a fact: " + codeLike.slice(0, 4).join(", ") + ".");
 
-    if (file === "index.html") {
-      var visibleQ = Array.prototype.map.call(doc.querySelectorAll(".accordion summary"), function (s) { return s.firstChild.textContent.trim(); });
-      var ldQ = (data.faq || []).map(function (f) { return f.q; });
-      if (visibleQ.join("|") !== ldQ.join("|")) add("error", "Visible FAQ and FAQ structured data don't match.");
+    // Every visible FAQ must match its FAQPage structured data exactly (AI answers quote the schema).
+    var visibleQ = Array.prototype.map.call(doc.querySelectorAll(".accordion summary"), function (s) { return s.firstChild.textContent.trim(); });
+    var faqLd = [];
+    lds.forEach(function (s) { try { var o = JSON.parse(s.textContent); if (o["@type"] === "FAQPage") faqLd.push(o); } catch (e) {} });
+    if (visibleQ.length && page.index !== false) {
+      if (faqLd.length !== 1) add("warn", "Page shows FAQs but has " + faqLd.length + " FAQ structured data blocks (expected 1).");
+      else {
+        var ldQ = faqLd[0].mainEntity.map(function (q) { return q.name; });
+        if (ldQ.length !== visibleQ.length || ldQ.some(function (q) { return visibleQ.indexOf(q) === -1; })) add("error", "Visible FAQ and FAQ structured data don't match.");
+      }
     }
 
     var penalty = issues.reduce(function (n, i) { return n + (i.level === "error" ? 12 : i.level === "warn" ? 4 : 0); }, 0);

@@ -24,7 +24,7 @@ function businessStatus(hours,clock){
 }
 if(typeof window!=="undefined"){window.estimateMove=estimateMove}
 if(typeof module!=="undefined"&&module.exports){module.exports={businessStatus:businessStatus,formatClock:formatClock,estimateMove:estimateMove,localDateInputValue:localDateInputValue,normalizeQuoteConfig:normalizeQuoteConfig,quoteReference:quoteReference}}
-if(typeof document!=="undefined"){
+if(typeof document!=="undefined"&&document.getElementById("quoteForm")){
   var quoteStep1=document.getElementById("quoteStep1"),quoteStep2=document.getElementById("quoteStep2"),quoteNext=document.getElementById("quoteNext"),quoteBack=document.getElementById("quoteBack"),quoteForm=document.getElementById("quoteForm");
   document.getElementById("qDate").min=localDateInputValue(new Date());
   function value(id){return document.getElementById(id).value.trim()}

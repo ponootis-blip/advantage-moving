@@ -592,3 +592,44 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
 .more-services a:hover{text-decoration:underline}
 .article h2:not(:first-child){margin-top:44px;font-size:clamp(1.6rem,2.4vw,2.1rem)}
 .article h3:first-child{margin-top:0;padding-top:0;border-top:0}
+
+/* planning tools */
+.tools-band{background:var(--white);border-top:1px solid var(--line)}
+@media (min-width:1121px){.tool-grid{grid-template-columns:repeat(4,1fr)!important}}
+.tool-section{padding-top:clamp(40px,5vw,64px)}
+.tool-card{padding:clamp(20px,3vw,32px);border:1px solid var(--line);border-radius:var(--r-lg);background:var(--white);box-shadow:var(--shadow-md)}
+.tool-bar{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;margin-bottom:18px}
+.tool-bar .field{margin:0;min-width:220px}
+.tool-actions{display:flex;align-items:center;gap:14px}
+.btn-tool{min-height:40px;padding:0 16px;font-size:.74rem}
+.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:0;padding:0;list-style:none}
+.phase{padding:18px 20px;border:1px solid var(--line);border-radius:var(--r-md);background:var(--paper)}
+.phase-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:8px}
+.phase-head h3{margin:0;font-size:1.15rem}
+.phase-date{color:var(--orange-dark);font-size:.8rem;font-weight:800;white-space:nowrap}
+.phase ul{margin:0;padding:0;list-style:none}
+.phase li label{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-top:1px solid var(--line);font-size:.92rem;cursor:pointer}
+.phase li:first-child label{border-top:0}
+.phase input{width:18px;height:18px;margin-top:2px;flex:0 0 auto;accent-color:var(--green)}
+.phase li.is-done span{color:var(--muted);text-decoration:line-through}
+.tool-note,.calc-note{margin:14px 0 0;color:var(--muted);font-size:.84rem}
+.tool-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px 16px;align-items:end}
+.tool-form .field,.tool-form .check{margin:0}
+.tool-form .check{display:flex;align-items:center;gap:8px;min-height:48px;font-weight:600;font-size:.92rem}
+.tool-form .check input{width:18px;height:18px;accent-color:var(--blue)}
+.tool-form select,.tool-form input[type=number]{width:100%;height:48px;padding:0 14px;border:1.5px solid #cfd8d4;border-radius:var(--r-sm);background:#fff;font-size:1rem}
+.tool-result{margin-top:20px}
+.tool-result.estimate-result{display:flex;flex-direction:column;gap:10px}
+.tool-subhead{margin:28px 0 10px;font-size:1.2rem}
+.table-wrap{overflow-x:auto}
+.calc-table{width:100%;border-collapse:collapse;font-size:.92rem}
+.calc-table th,.calc-table td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left}
+.calc-table td{font-weight:800;color:var(--navy)}
+.calc-table.wide td{font-weight:600;text-align:center}
+.calc-table.wide thead th{color:var(--muted);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+@media (max-width:720px){.checklist{grid-template-columns:1fr}}
+@media print{
+  .utility,.sitehead,.inner-hero,.content-section:not(.tool-section),.link-band,.final-cta,footer,.mobile-actions,.tool-actions{display:none!important}
+  .tool-card{box-shadow:none;border:0;padding:0}.checklist{grid-template-columns:1fr 1fr}
+}
+.tool-form select{appearance:none;-webkit-appearance:none;padding-right:38px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2353645d' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") right 12px center/16px no-repeat}

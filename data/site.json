@@ -313,8 +313,134 @@
     {
       "file": "moving-guides.html",
       "path": "moving-guides.html",
-      "title": "Moving Guides & Tips for Austin and Texas | Advantage Moving",
-      "description": "Free moving guides from a family-owned Texas mover: moving day steps, quotes, questions to ask, packing, pianos, storage and Texas moving terms.",
+      "title": "Moving Guides & Free Planning Tools | Advantage Moving",
+      "description": "Free moving checklist, box and cost calculators, plus guides to Texas moving quotes, questions to ask movers, moving day and change of address.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "house-movers-austin.html",
+      "path": "house-movers-austin.html",
+      "title": "House Movers in Austin | Full-Service Home Moving | Advantage",
+      "description": "Full-service house movers for Austin, Buda, Kyle and San Marcos: packing, protection, loading, transport and setup. Family owned since 2001.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "small-moves-austin.html",
+      "path": "small-moves-austin.html",
+      "title": "Small Moves in Austin | Few Items, Single Rooms | Advantage",
+      "description": "Moving a few rooms, a dorm or a handful of heavy items in Austin? Advantage handles small moves with the same careful, full-service crew.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "last-minute-movers-austin.html",
+      "path": "last-minute-movers-austin.html",
+      "title": "Last-Minute Movers in Austin | Short-Notice Moves | Advantage",
+      "description": "Need movers fast in Austin, Buda or Kyle? Call Advantage. A real person answers daily 8–5 and we'll tell you straight what we can do on short notice.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "loading-unloading-help.html",
+      "path": "loading-unloading-help.html",
+      "title": "Moving Labor in Austin | Loading & Unloading Help | Advantage",
+      "description": "Rented a truck or container? Advantage provides experienced loading and unloading help in Austin and along I-35—properly padded, packed tight and safe.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "senior-moving-austin.html",
+      "path": "senior-moving-austin.html",
+      "title": "Senior Moving & Downsizing in Austin | Advantage Moving",
+      "description": "Patient, careful senior moves and downsizing in Austin and along I-35: packing, setup in the new home and room-by-room planning. Family owned since 2001.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "student-movers.html",
+      "path": "student-movers.html",
+      "title": "Student Movers Austin & San Marcos | Advantage Moving",
+      "description": "Student moves near UT Austin and Texas State in San Marcos: dorms, apartments and storage between semesters, from a family-owned crew. Easy to reach.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "unpacking-services-austin.html",
+      "path": "unpacking-services-austin.html",
+      "title": "Unpacking & Home Setup Services in Austin | Advantage Moving",
+      "description": "Skip the weeks of boxes. Advantage unpacks, sets up furniture and removes packing materials so your new Austin-area home feels like home sooner.",
+      "index": true,
+      "priority": "0.6",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "antique-art-movers-austin.html",
+      "path": "antique-art-movers-austin.html",
+      "title": "Antique & Art Movers in Austin | Advantage Moving",
+      "description": "Careful moving for antiques, fine art, mirrors, clocks and heirlooms in Austin and along I-35: custom padding, packing and an unhurried crew.",
+      "index": true,
+      "priority": "0.7",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "in-home-furniture-moving.html",
+      "path": "in-home-furniture-moving.html",
+      "title": "In-Home Furniture Moving in Austin | Advantage Moving",
+      "description": "Need heavy furniture moved within your home—for a remodel, new flooring, staging or rearranging? Advantage moves it safely, room to room or floor to floor.",
+      "index": true,
+      "priority": "0.6",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "services.html",
+      "path": "services.html",
+      "title": "Moving Services in Austin, Buda & Kyle | Advantage Moving",
+      "description": "Every moving service from one family-owned, full-service crew: local, house, apartment, commercial, packing, pianos, storage, labor and Texas moves.",
+      "index": true,
+      "priority": "0.9",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "moving-checklist.html",
+      "path": "moving-checklist.html",
+      "title": "Moving Checklist: 8-Week Printable Plan for Austin Moves",
+      "description": "A free, printable moving checklist from 8 weeks out to the first week after. Enter your move date for target dates and tick off tasks as you go.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "moving-box-calculator.html",
+      "path": "moving-box-calculator.html",
+      "title": "Moving Box Calculator: How Many Boxes Do I Need? | Advantage",
+      "description": "Free moving box calculator: estimate small, medium, large, wardrobe and dish-pack boxes, tape and packing paper for a studio to a 4+ bedroom home.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "moving-cost-calculator.html",
+      "path": "moving-cost-calculator.html",
+      "title": "Moving Cost Calculator for Austin & Texas Moves | Advantage",
+      "description": "Estimate the cost of a local Austin-area or Texas move in seconds. Choose your home size, distance, packing and piano for a planning range.",
+      "index": true,
+      "priority": "0.8",
+      "lastmod": "2026-10-07"
+    },
+    {
+      "file": "change-of-address-checklist-texas.html",
+      "path": "change-of-address-checklist-texas.html",
+      "title": "Texas Change of Address Checklist After Moving | Advantage",
+      "description": "Moving in Texas? Update your driver license within 30 days, plus vehicle registration, USPS, voter registration and utilities. A simple checklist.",
       "index": true,
       "priority": "0.8",
       "lastmod": "2026-10-07"
@@ -384,20 +510,68 @@
       "file": "local-moving-austin.html"
     },
     {
+      "name": "House moving",
+      "file": "house-movers-austin.html"
+    },
+    {
+      "name": "Apartment and condo moving",
+      "file": "apartment-movers-austin.html"
+    },
+    {
+      "name": "Small moves",
+      "file": "small-moves-austin.html"
+    },
+    {
+      "name": "Last-minute moves",
+      "file": "last-minute-movers-austin.html"
+    },
+    {
+      "name": "Senior moving and downsizing",
+      "file": "senior-moving-austin.html"
+    },
+    {
+      "name": "Student moving",
+      "file": "student-movers.html"
+    },
+    {
       "name": "Commercial moving",
       "file": "commercial-movers-austin.html"
+    },
+    {
+      "name": "Texas intrastate moving",
+      "file": "austin-movers.html"
     },
     {
       "name": "Packing services",
       "file": "packing-services-austin.html"
     },
     {
+      "name": "Unpacking and setup",
+      "file": "unpacking-services-austin.html"
+    },
+    {
+      "name": "Furniture moving and assembly",
+      "file": "furniture-movers-austin.html"
+    },
+    {
       "name": "Piano and specialty moving",
       "file": "piano-moving-austin.html"
     },
     {
-      "name": "Texas intrastate moving",
-      "file": "austin-movers.html"
+      "name": "Antique and art moving",
+      "file": "antique-art-movers-austin.html"
+    },
+    {
+      "name": "Loading and unloading help",
+      "file": "loading-unloading-help.html"
+    },
+    {
+      "name": "In-home furniture moving",
+      "file": "in-home-furniture-moving.html"
+    },
+    {
+      "name": "Storage between homes",
+      "file": "moving-storage-austin.html"
     }
   ],
   "content": {
@@ -636,10 +810,10 @@
     },
     "moving-guides.html": {
       "eyebrow": "Moving guides & tips",
-      "h1": "Everything we’d tell a friend before they move.",
+      "h1": "Moving guides and free planning tools.",
       "lede": "Straight answers from a family-owned Texas mover that's been at it since 2001. Start wherever you are in the process.",
       "updated": "2026-10-07",
-      "article": "## Planning your move\n\n- [South Austin moving guide](moving-guide-south-austin.html): a four-week plan and an access checklist\n- [How moving quotes work in Texas](moving-quotes-texas.html): binding vs. not-to-exceed, and do movers charge for stairs?\n- [10 questions to ask a mover](questions-to-ask-movers.html): what to ask and the answers to listen for\n- [Moving glossary](moving-glossary.html): Texas moving terms in plain English\n\n## Moving day\n\n- [Moving day guide](move-day-guide.html): twelve steps from the crew's arrival to your first night\n- [How Texas protects your move](austin-movers.html): your rights on any move inside Texas\n\n## Packing and special items\n\n- [Packing services and tips](packing-services-austin.html): how to pack like the pros\n- [Piano care before and after a move](piano-moving-austin.html): measuring, placement and tuning\n- [Furniture moving](furniture-movers-austin.html): protection, disassembly and tight fits\n\n## In-between moves\n\n- [Storage between homes](moving-storage-austin.html): when your move-out and move-in dates don't line up\n- [Apartment moving](apartment-movers-austin.html): walk-ups, elevators and getting your deposit back",
+      "article": "## Free planning tools\n\n- [Moving checklist](moving-checklist.html): eight weeks out to settled in, with dates from your move day\n- [Box and supplies calculator](moving-box-calculator.html): how many boxes, how much tape and paper\n- [Moving cost calculator](moving-cost-calculator.html): a quick planning range for local and Texas moves\n- [Texas change-of-address checklist](change-of-address-checklist-texas.html): driver license, vehicle, mail and utilities\n\n## Planning your move\n\n- [South Austin moving guide](moving-guide-south-austin.html): a four-week plan and an access checklist\n- [How moving quotes work in Texas](moving-quotes-texas.html): binding vs. not-to-exceed, and do movers charge for stairs?\n- [10 questions to ask a mover](questions-to-ask-movers.html): what to ask and the answers to listen for\n- [Moving glossary](moving-glossary.html): Texas moving terms in plain English\n\n## Moving day\n\n- [Moving day guide](move-day-guide.html): twelve steps from the crew's arrival to your first night\n- [How Texas protects your move](austin-movers.html): your rights on any move inside Texas\n\n## Packing and special items\n\n- [Packing services and tips](packing-services-austin.html): how to pack like the pros\n- [Piano care before and after a move](piano-moving-austin.html): measuring, placement and tuning\n- [Furniture moving](furniture-movers-austin.html): protection, disassembly and tight fits\n\n## In-between moves\n\n- [Storage between homes](moving-storage-austin.html): when your move-out and move-in dates don't line up\n- [Apartment moving](apartment-movers-austin.html): walk-ups, elevators and getting your deposit back",
       "side": {
         "title": "Most-read",
         "text": "Popular starting points.",
@@ -659,6 +833,560 @@
         {
           "q": "What's the first step in planning a move?",
           "a": "Pick your date range, then get a written estimate based on both addresses, the size of the move and access at each end."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    },
+    "house-movers-austin.html": {
+      "eyebrow": "Residential moving",
+      "h1": "House movers for every room, from attic to garage.",
+      "lede": "Full-service home moves across Austin and every town south along I-35—packed, protected, loaded, moved and placed in the right rooms.",
+      "article": "## A house is a lot of moves at once\n\nBedrooms, kitchen, garage, patio, attic: every part of a house moves differently. We plan the crew, truck and timing around the whole property, not just the furniture count.\n\n### What full service includes\n\n- Packing as much or as little as you want, with materials supplied\n- Pads, wrap and floor protection at both homes\n- Disassembly and reassembly of beds, tables and other large pieces\n- Loading, transport, unloading and placing everything room by room\n\n### Garages, sheds and patios\n\nTools, yard equipment, grills and outdoor furniture often get left for last—and take longer than expected. Tell us what's outside so it's in the plan. Empty fuel and propane before moving day; flammable items can't ride on the truck.\n\n### Difficult houses are our specialty\n\nSplit levels, narrow bungalow doors, long Hill Country driveways and steep stairs are where an experienced crew shows. Mention them when you request a quote and we'll plan around them.\n\nSee also: [packing services](packing-services-austin.html), [furniture moving](furniture-movers-austin.html) and [storage between homes](moving-storage-austin.html).",
+      "side": {
+        "title": "For an accurate quote",
+        "text": "These details shape the crew and truck.",
+        "items": [
+          "Bedrooms and living areas",
+          "Garage, shed and patio items",
+          "Stairs and long carries",
+          "Heavy or fragile pieces",
+          "Packing help wanted"
+        ]
+      },
+      "faqTitle": "House moving questions",
+      "faq": [
+        {
+          "q": "How long does it take to move a house?",
+          "a": "It depends on the size of the home, how much is packed and the access at both ends. Your written proposal will spell out the plan and crew."
+        },
+        {
+          "q": "Do you pack the whole house?",
+          "a": "We can pack everything, just the kitchen and fragile items, or nothing at all—your choice."
+        },
+        {
+          "q": "Do you move garage and outdoor items?",
+          "a": "Yes. Tell us what's in the garage, shed and patio so it's included in the plan. Fuel and propane must be emptied first."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "House and residential moving",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "small-moves-austin.html": {
+      "eyebrow": "Small moves",
+      "h1": "Small moves, handled with the same care.",
+      "lede": "A studio, a single room, a storage unit or a few heavy pieces—moved by the same experienced crew we send on whole-house jobs.",
+      "article": "## When a small move makes sense\n\nNot every move fills a truck. Small moves are common when you're moving into a furnished place, splitting a household, clearing a storage unit or bringing home a few big purchases.\n\n### Typical small moves\n\n- Studios and small apartments\n- A single room or a home office\n- Moving items out of, or into, a storage unit\n- A sofa, dresser or appliance between homes\n\n### Small doesn't mean simple\n\nA single sleeper sofa up a third-floor walk-up can be harder than a dozen boxes on the ground floor. Tell us exactly what's moving and how the access looks at both ends, and we'll plan the right crew.\n\n### Make it efficient\n\nHave everything in one place, boxes packed and taped, and parking cleared before the crew arrives. Small moves go fastest when nothing needs to be gathered on the day.",
+      "side": {
+        "title": "Tell us",
+        "text": "A quick list is all we need.",
+        "items": [
+          "Each item that's moving",
+          "Both addresses",
+          "Floor numbers and elevators",
+          "Your preferred date"
+        ]
+      },
+      "faqTitle": "Small move questions",
+      "faq": [
+        {
+          "q": "Do you take small moves?",
+          "a": "Yes—studios, single rooms, storage units and a few heavy items are all part of the work we do."
+        },
+        {
+          "q": "What's the easiest way to get a small-move quote?",
+          "a": "List the items, both addresses and the access at each end. A photo of anything large or awkward helps."
+        },
+        {
+          "q": "Can you move just one heavy item?",
+          "a": "Yes. Tell us what it is, its size and the path at both homes so we bring the right crew and equipment."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Small moves",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "last-minute-movers-austin.html": {
+      "eyebrow": "Short-notice moves",
+      "h1": "Last-minute move? Call, and we’ll tell you straight.",
+      "lede": "Closings move, leases end early and plans change. When the clock is short, a real person answers our phone daily from 8am to 5pm.",
+      "article": "## Why short-notice moves happen\n\nA buyer wants an early closing. A lease falls through. A job starts sooner than planned. Short-notice moves are stressful because every decision has to happen at once.\n\n### What to do first\n\n1. Call us at [(512) 443-6141](tel:+15124436141)—a phone call is faster than any form.\n2. Have both addresses, the size of the move and your deadline ready.\n3. Tell us what's already packed and what isn't.\n\n### How we help when time is short\n\nWe'll tell you honestly what we can do on your timeline. If the full move can't happen on your date, options like packing help, moving the essentials first or coordinating short-term storage can keep you on schedule.\n\n### Save time on your end\n\n- Pack an essentials bag for each person\n- Book elevators and parking as soon as you have a date\n- Set aside anything that isn't coming so it isn't loaded by mistake\n\nSee [storage between homes](moving-storage-austin.html) and [packing services](packing-services-austin.html).",
+      "side": {
+        "title": "Have this ready",
+        "text": "It speeds up the first call.",
+        "items": [
+          "Both addresses",
+          "Move size",
+          "Your deadline",
+          "What's packed",
+          "Building access rules"
+        ]
+      },
+      "faqTitle": "Last-minute move questions",
+      "faq": [
+        {
+          "q": "Can you move me this week?",
+          "a": "Call us at (512) 443-6141. We'll check availability right away and tell you honestly what's possible."
+        },
+        {
+          "q": "What if I haven't packed?",
+          "a": "Our crew can pack for you. Tell us how much is unpacked so we plan the time."
+        },
+        {
+          "q": "Is calling faster than the online form?",
+          "a": "Yes. For short-notice moves, a call during business hours gets you an answer fastest."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Last-minute and short-notice moves",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "loading-unloading-help.html": {
+      "eyebrow": "Moving labor",
+      "h1": "Loading and unloading help from people who do it every day.",
+      "lede": "Renting your own truck or using a moving container? Our crew loads it tight, pads it right and unloads it safely at the other end.",
+      "article": "## Why loading matters more than driving\n\nMost damage in a do-it-yourself move happens inside the truck: furniture shifts, boxes crush and unpadded pieces rub together on the highway. A well-loaded truck uses every inch, keeps heavy items low and locks the load in place.\n\n### Rental trucks and moving containers\n\nWhether it's a rental truck or a portable container, the job is the same: heavy and square items first, tall pieces tied off, boxes stacked by weight and every gap filled. Tell us the size of the truck or container so we bring the right crew.\n\n### Unloading at the other end\n\nWe can unload and place furniture and boxes in the right rooms, and reassemble pieces we took apart.\n\n### Before the crew arrives\n\n- Have the truck or container parked as close to the door as possible\n- Pack and seal boxes, and label them by room\n- Have pads, straps and a dolly in the truck if the rental includes them\n\nPrefer a full-service move instead? See [house moving](house-movers-austin.html).",
+      "side": {
+        "title": "Tell us",
+        "text": "So we bring the right crew.",
+        "items": [
+          "Truck or container size",
+          "Load, unload or both",
+          "Both addresses",
+          "Stairs and long carries",
+          "Heavy items"
+        ]
+      },
+      "faqTitle": "Moving labor questions",
+      "faq": [
+        {
+          "q": "Can you load a truck or container I rented?",
+          "a": "Yes. Tell us the size and where it will be parked, and we'll plan the crew."
+        },
+        {
+          "q": "Do you unload at the destination too?",
+          "a": "Yes, if the destination is within our service area. Let us know both locations when you book."
+        },
+        {
+          "q": "Who drives the truck?",
+          "a": "With labor-only help, you drive your rental. For a move where we handle the transport too, see our full-service moves."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Moving labor: loading and unloading",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "senior-moving-austin.html": {
+      "eyebrow": "Senior moves & downsizing",
+      "h1": "Senior moves, done patiently and with respect.",
+      "lede": "Moving out of a long-time family home is about more than furniture. We take the time to pack carefully, place things just right and keep the day calm.",
+      "article": "## A different kind of move\n\nA senior move often means leaving a home of many years, deciding what goes and what stays, and fitting a lifetime into a smaller space. The pace should fit the person, not the truck.\n\n### Plan the new space first\n\nMeasure the new rooms and decide where the bed, favorite chair and dresser will go before moving day. A simple floor plan lets the crew place furniture exactly where it belongs.\n\n### Downsizing in stages\n\n- Start with rooms that are used least\n- Set aside keepsakes and photos for family first\n- Decide on donations and sales well before the move\n- Pack daily essentials, medication and documents separately\n\n### On moving day\n\nWe can pack, protect and move everything, then set up the bed and key furniture so the first night in the new home feels familiar. Family members are welcome to coordinate by phone—tell us who to call.\n\n### Assisted living and retirement communities\n\nMany communities have move-in windows, elevator reservations and rules about what can go in the hallways. Get them in writing and share them with us early.",
+      "side": {
+        "title": "Helpful to share",
+        "text": "So we can plan a calm day.",
+        "items": [
+          "Floor plan of the new space",
+          "Items going, staying or donated",
+          "Community move-in rules",
+          "Family contact for the day",
+          "Medication and essentials plan"
+        ]
+      },
+      "faqTitle": "Senior moving questions",
+      "faq": [
+        {
+          "q": "Can family members coordinate the move remotely?",
+          "a": "Yes. Tell us who to call with questions and updates, and we'll keep them in the loop."
+        },
+        {
+          "q": "Can you set up furniture in the new room?",
+          "a": "Yes. With a simple floor plan, the crew places and reassembles furniture where it belongs."
+        },
+        {
+          "q": "Do you move into assisted living communities?",
+          "a": "Yes. Share the community's move-in rules and reservations so we plan around them."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Senior moving and downsizing",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "student-movers.html": {
+      "eyebrow": "Student moving",
+      "h1": "Student moves without the borrowed-pickup drama.",
+      "lede": "Dorms and apartments near UT Austin and Texas State in San Marcos—moved quickly, carefully and on the tight schedules that semesters demand.",
+      "article": "## Semester moves are all about timing\n\nLeases start and end on the same few days, move-in windows are short and elevators are booked solid. The earlier you lock in a date, the easier it gets.\n\n### Apartments and dorms\n\nMany student apartment buildings set move-in hours and require elevator or loading-dock reservations. Some ask for a certificate of insurance from the mover. Get the rules from the leasing office early and share them with us.\n\n### Parents moving students from out of town\n\nYou can book and coordinate by phone. Tell us who'll be at the apartment to let the crew in and sign for the move.\n\n### Between semesters\n\nSummer internships and study-abroad terms often leave a gap between leases. We can coordinate short-term storage so you're not paying for an empty apartment. See [storage between homes](moving-storage-austin.html).\n\n### Keep it simple\n\n- Pack in small boxes—they fit stairs and elevators best\n- Label boxes by room and keep valuables with you\n- Photograph the old apartment when it's empty for your deposit",
+      "side": {
+        "title": "Tell us",
+        "text": "Student moves need a few extra details.",
+        "items": [
+          "Move-in or move-out window",
+          "Building elevator rules",
+          "Floor numbers",
+          "Who will be on site",
+          "Storage needed between leases"
+        ]
+      },
+      "faqTitle": "Student moving questions",
+      "faq": [
+        {
+          "q": "Do you move students in San Marcos?",
+          "a": "Yes. San Marcos and Texas State are within our service area along I-35, along with Austin and UT."
+        },
+        {
+          "q": "Can parents book a move for a student?",
+          "a": "Yes. Book by phone and tell us who will be on site on moving day."
+        },
+        {
+          "q": "When should students book?",
+          "a": "As soon as you know your lease dates. The start and end of semesters are the busiest days of the year."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Student moving",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "unpacking-services-austin.html": {
+      "eyebrow": "Unpacking & setup",
+      "h1": "Unpacking that gets you home sooner.",
+      "lede": "The move isn't done when the truck is empty. Our crew can unpack rooms, set up furniture and take the packing materials away.",
+      "article": "## The part of moving everyone forgets\n\nMost people unpack the kitchen and bedroom, then live around boxes for weeks. Unpacking help turns that into a day.\n\n### What unpacking can include\n\n- Unpacking boxes into the right rooms, cabinets and closets\n- Reassembling beds, tables and other furniture\n- Placing furniture according to your floor plan\n- Collecting packing paper and empty boxes\n\n### Pick the rooms that matter most\n\nKitchens take the longest to unpack and make the biggest difference. Many people have the crew handle the kitchen and bedrooms, then finish the rest themselves.\n\n### Make it smooth\n\nLabel boxes with the room and a short list of contents, and decide where major pieces go before moving day. It's faster when the crew doesn't have to guess.\n\nPair it with [packing services](packing-services-austin.html) for a true door-to-door, full-service move.",
+      "side": {
+        "title": "Tell us",
+        "text": "So we plan the right time.",
+        "items": [
+          "Rooms to unpack",
+          "Furniture to reassemble",
+          "Floor plan for big pieces",
+          "Whether to remove boxes"
+        ]
+      },
+      "faqTitle": "Unpacking questions",
+      "faq": [
+        {
+          "q": "Do you unpack after the move?",
+          "a": "Yes. Tell us which rooms you'd like unpacked and set up, and we'll plan the time."
+        },
+        {
+          "q": "Do you take away the boxes and paper?",
+          "a": "Ask when you book and we'll include it in your written proposal."
+        },
+        {
+          "q": "Can I unpack some rooms myself?",
+          "a": "Of course. Many customers have the crew handle the kitchen and bedrooms and finish the rest."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Unpacking and home setup",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "antique-art-movers-austin.html": {
+      "eyebrow": "Antiques, art & heirlooms",
+      "h1": "Antiques and art, moved like they’re irreplaceable.",
+      "lede": "Old finishes, fragile joinery, framed art and family heirlooms get extra protection, careful packing and a crew that never rushes.",
+      "article": "## Why antiques need a different approach\n\nOld wood dries out, veneers lift, glue joints weaken and original finishes scratch easily. Antique pieces often weigh more than they look and have weak points that aren't obvious until something goes wrong.\n\n### Art, mirrors and glass\n\nFramed art and mirrors travel on edge, never flat, with corner protection and padding. Large or very valuable pieces may need custom packing—tell us the size and type in advance.\n\n### Clocks and delicate mechanisms\n\nGrandfather and wall clocks need weights and pendulums removed and secured before they move. If you're unsure how, ask before moving day.\n\n### Document before the move\n\n- Photograph valuable pieces from several angles\n- Note existing scratches, chips or repairs\n- Ask about liability limits and consider extra coverage—in Texas, it's agreed in writing before the move\n\nFor pianos and organs, see [piano moving](piano-moving-austin.html).",
+      "side": {
+        "title": "Tell us about",
+        "text": "Details for a safe plan.",
+        "items": [
+          "Type, size and weight",
+          "Glass or marble parts",
+          "Known repairs or weak spots",
+          "Stairs and tight turns",
+          "Value for liability planning"
+        ]
+      },
+      "faqTitle": "Antique and art moving questions",
+      "faq": [
+        {
+          "q": "Do you move antiques and fine art?",
+          "a": "Yes. Delicate and valuable pieces get extra padding, careful packing and an unhurried carry."
+        },
+        {
+          "q": "Should I insure valuable items?",
+          "a": "Mover liability is agreed before the move and isn't the same as insurance. For high-value pieces, consider separate coverage."
+        },
+        {
+          "q": "How are paintings and mirrors moved?",
+          "a": "On edge, padded and corner-protected, never laid flat. Very large or valuable pieces may need custom packing."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "Antique, art and heirloom moving",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "in-home-furniture-moving.html": {
+      "eyebrow": "In-home moves",
+      "h1": "Moving furniture within your home—safely.",
+      "lede": "New flooring, a remodel, home staging or just a new layout: we move heavy furniture room to room or floor to floor without damaging walls, floors or backs.",
+      "article": "## When you need furniture moved but aren't moving\n\nSome of the heaviest lifting happens without a change of address. Common reasons:\n\n- New flooring or carpet installation\n- Kitchen, bathroom or room remodels\n- Staging a home for sale\n- Moving a piano, armoire or bed upstairs or downstairs\n\n### Protecting the house\n\nDoorways, stair rails and floors take the most damage when heavy pieces move inside a home. We pad furniture, protect floors and corners, and take pieces apart when that's safer.\n\n### Remodels and flooring\n\nCoordinate with your contractor on timing: furniture usually needs to come out of the room the day before work starts and go back once floors have cured. Short-term storage can help if rooms will be out of action for a while—see [storage between homes](moving-storage-austin.html).\n\n### Staging for sale\n\nRealtors and homeowners often need furniture removed, rearranged or brought in for listing photos. Tell us the plan and the deadline.",
+      "side": {
+        "title": "Tell us",
+        "text": "A quick description is enough.",
+        "items": [
+          "Pieces to move",
+          "From and to which rooms",
+          "Stairs involved",
+          "Timing with contractors",
+          "Storage needed"
+        ]
+      },
+      "faqTitle": "In-home moving questions",
+      "faq": [
+        {
+          "q": "Do you move furniture within the same house?",
+          "a": "Yes—room to room or floor to floor, including for remodels, new flooring and staging."
+        },
+        {
+          "q": "Can you move furniture out for new flooring and back after?",
+          "a": "Yes. Tell us the installer's schedule so we time both trips around it."
+        },
+        {
+          "q": "Can you move a piano upstairs or downstairs?",
+          "a": "Yes. See our piano moving page and tell us about the stairs."
+        }
+      ],
+      "schema": {
+        "type": "Service",
+        "name": "In-home furniture moving and rearranging",
+        "areaServed": [
+          "Austin, TX",
+          "Buda, TX",
+          "Kyle, TX",
+          "San Marcos, TX"
+        ]
+      }
+    },
+    "services.html": {
+      "eyebrow": "All moving services",
+      "h1": "Every service, one family-owned crew.",
+      "lede": "Advantage Moving is a full-service mover. Whatever your move needs—packing, a piano, a third-floor walk-up or a truck across Texas—it's handled by the same experienced team.",
+      "article": "## Moving\n\n- [Local moving](local-moving-austin.html): homes, apartments and condos across Greater Austin\n- [House moving](house-movers-austin.html): every room, from attic to garage\n- [Apartment and condo moving](apartment-movers-austin.html): walk-ups, elevators and move windows\n- [Small moves](small-moves-austin.html): studios, single rooms and a few heavy items\n- [Last-minute moves](last-minute-movers-austin.html): short notice, straight answers\n- [Senior moves and downsizing](senior-moving-austin.html): patient, room-by-room moves\n- [Student moving](student-movers.html): dorms and apartments near UT and Texas State\n- [Commercial and office moving](commercial-movers-austin.html): moves around your business hours\n\n## Texas moves\n\n- [Moving anywhere in Texas](austin-movers.html): intrastate moves and your rights\n- [Austin to Houston](austin-to-houston-movers.html), [Austin to San Antonio](austin-to-san-antonio-movers.html) and [Austin to Dallas–Fort Worth](austin-to-dallas-movers.html)\n\n## Packing and special items\n\n- [Packing services](packing-services-austin.html): full, partial or just supplies\n- [Unpacking and setup](unpacking-services-austin.html): get home sooner\n- [Furniture moving, disassembly and assembly](furniture-movers-austin.html)\n- [Piano and specialty moving](piano-moving-austin.html)\n- [Antiques, art and heirlooms](antique-art-movers-austin.html)\n\n## Other help\n\n- [Loading and unloading help](loading-unloading-help.html) for rental trucks and containers\n- [In-home furniture moving](in-home-furniture-moving.html) for remodels, flooring and staging\n- [Storage between homes](moving-storage-austin.html) when dates don't line up\n\n## Free planning tools\n\n- [Moving checklist](moving-checklist.html) with dates from your move day\n- [Box and supplies calculator](moving-box-calculator.html)\n- [Moving cost calculator](moving-cost-calculator.html)\n- [Texas change-of-address checklist](change-of-address-checklist-texas.html)",
+      "side": {
+        "title": "Why one crew matters",
+        "text": "Fewer handoffs, fewer surprises.",
+        "items": [
+          "Family owned since 2001",
+          "Full service, start to finish",
+          "Licensed: TXDMV #000572890B",
+          "Easy to reach, daily 8–5",
+          "Reviews going back 20+ years"
+        ]
+      },
+      "faqTitle": "Service questions",
+      "faq": [
+        {
+          "q": "Are you a full-service mover?",
+          "a": "Yes. We pack, protect, load, move, unload and set up—or handle just the parts you need."
+        },
+        {
+          "q": "Where do you provide moving services?",
+          "a": "Austin and every town south along I-35, including Buda, Kyle and San Marcos, within about 30 miles—plus moves anywhere in Texas."
+        },
+        {
+          "q": "Can I combine services?",
+          "a": "Yes. Most moves combine several—for example packing, a piano and storage between homes—in one written proposal."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    },
+    "moving-checklist.html": {
+      "eyebrow": "Free moving tool",
+      "h1": "The moving checklist, from eight weeks out to settled in.",
+      "lede": "Enter your move date to see a target date for every stage, tick tasks as you go, and print it for the fridge.",
+      "updated": "2026-10-07",
+      "article": "## How to use this checklist\n\nStart as early as you can. Eight weeks is comfortable for a house; an apartment move can compress the first stages into two or three weeks. If you're short on time, focus on the essentials: book the mover, reserve elevators and parking, and keep documents and medication with you.\n\n## The tasks most people forget\n\n- **Building rules.** Elevator reservations, loading-dock hours and insurance certificates at both addresses.\n- **Parking.** In Austin, a truck in a metered space or curb lane may need a City permit—call 3-1-1.\n- **Texas paperwork.** Update your driver license address within 30 days of moving, plus your vehicle registration and voter registration. See the [Texas change-of-address checklist](change-of-address-checklist-texas.html).\n- **The freezer.** Defrost it a day ahead so it doesn't leak in the truck.\n\n## Let the crew take tasks off the list\n\nA full-service move covers packing, disassembly, loading, transport and setup. See [all moving services](services.html) or the [moving day guide](move-day-guide.html).",
+      "side": {
+        "title": "Related tools",
+        "text": "Plan the rest of your move.",
+        "items": [
+          "Box & supplies calculator",
+          "Moving cost calculator",
+          "Texas change-of-address checklist",
+          "Moving day guide"
+        ]
+      },
+      "faqTitle": "Checklist questions",
+      "faq": [
+        {
+          "q": "How far in advance should I start planning a move?",
+          "a": "About eight weeks ahead for a house, and three to four weeks for most apartments. Book the mover early for summer and end-of-month dates."
+        },
+        {
+          "q": "What's the most important thing to do first?",
+          "a": "Book a licensed mover and get a written proposal, then reserve elevators, docks and parking at both addresses."
+        },
+        {
+          "q": "Is my checklist saved?",
+          "a": "Yes, in this browser only. Use Print to keep a paper copy."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    },
+    "moving-box-calculator.html": {
+      "eyebrow": "Free moving tool",
+      "h1": "How many moving boxes do you need?",
+      "lede": "Choose your home size and how much you own to get a starting list of boxes, tape and packing paper.",
+      "updated": "2026-10-07",
+      "article": "## Which box for what\n\n- **Small boxes:** books, tools, canned goods, records—anything heavy\n- **Medium boxes:** kitchen items, toys, small appliances, linens\n- **Large boxes:** pillows, lampshades, bedding and other light, bulky things\n- **Wardrobe boxes:** hanging clothes, straight from the closet\n- **Dish-pack boxes:** double-walled boxes for dishes, glasses and fragile kitchenware\n\n## Packing tips that prevent damage\n\nKeep each box under about 50 pounds, fill empty space with paper so nothing shifts, and tape the top and bottom seams. Label two sides and the top with the room and contents. For more, see [how to pack like the pros](packing-services-austin.html).\n\n## Why most people run short\n\nKitchens, garages and closets always hold more than expected. Buy a few extra small boxes—they're the first to run out—and keep unused ones to return or pass along.",
+      "side": {
+        "title": "Box rules of thumb",
+        "text": "Quick guidance.",
+        "items": [
+          "Heavy items in small boxes",
+          "Light items in large boxes",
+          "Under about 50 lbs per box",
+          "Plates packed on edge",
+          "Label two sides and the top"
+        ]
+      },
+      "faqTitle": "Box questions",
+      "faq": [
+        {
+          "q": "How many boxes do I need for a two-bedroom apartment?",
+          "a": "As a starting point, about 25 small, 20 medium and 10 large boxes plus a few wardrobe and dish-pack boxes. Use the calculator to adjust for how much you own."
+        },
+        {
+          "q": "What size box should books go in?",
+          "a": "Small boxes. Books get heavy fast, and small boxes keep the weight manageable and safe to carry."
+        },
+        {
+          "q": "Can the movers pack for me?",
+          "a": "Yes. Our crew can pack the whole home, just the kitchen and fragile items, or anything in between."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    },
+    "moving-cost-calculator.html": {
+      "eyebrow": "Free moving tool",
+      "h1": "Moving cost calculator.",
+      "lede": "Get a quick planning range for a local or Texas move, then request a written estimate for a price based on your actual move.",
+      "updated": "2026-10-07",
+      "article": "## What this calculator does—and doesn't—do\n\nIt gives a planning range based on typical crew sizes and hours for each home size, plus mileage for moves elsewhere in Texas and common add-ons. It's a starting point for your budget, **not a binding quote**.\n\n## What makes a real quote different\n\nYour written proposal accounts for what a calculator can't see: stairs and elevators, the distance from the truck to the door, how much is packed, large or fragile items and your date. See [how moving quotes work in Texas](moving-quotes-texas.html).\n\n## Ways to keep costs down\n\n- Declutter before the move—less to pack and carry\n- Pack non-fragile rooms yourself and leave the kitchen to the crew\n- Have everything packed and ready before the crew arrives\n- Reserve elevators and parking so no time is lost on the day\n- Choose a mid-month, mid-week date if you have flexibility",
+      "side": {
+        "title": "For a written estimate",
+        "text": "Share these details.",
+        "items": [
+          "Both addresses",
+          "Rooms and large items",
+          "Stairs and elevators",
+          "Packing help wanted",
+          "Preferred dates"
+        ]
+      },
+      "faqTitle": "Moving cost questions",
+      "faq": [
+        {
+          "q": "Is the calculator result a quote?",
+          "a": "No. It's a planning range. Your written estimate is based on the details of your move, and Texas movers must give you a written proposal before loading."
+        },
+        {
+          "q": "What affects the cost of a move most?",
+          "a": "The amount you're moving, access at both homes, distance, extra services like packing, and timing."
+        },
+        {
+          "q": "How can I lower my moving cost?",
+          "a": "Declutter, pack what you can, have everything ready on time, and choose a mid-month weekday if possible."
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    },
+    "change-of-address-checklist-texas.html": {
+      "eyebrow": "Free moving guide",
+      "h1": "Your Texas change-of-address checklist.",
+      "lede": "Who to tell, and by when, after a move within Texas—driver license, vehicle, mail, voting and utilities.",
+      "updated": "2026-10-07",
+      "article": "## Required by Texas\n\n### Driver license or ID: within 30 days\n\nTexas requires you to change the address on your driver license or ID card within 30 days of moving. You can do it online, by mail or in person. Source: [Texas DPS](https://www.dps.texas.gov/section/driver-license/how-change-information-your-driver-license-or-id-card).\n\n### Vehicle registration\n\nUpdate the address on your vehicle registration with the Texas Department of Motor Vehicles so renewal notices reach you. A USPS change of address does **not** update TxDMV records. Visit [TxDMV](https://www.txdmv.gov/).\n\n### Voter registration\n\nUpdate your voter registration address so you can vote at your new polling place. Start at [VoteTexas.gov](https://www.votetexas.gov/).\n\n## Mail and accounts\n\n- File a change of address with [USPS](https://moversguide.usps.com/)\n- Banks, credit cards and insurance (home, auto and health)\n- Employer and payroll\n- Subscriptions, deliveries and online stores\n- Doctors, dentists, pharmacy and veterinarian\n- Schools and childcare\n\n## Utilities in the Austin area\n\n- **Electric:** inside the City of Austin, service is through Austin Energy; elsewhere, your provider depends on the address—ask your landlord, builder or the previous owner\n- **Water, wastewater and trash:** usually your city or local utility district\n- **Gas:** if the home has gas service, schedule a start date\n- **Internet:** book installation early; appointments can be weeks out\n\nSchedule shut-off at the old home for the day after you move out, and start-up at the new home for the day before you arrive.",
+      "side": {
+        "title": "Key deadlines",
+        "text": "For moves within Texas.",
+        "items": [
+          "Driver license: within 30 days",
+          "Vehicle registration: update address",
+          "Voter registration: before the next election",
+          "USPS: about two weeks before",
+          "Utilities: 1–2 weeks before"
+        ]
+      },
+      "faqTitle": "Change-of-address questions",
+      "faq": [
+        {
+          "q": "How long do I have to change my driver license address in Texas?",
+          "a": "Thirty days after moving, according to the Texas Department of Public Safety. You can update it online, by mail or in person."
+        },
+        {
+          "q": "Does a USPS change of address update my vehicle registration?",
+          "a": "No. Update your vehicle registration address with the Texas Department of Motor Vehicles separately."
+        },
+        {
+          "q": "When should I set up utilities at my new home?",
+          "a": "Schedule them one to two weeks before your move, with service starting the day before you arrive."
         }
       ],
       "schema": {

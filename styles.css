@@ -917,3 +917,17 @@ h3{font-weight:600;letter-spacing:-.005em}
 .intro-copy h1 em{font-style:italic;font-weight:600;font-variation-settings:"SOFT" 100}
 .review-card blockquote,.intro-review blockquote{font-weight:500;font-variation-settings:"SOFT" 100}
 .button,.main-nav a,.eyebrow,.field,label{font-family:var(--sans)}
+
+/* ==========================================================================
+   Typography v2: Bricolage Grotesque headings — chunky, slightly condensed,
+   like letters cut into a stone block. Body stays Figtree.
+   ========================================================================== */
+:root{--serif:"Bricolage Grotesque","Figtree",ui-sans-serif,system-ui,sans-serif}
+h1,h2,h3{font-family:var(--serif);font-optical-sizing:auto;font-variation-settings:"wdth" 88}
+h1,h2{font-weight:780;letter-spacing:-.025em;line-height:1.02}
+h3{font-weight:700;letter-spacing:-.01em;font-variation-settings:"wdth" 92}
+.intro-copy h1 em{font-style:normal;font-weight:780;font-variation-settings:"wdth" 88}
+.accordion summary{font-family:var(--serif);font-weight:650;font-variation-settings:"wdth" 94}
+.review-card blockquote,.intro-review blockquote{font-family:var(--sans);font-weight:500;font-style:italic;font-variation-settings:normal}
+.trust-grid strong,.phone-plain{font-family:var(--serif);font-weight:750;font-variation-settings:"wdth" 90}
+.crew-photo figcaption{font-family:var(--serif);font-weight:650}

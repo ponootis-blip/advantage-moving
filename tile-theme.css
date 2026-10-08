@@ -102,3 +102,50 @@
 /* photo prints keep their paper look; ornaments stay as they are */
 .theme-tile .crew-photo,.theme-tile .print{border-radius:3px}
 
+
+/* ==========================================================================
+   Huge blocks: every section is one carved stone block; mortar shows between
+   them; cards are inlaid into the block instead of floating above it.
+   ========================================================================== */
+.theme-tile{--mortar:#d8c6a3;--block-gap:10px;--block-r:8px}
+.theme-tile body{background:var(--mortar)}
+.theme-tile main{background:none;padding:var(--block-gap) 0 0}
+.theme-tile main>section{
+  margin:0 var(--block-gap) var(--block-gap);
+  border-radius:var(--block-r);
+  border-top:0!important;
+  overflow:hidden;
+  background-color:#f8f0e1;
+  background-image:url("assets/stone-slabs.svg?v=1");
+  background-size:720px 480px;
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.75),inset 0 -3px 0 rgba(110,72,24,.12),inset 2px 0 0 rgba(255,255,255,.35),inset -2px 0 0 rgba(110,72,24,.06),0 1px 0 rgba(255,255,255,.35);
+}
+/* stone tone varies block to block, like real cut stone */
+.theme-tile main>section:nth-of-type(3n+2){background-color:#f4ead7}
+.theme-tile main>section:nth-of-type(3n){background-color:#fbf5ea}
+/* blocks with their own surface keep it */
+.theme-tile main>.hero{background-color:#3c97d6;background-image:none}
+.theme-tile main>.story{background:var(--navy)}
+.theme-tile main>.final-cta{background-color:#c8642b}
+.theme-tile main>.intro{overflow:visible}            /* quote card rises over the hero block */
+.theme-tile main>.hero{overflow:hidden}
+.theme-tile footer{margin:0 var(--block-gap) var(--block-gap);border-radius:var(--block-r);overflow:hidden;box-shadow:inset 0 2px 0 rgba(255,255,255,.12),inset 0 -3px 0 rgba(0,0,0,.25)}
+.theme-tile footer::before{display:none}
+.theme-tile .link-band{border:0}
+
+/* inlay: cards sit in the block, not above it */
+.theme-tile .service-card,.theme-tile .area-card,.theme-tile .hard-grid li,.theme-tile .smart-grid li,.theme-tile .review-card:not(.featured),
+.theme-tile .tool-card,.theme-tile .estimate-tool,.theme-tile .process-card,.theme-tile .related-card,.theme-tile .intro-review,.theme-tile .next-steps-card,
+.theme-tile .phase,.theme-tile .trust-grid>div,.theme-tile .trust-grid>div:first-child,.theme-tile .accordion details{
+  background:rgba(255,253,247,.62);
+  border:1px solid rgba(160,128,78,.28);
+  box-shadow:inset 0 1px 2px rgba(110,72,24,.10),inset 0 -1px 0 rgba(255,255,255,.6);
+}
+.theme-tile .area-card:hover,.theme-tile .service-card:hover,.theme-tile .related-card:hover{transform:none;background:rgba(255,253,247,.85);box-shadow:inset 0 1px 2px rgba(110,72,24,.10),0 0 0 1px rgba(160,128,78,.35)}
+.theme-tile .service-art{border-bottom:1px solid rgba(160,128,78,.28);box-shadow:none}
+.theme-tile .review-card.featured,.theme-tile .local-band-grid{box-shadow:inset 0 2px 4px rgba(0,0,0,.25)}
+.theme-tile .side-card{box-shadow:inset 0 1px 2px rgba(110,72,24,.10);background:rgba(255,253,247,.7);border:1px solid rgba(160,128,78,.28)}
+
+@media (max-width:720px){
+  .theme-tile{--block-gap:6px;--block-r:6px}
+}

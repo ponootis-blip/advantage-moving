@@ -842,3 +842,12 @@ footer{background:#05314d}
   .phone-link{padding:12px 0;margin:-12px 0}
   .breadcrumbs a{display:inline-block;padding:12px 2px;margin:-12px 0}
 }
+
+/* intro: form column carries proof + next steps so both columns end together */
+.intro-side{display:flex;flex-direction:column;gap:16px}
+.intro-side .intro-review{margin:0;max-width:none;padding:18px 20px}
+.next-steps-card{margin:0;padding:18px 20px;list-style:none;border:1px solid var(--line);border-radius:var(--card-r);background:var(--white);display:grid;gap:12px}
+.next-steps-card li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start;font-size:.92rem;color:var(--muted);line-height:1.45}
+.next-steps-card b{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-size:.8rem}
+.next-steps-card strong{color:var(--ink)}
+@media (max-width:960px){.intro-side{gap:14px}}

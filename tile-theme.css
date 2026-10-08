@@ -1,5 +1,5 @@
 /* ==========================================================================
-   "All tile" theme — preview with ?theme=tile (see nav.js).
+   "All tile" theme — the site default (html.theme-tile on every page).
    Tile is the material of the whole site: a handmade cream tile floor,
    glazed ceramic cards and buttons, mosaic seams between sections and
    tile walls for the footer and final call to action.
@@ -102,8 +102,3 @@
 /* photo prints keep their paper look; ornaments stay as they are */
 .theme-tile .crew-photo,.theme-tile .print{border-radius:3px}
 
-/* ---------- preview badge ---------- */
-.tile-preview-badge{position:fixed;left:16px;bottom:16px;z-index:200;display:flex;align-items:center;gap:10px;padding:8px 10px 8px 14px;border:1px solid #cdb68b;border-radius:8px;background:#fffaf0;box-shadow:0 2px 0 #cdb68b,0 10px 24px rgba(0,0,0,.15);font:600 .85rem/1.2 Inter,system-ui,sans-serif;color:#16302a}
-.tile-preview-badge button{min-height:32px;padding:0 10px;border:1px solid #cdb68b;border-radius:6px;background:#f3e7d1;font:700 .8rem/1 Inter,system-ui,sans-serif;cursor:pointer}
-@media (max-width:720px){.tile-preview-badge{bottom:84px}}
-@media print{.tile-preview-badge{display:none}}

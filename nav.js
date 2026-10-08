@@ -1,27 +1,3 @@
-/* Theme preview: ?theme=tile switches to the "all tile" look for this browser session,
-   ?theme=default switches back. The default design is unaffected for everyone else. */
-(function () {
-  try {
-    var p = new URLSearchParams(location.search).get("theme");
-    if (p === "tile") sessionStorage.setItem("adv-theme", "tile");
-    if (p === "default") sessionStorage.removeItem("adv-theme");
-    if (sessionStorage.getItem("adv-theme") !== "tile") return;
-  } catch (e) { return; }
-  var root = document.documentElement;
-  root.classList.add("theme-tile");
-  var link = document.createElement("link");
-  link.rel = "stylesheet"; link.href = "tile-theme.css?v=5";
-  document.head.appendChild(link);
-  var badge = document.createElement("div");
-  badge.className = "tile-preview-badge";
-  badge.innerHTML = "Tile theme preview <button type=\"button\">Exit</button>";
-  badge.querySelector("button").addEventListener("click", function () {
-    try { sessionStorage.removeItem("adv-theme"); } catch (e) {}
-    root.classList.remove("theme-tile"); link.remove(); badge.remove();
-  });
-  document.body.appendChild(badge);
-})();
-
 /* Header dropdowns (Services, Service areas).
    Links are plain HTML in every page, so search engines see them without this script;
    it only opens and closes the panels on hover, click, touch and keyboard. */

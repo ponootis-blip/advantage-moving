@@ -21,14 +21,13 @@
 /* ---------- the floor: a very subtle repeating encaustic tile ---------- */
 .theme-tile body,.theme-tile main{
   background-color:var(--tile-cream);
-  background-image:url("assets/tile-pattern-cream.svg?v=2");
-  background-size:140px 140px;
+  background-image:url("assets/stone-slabs.svg?v=1");
+  background-size:720px 480px;
 }
 .theme-tile .services,.theme-tile .reviews,.theme-tile .areas,.theme-tile .tools-band,.theme-tile .content-section.alt,.theme-tile .trust-strip{
   background-color:#fbf6ec;
-  background-image:url("assets/tile-pattern-cream.svg?v=2");
-  background-size:140px 140px;
-  background-blend-mode:luminosity;
+  background-image:url("assets/stone-slabs.svg?v=1");
+  background-size:720px 480px;
 }
 .theme-tile .faq,.theme-tile .estimate-section,.theme-tile .hard-moves,.theme-tile .hire-smart,.theme-tile .intro,.theme-tile .content-section,.theme-tile .local-band{background-color:transparent}
 

@@ -96,7 +96,7 @@ if(typeof document!=="undefined"&&document.getElementById("quoteForm")){
       status.innerHTML=(sendError.message==="not-configured"?"Online quote delivery is being connected. ":sendError.name==="AbortError"?"The request timed out. ":"We couldn’t send the form just now. ")+"Please call <a href='tel:+15124436141'>(512) 443-6141</a> or email <a href='mailto:service@advantagemovingaustin.com'>service@advantagemovingaustin.com</a>.";
       status.hidden=false;status.focus();
     }finally{
-      submit.disabled=false;submit.innerHTML="Send my quote request <span aria-hidden='true'>→</span>";
+      submit.disabled=false;submit.innerHTML="Send my free quote request <span aria-hidden='true'>→</span>";
     }
   });
   var dist=document.getElementById("estDist"),milesWrap=document.getElementById("milesWrap"),miles=document.getElementById("estMiles");

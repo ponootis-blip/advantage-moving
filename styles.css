@@ -931,3 +931,28 @@ h3{font-weight:700;letter-spacing:-.01em;font-variation-settings:"wdth" 92}
 .review-card blockquote,.intro-review blockquote{font-family:var(--sans);font-weight:500;font-style:italic;font-variation-settings:normal}
 .trust-grid strong,.phone-plain{font-family:var(--serif);font-weight:750;font-variation-settings:"wdth" 90}
 .crew-photo figcaption{font-family:var(--serif);font-weight:650}
+
+/* ==========================================================================
+   Quote CTA: strong navy tile header + bolder action; hero art toned down
+   so the form is the brightest, clearest thing in first view.
+   ========================================================================== */
+.hero .hero-slide>img,.hero .hero-slide>picture>img,.hero .prints-bg img{filter:saturate(.72) contrast(.94) brightness(1.03)}
+.hero .print img{filter:saturate(.9)}
+.hero::after{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;background:linear-gradient(90deg,rgba(248,240,225,0) 55%,rgba(248,240,225,.18) 100%)}
+
+.quote-heading{
+  position:relative;margin:-15px -17px 16px;padding:18px 20px 16px;
+  border-radius:10px 10px 4px 4px;color:#fff;
+  background-color:#063f63;
+  background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(150deg,#0a5d91,#063f63 70%);
+  background-size:22px 22px,22px 22px,auto;
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.18),inset 0 -4px 0 #f2b632,0 3px 8px rgba(6,63,99,.25);
+}
+.quote-heading .step-kicker{color:#ffd58a;margin-bottom:6px}
+.quote-heading h2{color:#fff;margin-bottom:4px}
+.quote-heading>p:last-child{color:#d6e6f0}
+#quoteNext,#quoteSubmit{min-height:58px;font-size:1.06rem;font-weight:800;letter-spacing:.01em;
+  background:linear-gradient(160deg,#f47c22 0%,#e8620f 55%,#d4520b 100%);
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.3),inset 0 -3px 0 rgba(120,40,0,.25),0 3px 0 #a63b0b,0 12px 24px rgba(212,82,11,.32)}
+#quoteNext:hover,#quoteSubmit:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.quote-progress span.is-on{background:#e8620f}

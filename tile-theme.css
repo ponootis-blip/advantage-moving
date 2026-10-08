@@ -18,20 +18,17 @@
   --mosaic-seam:linear-gradient(90deg,#0868a6 0 9%,#f5a623 9% 13%,#147245 13% 24%,#e2600f 24% 28%,#0868a6 28% 41%,#f5a623 41% 45%,#c8642b 45% 54%,#147245 54% 66%,#f5a623 66% 70%,#0868a6 70% 83%,#e2600f 83% 87%,#147245 87% 100%);
 }
 
-/* ---------- the floor: cream handmade tile with grout ---------- */
+/* ---------- the floor: a very subtle repeating encaustic tile ---------- */
 .theme-tile body,.theme-tile main{
   background-color:var(--tile-cream);
-  background-image:
-    radial-gradient(circle at 30% 20%,rgba(255,255,255,.55),transparent 38%),
-    linear-gradient(var(--grout) 1.5px,transparent 1.5px),
-    linear-gradient(90deg,var(--grout) 1.5px,transparent 1.5px),
-    linear-gradient(135deg,rgba(255,255,255,.35),rgba(214,190,150,.10));
-  background-size:56px 56px,56px 56px,56px 56px,auto;
+  background-image:url("assets/tile-pattern-cream.svg?v=2");
+  background-size:140px 140px;
 }
 .theme-tile .services,.theme-tile .reviews,.theme-tile .areas,.theme-tile .tools-band,.theme-tile .content-section.alt,.theme-tile .trust-strip{
   background-color:#fbf6ec;
-  background-image:linear-gradient(#ece0c8 1px,transparent 1px),linear-gradient(90deg,#ece0c8 1px,transparent 1px);
-  background-size:28px 28px;
+  background-image:url("assets/tile-pattern-cream.svg?v=2");
+  background-size:140px 140px;
+  background-blend-mode:luminosity;
 }
 .theme-tile .faq,.theme-tile .estimate-section,.theme-tile .hard-moves,.theme-tile .hire-smart,.theme-tile .intro,.theme-tile .content-section,.theme-tile .local-band{background-color:transparent}
 

@@ -10,7 +10,7 @@
   var root = document.documentElement;
   root.classList.add("theme-tile");
   var link = document.createElement("link");
-  link.rel = "stylesheet"; link.href = "tile-theme.css?v=1";
+  link.rel = "stylesheet"; link.href = "tile-theme.css?v=3";
   document.head.appendChild(link);
   var badge = document.createElement("div");
   badge.className = "tile-preview-badge";

@@ -896,3 +896,8 @@ footer{background:#05314d}
 .hard-intro h2{font-size:clamp(2rem,3vw,2.75rem)}
 .hard-icon svg{width:26px;height:26px}
 .hard-print figcaption{white-space:normal;overflow:visible}
+
+/* no multicolor borders: neutral header line, plain card tops */
+.sitehead::after{display:none}
+.sitehead{border-bottom:1px solid var(--line)}
+.hard-grid li::before{display:none}

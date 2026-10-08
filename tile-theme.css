@@ -15,7 +15,6 @@
   --tile-r:6px;
   --bevel:inset 0 2px 0 var(--glaze-hi),inset 0 -3px 0 var(--glaze-lo),inset 2px 0 0 rgba(255,255,255,.5),inset -2px 0 0 rgba(110,72,24,.07);
   --lift:0 2px 0 var(--grout-dark),0 10px 20px rgba(70,46,12,.10);
-  --mosaic-seam:linear-gradient(90deg,#0868a6 0 9%,#f5a623 9% 13%,#147245 13% 24%,#e2600f 24% 28%,#0868a6 28% 41%,#f5a623 41% 45%,#c8642b 45% 54%,#147245 54% 66%,#f5a623 66% 70%,#0868a6 70% 83%,#e2600f 83% 87%,#147245 87% 100%);
 }
 
 /* ---------- the floor: a very subtle repeating encaustic tile ---------- */
@@ -31,16 +30,11 @@
 }
 .theme-tile .faq,.theme-tile .estimate-section,.theme-tile .hard-moves,.theme-tile .hire-smart,.theme-tile .intro,.theme-tile .content-section,.theme-tile .local-band{background-color:transparent}
 
-/* ---------- mosaic seams between sections ---------- */
+/* ---------- quiet seams: a single stone-colored hairline between sections ---------- */
 .theme-tile main>section{position:relative}
-.theme-tile main>section+section::before,.theme-tile footer::before{
-  content:"";position:absolute;left:0;right:0;top:0;height:8px;z-index:1;
-  background:var(--mosaic-seam);background-size:520px 100%;
-  -webkit-mask:repeating-linear-gradient(90deg,#000 0 12px,transparent 12px 14px);mask:repeating-linear-gradient(90deg,#000 0 12px,transparent 12px 14px);
-}
-.theme-tile .story::before{display:none}
-.theme-tile .sitehead::after{height:8px;bottom:-8px;opacity:1;background:var(--mosaic-seam);background-size:520px 100%;
-  -webkit-mask:repeating-linear-gradient(90deg,#000 0 12px,transparent 12px 14px);mask:repeating-linear-gradient(90deg,#000 0 12px,transparent 12px 14px)}
+.theme-tile main>section+section{border-top:1px solid #e6d8bd}
+.theme-tile .sitehead::after{display:none}
+.theme-tile .sitehead{border-bottom:1px solid #e6d8bd}
 
 /* ---------- header + utility ---------- */
 .theme-tile .utility{background-color:#063f63;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:18px 18px}

@@ -159,7 +159,13 @@ p{text-wrap:pretty}
 .intro-call:hover strong{color:var(--orange-dark)}
 
 /* quote card rises into the art so the form is visible on first load */
-.quote-card{position:relative;margin-top:clamp(-230px,-16vw,-140px);padding:30px 30px 24px;border:1px solid var(--line);border-top:6px solid var(--orange);border-radius:var(--r-lg);background:var(--white);box-shadow:var(--shadow-lg)}
+.quote-card{position:relative;isolation:isolate;margin-top:clamp(-230px,-16vw,-140px);padding:30px 30px 24px;border:1px solid #d1bc97;border-radius:var(--r-lg);background:#e8ddc6 url("assets/quote-ceramic-brick-v1.webp") center top/520px 520px repeat;box-shadow:inset 0 1px 1px #fff6dc,0 4px 0 #c1af91,0 18px 38px rgba(6,45,58,.2)}
+/* The ceramic is only a floating backdrop; copy and controls stay live above it.
+   Fixed texture scale avoids enlarged bricks when Step 2 makes the card taller.
+   Do not clip the card: keyboard focus rings need room outside the controls. */
+.quote-card::before,.quote-card::after{content:"";position:absolute;pointer-events:none}
+.quote-card::before{inset:0;z-index:-2;border-radius:inherit;background:linear-gradient(135deg,rgba(255,250,235,.25),rgba(255,250,235,.08));box-shadow:inset 0 1px 2px rgba(255,255,255,.8),inset 0 -2px 3px rgba(83,60,32,.14)}
+.quote-card::after{inset:9px;z-index:-1;border:1px solid rgba(255,255,255,.9);border-radius:calc(var(--card-r,16px) - 6px);background:linear-gradient(120deg,rgba(255,253,246,.96),rgba(255,253,246,.90));box-shadow:0 1px 4px rgba(92,69,38,.1),inset 0 1px 0 #fff}
 .quote-heading{margin-bottom:20px}
 .step-kicker{margin:0 0 8px;color:var(--orange-dark);font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .quote-heading h2{margin:0 0 8px;font-size:1.75rem}
@@ -742,7 +748,7 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
 .service-card,.area-card,.smart-grid li,.process-card,.related-card,.review-card:not(.featured),.tool-card,.estimate-tool,.side-card,.hero-contact,.quote-card{border-radius:var(--card-r)}
 .area-card,.smart-grid li,.process-card,.related-card{border:1px solid var(--line);box-shadow:none}
 .area-card:hover,.related-card:hover,.service-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
-.quote-card{border-top-width:4px}
+.quote-card{border-top-width:1px}
 .hero-contact{border-top-width:4px}
 .side-card{border-top-width:3px;box-shadow:var(--shadow-sm)}
 

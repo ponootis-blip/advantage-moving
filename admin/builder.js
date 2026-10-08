@@ -317,6 +317,19 @@
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + rows.join("\n") + "\n</urlset>\n";
   }
 
+  /* llms.txt: a plain-text guide to the business for AI assistants (https://llmstxt.org) */
+  function llms(data) {
+    var b = data.business, base = data.site.baseUrl, p = phoneForms(b.phone), m = data.menus || {};
+    var pageDesc = function (file) { var pg = (data.pages || []).filter(function (x) { return x.file === file; })[0]; return pg ? pg.description : ""; };
+    var list = function (items) { return (items || []).map(function (i) { var dsc = pageDesc(i.file); return "- [" + i.label + "](" + base + i.file + ")" + (dsc ? ": " + dsc : ""); }).join("\n"); };
+    return "# " + b.name + "\n\n> " + (b.description || "") + "\n\n" +
+      "- Phone: " + (p ? p.display : b.phone) + "\n- Email: " + b.email + "\n- Address: " + b.street + ", " + b.city + ", " + b.region + " " + b.postalCode + "\n" +
+      "- Hours: " + (b.hours.days.length === 7 ? "Daily" : b.hours.days.join(", ")) + " " + b.hours.opens + "–" + b.hours.closes + " (Central Time)\n" +
+      "- Licensed: TXDMV certificate " + b.txdmv + " (moves within Texas only)\n- Family owned since " + b.foundingYear + "\n" +
+      "- Free written estimates: " + base + "#quote\n\n" +
+      "## Services\n\n" + list(m.services) + "\n\n## Service areas\n\n" + list(m.areas) + "\n\n## Guides and free tools\n\n" + list(m.guides) + "\n";
+  }
+
   function robots(data) {
     return "User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /data/\n\nSitemap: " + data.site.baseUrl + "sitemap.xml\n";
   }
@@ -344,6 +357,8 @@
     });
     var sm = sitemap(data);
     if (sm !== files["sitemap.xml"]) out["sitemap.xml"] = sm;
+    var lt = llms(data);
+    if (lt !== files["llms.txt"]) out["llms.txt"] = lt;
     var rb = robots(data);
     if (rb !== files["robots.txt"]) out["robots.txt"] = rb;
     return { files: out, data: data };

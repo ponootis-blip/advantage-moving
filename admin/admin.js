@@ -101,7 +101,7 @@
     state.store = await pickStore();
     if (state.store === GitHubStore) state.baseSha = await GitHubStore.head();
     var data = JSON.parse(await state.store.read("data/site.json"));
-    var paths = data.pages.map(function (p) { return p.file; }).concat(["sitemap.xml", "robots.txt", "admin/page-template.html"]);
+    var paths = data.pages.map(function (p) { return p.file; }).concat(["sitemap.xml", "robots.txt", "llms.txt", "admin/page-template.html"]);
     var files = {};
     await Promise.all(paths.map(async function (p) { try { files[p] = await state.store.read(p); } catch (e) { files[p] = ""; } }));
     state.original = data; state.draft = clone(data); state.files = files;

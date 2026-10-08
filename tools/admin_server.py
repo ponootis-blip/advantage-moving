@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 # Only files the admin builder owns may be written.
-ALLOWED = re.compile(r"^(?:[a-z0-9-]+\.html|sitemap\.xml|robots\.txt|data/site\.json)$")
+ALLOWED = re.compile(r"^(?:[a-z0-9-]+\.html|sitemap\.xml|robots\.txt|llms\.txt|data/site\.json)$")
 MAX_BYTES = 5 * 1024 * 1024
 
 

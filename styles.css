@@ -217,6 +217,27 @@ p{text-wrap:pretty}
 .section-intro.centered h2{margin-bottom:16px}
 .section-intro.centered>p{margin-inline:auto}
 
+/* Small Austin ceramic inlays. In flow, never over copy or quote controls. */
+.mosaic-anchor{display:flex;align-items:center;gap:20px;max-width:320px;margin:0 0 22px;pointer-events:none;user-select:none}
+.mosaic-anchor img{display:block;flex:0 0 auto;width:164px;max-width:60%;height:auto;object-fit:contain}
+.mosaic-anchor::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,#d9c7a6,transparent)}
+.mosaic-anchor--bridge{max-width:390px;margin-bottom:24px}
+.mosaic-anchor--bridge img{width:216px}
+.mosaic-anchor--center{justify-content:center;max-width:300px;margin:0 auto 22px;gap:18px}
+.mosaic-anchor--center img{width:144px}
+.mosaic-anchor--center::before{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,#d9c7a6)}
+.mosaic-anchor--closing{max-width:260px;margin:28px 0 0}
+.mosaic-anchor--closing img{width:144px}
+@media(max-width:720px){
+  .mosaic-anchor{max-width:260px;gap:16px;margin-bottom:18px}
+  .mosaic-anchor img{width:136px}
+  .mosaic-anchor--bridge img{width:168px;max-width:70%}
+  .mosaic-anchor--center{max-width:250px}
+  .mosaic-anchor--center img,.mosaic-anchor--closing img{width:124px}
+  .mosaic-anchor--closing{margin:22px 0 0}
+}
+@media print{.mosaic-anchor{display:none}}
+
 /* services */
 .services{background:var(--white)}
 .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}

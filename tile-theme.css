@@ -1,0 +1,119 @@
+/* ==========================================================================
+   "All tile" theme — preview with ?theme=tile (see nav.js).
+   Tile is the material of the whole site: a handmade cream tile floor,
+   glazed ceramic cards and buttons, mosaic seams between sections and
+   tile walls for the footer and final call to action.
+   Everything is scoped to html.theme-tile so the default design is untouched.
+   ========================================================================== */
+.theme-tile{
+  --tile-cream:#f8f0e1;
+  --tile-cream-2:#f3e7d1;
+  --grout:#e3d3b4;
+  --grout-dark:#cdb68b;
+  --glaze-hi:rgba(255,255,255,.85);
+  --glaze-lo:rgba(110,72,24,.14);
+  --tile-r:6px;
+  --bevel:inset 0 2px 0 var(--glaze-hi),inset 0 -3px 0 var(--glaze-lo),inset 2px 0 0 rgba(255,255,255,.5),inset -2px 0 0 rgba(110,72,24,.07);
+  --lift:0 2px 0 var(--grout-dark),0 10px 20px rgba(70,46,12,.10);
+  --mosaic-seam:linear-gradient(90deg,#0868a6 0 9%,#f5a623 9% 13%,#147245 13% 24%,#e2600f 24% 28%,#0868a6 28% 41%,#f5a623 41% 45%,#c8642b 45% 54%,#147245 54% 66%,#f5a623 66% 70%,#0868a6 70% 83%,#e2600f 83% 87%,#147245 87% 100%);
+}
+
+/* ---------- the floor: cream handmade tile with grout ---------- */
+.theme-tile body,.theme-tile main{
+  background-color:var(--tile-cream);
+  background-image:
+    radial-gradient(circle at 30% 20%,rgba(255,255,255,.55),transparent 38%),
+    linear-gradient(var(--grout) 1.5px,transparent 1.5px),
+    linear-gradient(90deg,var(--grout) 1.5px,transparent 1.5px),
+    linear-gradient(135deg,rgba(255,255,255,.35),rgba(214,190,150,.10));
+  background-size:56px 56px,56px 56px,56px 56px,auto;
+}
+.theme-tile .services,.theme-tile .reviews,.theme-tile .areas,.theme-tile .tools-band,.theme-tile .content-section.alt,.theme-tile .trust-strip{
+  background-color:#fbf6ec;
+  background-image:linear-gradient(#ece0c8 1px,transparent 1px),linear-gradient(90deg,#ece0c8 1px,transparent 1px);
+  background-size:28px 28px;
+}
+.theme-tile .faq,.theme-tile .estimate-section,.theme-tile .hard-moves,.theme-tile .hire-smart,.theme-tile .intro,.theme-tile .content-section,.theme-tile .local-band{background-color:transparent}
+
+/* ---------- mosaic seams between sections ---------- */
+.theme-tile main>section{position:relative}
+.theme-tile main>section+section::before,.theme-tile footer::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:8px;z-index:1;
+  background:var(--mosaic-seam);background-size:520px 100%;
+  -webkit-mask:repeating-linear-gradient(90deg,#000 0 12px,transparent 12px 14px);mask:repeating-linear-gradient(90deg,#000 0 12px,transparent 12px 14px);
+}
+.theme-tile .story::before{display:none}
+.theme-tile .sitehead::after{height:8px;bottom:-8px;opacity:1;background:var(--mosaic-seam);background-size:520px 100%;
+  -webkit-mask:repeating-linear-gradient(90deg,#000 0 12px,transparent 12px 14px);mask:repeating-linear-gradient(90deg,#000 0 12px,transparent 12px 14px)}
+
+/* ---------- header + utility ---------- */
+.theme-tile .utility{background-color:#063f63;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:18px 18px}
+.theme-tile .sitehead{background:rgba(250,243,230,.97)}
+.theme-tile .main-nav a:hover{background:#f1e4cb}
+.theme-tile .mega{background:var(--tile-cream);border-radius:0;box-shadow:var(--lift)}
+
+/* ---------- glazed ceramic surfaces ---------- */
+.theme-tile .service-card,.theme-tile .area-card,.theme-tile .hard-grid li,.theme-tile .smart-grid li,.theme-tile .review-card:not(.featured),
+.theme-tile .tool-card,.theme-tile .estimate-tool,.theme-tile .side-card,
+.theme-tile .process-card,.theme-tile .related-card,.theme-tile .intro-review,.theme-tile .next-steps-card,.theme-tile .phase,.theme-tile .inner-hero-grid>div:first-child{
+  border-radius:var(--tile-r);
+  border:1px solid var(--grout-dark);
+  background:linear-gradient(150deg,#fffdf8 0%,#fbf4e6 60%,#f6ead4 100%);
+  box-shadow:var(--bevel),var(--lift);
+}
+/* quote form, contact boxes and final CTA keep their ceramic mosaic backdrop */
+.theme-tile .service-card{overflow:hidden}
+.theme-tile .service-art{border-bottom:6px solid #fbf4e6;box-shadow:0 1px 0 var(--grout-dark)}
+.theme-tile .area-card:hover,.theme-tile .service-card:hover,.theme-tile .related-card:hover{transform:translateY(-2px);box-shadow:var(--bevel),0 4px 0 var(--grout-dark),0 16px 28px rgba(70,46,12,.14)}
+
+/* deep-glaze tiles for emphasis */
+.theme-tile .review-card.featured,.theme-tile .local-band-grid{
+  border-radius:var(--tile-r);border:1px solid #03304b;
+  background:linear-gradient(150deg,#0a5d91,#063f63 70%);
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.18),inset 0 -3px 0 rgba(0,0,0,.25),0 2px 0 #03304b,0 12px 24px rgba(3,40,64,.25);
+}
+
+/* trust strip: four tiles */
+.theme-tile .trust-grid{gap:12px;padding-block:22px}
+.theme-tile .trust-grid>div,.theme-tile .trust-grid>div:first-child{padding:18px 20px;border:1px solid var(--grout-dark);border-radius:var(--tile-r);background:linear-gradient(150deg,#fffdf8,#f6ead4);box-shadow:var(--bevel),0 2px 0 var(--grout-dark)}
+
+/* eyebrows become little tile chips */
+.theme-tile .eyebrow{display:inline-block;padding:6px 10px 5px;border-radius:4px;background:#fff8ea;border:1px solid var(--grout);box-shadow:inset 0 -2px 0 var(--glaze-lo)}
+.theme-tile .eyebrow.light{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25);box-shadow:none}
+.theme-tile .inner-hero .eyebrow{background:#fff3df}
+
+/* ---------- buttons + fields as glazed tiles ---------- */
+.theme-tile .button{border-radius:var(--tile-r);box-shadow:inset 0 2px 0 rgba(255,255,255,.3),inset 0 -3px 0 rgba(120,40,0,.25),0 3px 0 #a63b0b,0 10px 18px rgba(166,59,11,.18)}
+.theme-tile .button-outline{background:linear-gradient(150deg,#fffdf8,#f3e7d1);border-color:var(--grout-dark);box-shadow:var(--bevel),0 2px 0 var(--grout-dark)}
+.theme-tile .button-cream{border-radius:var(--tile-r)}
+.theme-tile .field input,.theme-tile .field select,.theme-tile .estimate-tool input:not([type=checkbox]),.theme-tile .estimate-tool select,.theme-tile .tool-form select,.theme-tile .tool-form input[type=number]{
+  border-radius:5px;border-color:#d7c6a4;background-color:#fffdf8;box-shadow:inset 0 2px 3px rgba(110,72,24,.08)}
+.theme-tile .hard-icon,.theme-tile .smart-grid li>span,.theme-tile .call-icon,.theme-tile .next-steps-card b{border-radius:5px;box-shadow:inset 0 2px 0 rgba(255,255,255,.2),inset 0 -2px 0 rgba(0,0,0,.25)}
+
+/* FAQ rows as a column of tiles */
+.theme-tile .accordion{border:0;display:grid;gap:10px}
+.theme-tile .accordion details{padding:0 18px;border:1px solid var(--grout-dark);border-radius:var(--tile-r);background:linear-gradient(150deg,#fffdf8,#f8eedc);box-shadow:var(--bevel),0 2px 0 var(--grout-dark)}
+.theme-tile .accordion summary{padding:18px 0}
+
+/* ---------- tile walls ---------- */
+.theme-tile .story-copy{background-color:#063f63;background-image:linear-gradient(rgba(255,255,255,.06) 1.5px,transparent 1.5px),linear-gradient(90deg,rgba(255,255,255,.06) 1.5px,transparent 1.5px);background-size:48px 48px}
+.theme-tile .final-cta{
+  background-color:#c8642b;
+  background-image:
+    linear-gradient(rgba(255,226,190,.35) 2px,transparent 2px),linear-gradient(90deg,rgba(255,226,190,.35) 2px,transparent 2px),
+    radial-gradient(circle at 25% 30%,rgba(255,255,255,.16),transparent 45%),
+    linear-gradient(110deg,#b9541f,#d06c30 55%,#dc8a3a);
+  background-size:64px 64px,64px 64px,auto,auto;
+}
+.theme-tile footer{position:relative;background-color:#05314d;background-image:linear-gradient(rgba(255,255,255,.05) 1.5px,transparent 1.5px),linear-gradient(90deg,rgba(255,255,255,.05) 1.5px,transparent 1.5px);background-size:40px 40px}
+.theme-tile .footer-brand img{border-radius:var(--tile-r);box-shadow:var(--bevel)}
+.theme-tile .mobile-actions{background:rgba(250,243,230,.97)}
+
+/* photo prints keep their paper look; ornaments stay as they are */
+.theme-tile .crew-photo,.theme-tile .print{border-radius:3px}
+
+/* ---------- preview badge ---------- */
+.tile-preview-badge{position:fixed;left:16px;bottom:16px;z-index:200;display:flex;align-items:center;gap:10px;padding:8px 10px 8px 14px;border:1px solid #cdb68b;border-radius:8px;background:#fffaf0;box-shadow:0 2px 0 #cdb68b,0 10px 24px rgba(0,0,0,.15);font:600 .85rem/1.2 Inter,system-ui,sans-serif;color:#16302a}
+.tile-preview-badge button{min-height:32px;padding:0 10px;border:1px solid #cdb68b;border-radius:6px;background:#f3e7d1;font:700 .8rem/1 Inter,system-ui,sans-serif;cursor:pointer}
+@media (max-width:720px){.tile-preview-badge{bottom:84px}}
+@media print{.tile-preview-badge{display:none}}

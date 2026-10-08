@@ -159,13 +159,14 @@ p{text-wrap:pretty}
 .intro-call:hover strong{color:var(--orange-dark)}
 
 /* quote card rises into the art so the form is visible on first load */
-.quote-card{position:relative;isolation:isolate;margin-top:clamp(-230px,-16vw,-140px);padding:30px 30px 24px;border:1px solid #d1bc97;border-radius:var(--r-lg);background:#e8ddc6 url("assets/quote-ceramic-brick-v1.webp") center top/520px 520px repeat;box-shadow:inset 0 1px 1px #fff6dc,0 4px 0 #c1af91,0 18px 38px rgba(6,45,58,.2)}
+.quote-card{margin-top:clamp(-230px,-16vw,-140px);padding:30px 30px 24px}
 /* The ceramic is only a floating backdrop; copy and controls stay live above it.
    Fixed texture scale avoids enlarged bricks when Step 2 makes the card taller.
    Do not clip the card: keyboard focus rings need room outside the controls. */
-.quote-card::before,.quote-card::after{content:"";position:absolute;pointer-events:none}
-.quote-card::before{inset:0;z-index:-2;border-radius:inherit;background:linear-gradient(135deg,rgba(255,250,235,.25),rgba(255,250,235,.08));box-shadow:inset 0 1px 2px rgba(255,255,255,.8),inset 0 -2px 3px rgba(83,60,32,.14)}
-.quote-card::after{inset:9px;z-index:-1;border:1px solid rgba(255,255,255,.9);border-radius:calc(var(--card-r,16px) - 6px);background:linear-gradient(120deg,rgba(255,253,246,.96),rgba(255,253,246,.90));box-shadow:0 1px 4px rgba(92,69,38,.1),inset 0 1px 0 #fff}
+:is(.quote-card,.hero-contact,.final-cta-inner){position:relative;isolation:isolate;border:1px solid #d1bc97;border-radius:var(--card-r,16px);background:#e8ddc6 url("assets/quote-ceramic-brick-v1.webp") center top/520px 520px repeat;box-shadow:inset 0 1px 1px #fff6dc,0 4px 0 #c1af91,0 18px 38px rgba(6,45,58,.2)}
+:is(.quote-card,.hero-contact,.final-cta-inner)::before,:is(.quote-card,.hero-contact,.final-cta-inner)::after{content:"";position:absolute;pointer-events:none}
+:is(.quote-card,.hero-contact,.final-cta-inner)::before{inset:0;z-index:-2;border-radius:inherit;background:linear-gradient(135deg,rgba(255,250,235,.25),rgba(255,250,235,.08));box-shadow:inset 0 1px 2px rgba(255,255,255,.8),inset 0 -2px 3px rgba(83,60,32,.14)}
+:is(.quote-card,.hero-contact,.final-cta-inner)::after{inset:9px;z-index:-1;border:1px solid rgba(255,255,255,.9);border-radius:calc(var(--card-r,16px) - 6px);background:linear-gradient(120deg,rgba(255,253,246,.96),rgba(255,253,246,.90));box-shadow:0 1px 4px rgba(92,69,38,.1),inset 0 1px 0 #fff}
 .quote-heading{margin-bottom:20px}
 .step-kicker{margin:0 0 8px;color:var(--orange-dark);font-size:.68rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .quote-heading h2{margin:0 0 8px;font-size:1.75rem}
@@ -320,14 +321,18 @@ p{text-wrap:pretty}
 .accordion details[open] summary span{transform:rotate(45deg);background:var(--cream)}
 .accordion details p{max-width:640px;margin:-6px 52px 22px 0;color:var(--muted)}
 
-/* final CTA — copy on solid terracotta, wildflowers on their own strip below */
-.final-cta{position:relative;overflow:hidden;padding:clamp(56px,6vw,80px) 0 clamp(120px,11vw,170px);background:linear-gradient(110deg,#d4520b,#e8661a 55%,#f08a24);color:#fff}
+/* A floating ceramic invitation; wildflowers stay on their own strip below. */
+.final-cta{position:relative;overflow:hidden;padding:clamp(48px,6vw,80px) 0 clamp(120px,11vw,170px);background:linear-gradient(155deg,#eaf5fb,#f6f5e9);color:var(--ink)}
 .final-cta::before{content:"";position:absolute;left:0;right:0;bottom:0;height:clamp(84px,9vw,140px);background:url("assets/texas-wildflower-divider-v1.png") center bottom/auto 100% repeat-x;pointer-events:none}
-.final-cta-inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:32px 56px}
-.final-cta h2{max-width:640px;margin:0;color:#fff;font-size:clamp(2rem,3.6vw,3.2rem)}
-.final-cta .eyebrow{color:#ffe7c2}
-.final-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;flex:0 0 auto}
-.final-call{color:#fff;text-decoration:none}
+.final-cta-inner{z-index:1;display:flex;align-items:center;justify-content:space-between;gap:28px 48px;padding:clamp(26px,4vw,48px)}
+.final-cta-inner>div:first-child{min-width:0;flex:1}
+.final-cta h2{max-width:640px;margin:0;color:var(--navy);font-size:clamp(2rem,3.6vw,3.2rem)}
+.final-cta .eyebrow{color:var(--orange-dark)}
+.final-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;flex:0 1 260px;min-width:0}
+.final-cta .button-cream{max-width:100%;min-height:52px;height:auto;padding:16px 22px;line-height:1.3;text-align:center;color:#fff;border-color:#cf8046;background:linear-gradient(160deg,#b84c13,#a63b08);box-shadow:inset 0 1px 0 #ffffff45,0 2px 0 #80300a,0 8px 18px #80300a24}
+.final-cta .button-cream:hover{background:linear-gradient(160deg,#a6410d,#923106);box-shadow:inset 0 1px 0 #ffffff45,0 3px 0 #80300a,0 12px 24px #80300a30}
+.final-cta .button-cream:active{transform:translateY(2px);box-shadow:inset 0 2px 4px #59270733,0 1px 0 #80300a}
+.final-call{color:var(--navy);text-decoration:none}
 .final-call small,.final-call strong{display:block}
 .final-call small{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
 .final-call strong{font-size:1.3rem}
@@ -397,7 +402,7 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
 .inner-hero .eyebrow{color:var(--orange-dark)}
 .inner-hero h1{margin:0 0 16px;font-size:clamp(2.4rem,4.4vw,4rem)}
 .inner-hero .lede{max-width:620px;margin:0;color:var(--muted)}
-.hero-contact{display:grid;gap:10px;padding:26px;border-top:6px solid var(--orange);border-radius:var(--r-lg);background:var(--white);color:var(--ink);box-shadow:var(--shadow-lg)}
+.hero-contact{display:grid;gap:10px;padding:26px;color:var(--ink)}
 .hero-contact h2{margin:0;font-size:1.45rem}
 .hero-contact p{margin:0 0 8px;color:var(--muted);font-size:.9rem}
 
@@ -488,6 +493,7 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
   .faq-grid{grid-template-columns:1fr;gap:28px}
   .faq-intro{position:static}
   .final-cta-inner{flex-direction:column;align-items:flex-start}
+  .final-actions{flex-basis:auto;width:100%}
   .footer-grid{grid-template-columns:1fr 1fr}
   .footer-brand{grid-column:1/-1}
 
@@ -749,7 +755,6 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
 .area-card,.smart-grid li,.process-card,.related-card{border:1px solid var(--line);box-shadow:none}
 .area-card:hover,.related-card:hover,.service-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
 .quote-card{border-top-width:1px}
-.hero-contact{border-top-width:4px}
 .side-card{border-top-width:3px;box-shadow:var(--shadow-sm)}
 
 /* difficult moves: light cards instead of solid navy blocks */

@@ -710,3 +710,66 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
 }
 @media (max-width:420px){.mega-cols{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.nav-toggle::before{transition:none}}
+
+/* ==========================================================================
+   Refinement pass — quieter chrome, one card language, calmer type
+   ========================================================================== */
+:root{--section:clamp(56px,7vw,96px);--card-r:16px}
+
+/* header + utility */
+.utility{font-size:.76rem;font-weight:500}
+.sitehead::after{height:2px;bottom:-2px;opacity:.55}
+.main-nav a{font-weight:600}
+
+/* buttons: sentence case, flatter */
+.button{min-height:50px;padding:0 22px;border-radius:10px;font:700 .95rem/1 var(--sans);letter-spacing:.005em;text-transform:none;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 2px 0 #b8470a,0 8px 18px rgba(166,59,11,.16)}
+.button:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 3px 0 #b8470a,0 12px 24px rgba(166,59,11,.2)}
+.button-small{min-height:42px;padding:0 16px;font-size:.88rem}
+.button-cream{box-shadow:inset 0 1px 0 #fff,0 2px 0 #d9b56f,0 8px 18px rgba(80,40,0,.12)}
+.button-outline{box-shadow:none;border-color:#c3d9e6}
+.button-outline:hover{box-shadow:none}
+.btn-sm,.btn-tool{font-size:.85rem}
+.mobile-actions a{font-size:.9rem;letter-spacing:0;text-transform:none}
+
+/* type */
+.section-intro h2,.estimate-copy h2,.faq-intro h2{font-size:clamp(2.1rem,3.6vw,3.1rem);letter-spacing:-.02em}
+.section-intro>p{font-size:1rem;line-height:1.65}
+.eyebrow{font-size:.7rem;letter-spacing:.15em}
+.lede{line-height:1.6}
+
+/* one card language */
+.service-card,.area-card,.smart-grid li,.process-card,.related-card,.review-card:not(.featured),.tool-card,.estimate-tool,.side-card,.hero-contact,.quote-card{border-radius:var(--card-r)}
+.area-card,.smart-grid li,.process-card,.related-card{border:1px solid var(--line);box-shadow:none}
+.area-card:hover,.related-card:hover,.service-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.quote-card{border-top-width:4px}
+.hero-contact{border-top-width:4px}
+.side-card{border-top-width:3px;box-shadow:var(--shadow-sm)}
+
+/* difficult moves: light cards instead of solid navy blocks */
+.hard-grid li{background:var(--white);border:1px solid var(--line);color:var(--muted)}
+.hard-grid li::before{color:var(--orange-dark)}
+.hard-grid h3{color:var(--navy)}
+
+/* estimator: no box inside a box */
+.estimate-shell{padding:0;border:0;border-radius:0;background:none}
+
+/* long-form articles: lighter rhythm */
+.article h3{margin:34px 0 10px;padding-top:0;border-top:0;font-size:1.35rem}
+.article h2:not(:first-child){margin-top:48px}
+.article p,.article li{color:#3a4b45}
+
+/* footer */
+footer{background:#05314d}
+.footer-grid h2{letter-spacing:.12em}
+
+@media (max-width:720px){
+  .button{min-height:48px;font-size:.92rem}
+}
+[hidden]{display:none!important}
+@media (max-width:560px){
+  .hard-grid{gap:10px}
+  .hard-grid li{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;padding:18px 20px}
+  .hard-grid li::before{grid-row:span 2;margin:2px 0 0}
+  .hard-grid h3{margin-bottom:4px;font-size:1.12rem}
+}

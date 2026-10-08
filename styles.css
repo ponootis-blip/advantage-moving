@@ -112,31 +112,35 @@ p{text-wrap:pretty}
 /* ---------- Home hero: full-bleed mosaic art, nothing on top of it ---------- */
 .hero{position:relative;isolation:isolate;height:clamp(380px,52vh,560px);overflow:hidden;background:#3c97d6}
 
-/* desktop slideshow: the photo collage shows for 3s, then four mosaic slides cycle every 8s.
-   The collage stays underneath and is not repeated. Overlays are display:none below 961px. */
+/* hero slideshow (driven by hero.js): collage for 3s, then mosaic slides every 8s */
 .hero-slide{position:absolute;inset:0;overflow:hidden}
 .hero-slide>img,.hero-slide>picture>img{display:block;width:100%;height:100%;max-width:none;object-fit:cover}
 .hero-slide>picture{display:block;width:100%;height:100%}
-.hero-slide-2,.hero-slide-3,.hero-slide-4,.hero-slide-5{display:none;opacity:0}
-.hero-slide-2{z-index:2}.hero-slide-3{z-index:3}.hero-slide-4{z-index:4}.hero-slide-5{z-index:5}
+.hero-slide:not(.hero-slide-base){z-index:2;opacity:0;transition:opacity 1.2s ease}
+.hero-slide.is-prev{z-index:3}
+.hero-slide.is-active{z-index:4;opacity:1}
 .hero-slide-2 img{object-position:center 80%;transform-origin:50% 70%}
 .hero-slide-3>img{object-position:center 88%;transform-origin:96% 70%}
 .hero-slide-4>img{object-position:center 62%;transform-origin:20% 60%}
 .hero-slide-5>img{object-position:center 46%;transform-origin:35% 45%}
-@media (min-width:961px){
-  .hero-slide-2,.hero-slide-3,.hero-slide-4,.hero-slide-5{display:block;animation:heroFade 32s linear infinite both}
-  .hero-slide-2{animation-delay:3s}.hero-slide-3{animation-delay:11s}.hero-slide-4{animation-delay:19s}.hero-slide-5{animation-delay:27s}
-  .hero-slide-2 img{animation:heroZoom 32s ease-out 3s infinite both}
-  .hero-slide-3>img{animation:heroZoomCrew 32s ease-out 11s infinite both}
-  .hero-slide-4>img{animation:heroZoom 32s ease-out 19s infinite both}
-  .hero-slide-5>img{animation:heroZoom 32s ease-out 27s infinite both}
-  .prints-bg img{animation:heroZoomBase 18s ease-in-out infinite alternate}
-}
-/* 32s cycle (4 slides x 8s): fade in 1.2s, hold until the next slide covers it, fade out 1.2s */
-@keyframes heroFade{0%{opacity:0}3.75%{opacity:1}28.75%{opacity:1}32.5%{opacity:0}100%{opacity:0}}
-@keyframes heroZoomCrew{0%{transform:scale(1.3)}32.5%{transform:scale(1.42)}100%{transform:scale(1.42)}}
-@keyframes heroZoom{0%{transform:scale(1.02)}32.5%{transform:scale(1.12)}100%{transform:scale(1.12)}}
+.hero-slide img{transform:scale(1.02)}
+.hero-slide-3>img{transform:scale(1.3)}
+.hero-slide.is-active img{animation:heroZoom 9.4s ease-out both}
+.hero-slide-3.is-active>img{animation-name:heroZoomCrew}
+.prints-bg img{animation:heroZoomBase 18s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1.02)}to{transform:scale(1.12)}}
+@keyframes heroZoomCrew{from{transform:scale(1.3)}to{transform:scale(1.42)}}
 @keyframes heroZoomBase{from{transform:scale(1)}to{transform:scale(1.07)}}
+@media (max-width:960px){.hero-slide-3>img{transform-origin:50% 70%}}
+.hero-pause{position:absolute;left:14px;bottom:14px;z-index:6;display:grid;place-items:center;width:36px;height:36px;padding:0;border:1px solid rgba(255,255,255,.7);border-radius:50%;background:rgba(6,63,99,.55);color:#fff;cursor:pointer;backdrop-filter:blur(4px)}
+.hero-pause::before{content:"";width:10px;height:12px;border-left:3px solid #fff;border-right:3px solid #fff}
+.hero.is-paused .hero-pause::before{width:0;height:0;border:0;border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
+.hero.is-paused .hero-slide img{animation-play-state:paused}
+.hero-pause:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){
+  .hero-slide.is-active img,.prints-bg img{animation:none!important}
+  .hero-slide:not(.hero-slide-base){transition:opacity 1.2s ease!important}
+}
 
 /* ---------- Home intro + quote ---------- */
 .intro{position:relative;z-index:2;padding:0 0 clamp(48px,6vw,80px);background:var(--paper)}
@@ -511,7 +515,8 @@ footer{padding:clamp(56px,6vw,80px) 0 28px;background:#05314d;color:#c4d6e2}
 
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  *,*::before,*::after{transition:none!important;animation:none!important}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important}
+  .hero-slide.is-active img,.prints-bg img{animation:none!important}
 }
 
 /* service-area hub + contextual links (local SEO internal linking) */

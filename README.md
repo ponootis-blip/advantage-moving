@@ -2,11 +2,11 @@
 
 Static, multi-page website for Advantage Moving, focused on South Austin and
 nearby Central Texas service areas. It is built for GitHub Pages with no build
-step. An optional company-operated Python chat server provides visitor chat and
+step. A company-operated chat backend (Cloudflare Worker/D1 or local Python/SQLite) provides visitor chat and
 a separate authenticated staff inbox.
 
 The quote form uses the company Formspree endpoint in `site-config.js`; chat is
-separate and remains disabled on GitHub Pages until an HTTPS chat server is
+separate and remains disabled on GitHub Pages until an HTTPS chat backend is
 configured in `chat-config.js`.
 
 - `HOSTING.md` — publishing and Formspree activation

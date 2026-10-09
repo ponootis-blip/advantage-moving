@@ -1,15 +1,29 @@
 # Self-hosted customer chat
 
-The quote form still uses Formspree. This is a separate, company-operated visitor chat. It uses Python's standard library, SQLite, and Server-Sent Events (SSE). The website widget has no hosted chat vendor or external realtime dependency.
+The quote form still uses Formspree. Chat is a separate application owned by Advantage Moving; no hosted chat vendor handles conversations. There are two deployment options: the Cloudflare Worker with D1 storage, or the original Python/SQLite server described below.
+
+## Cloudflare free-tier deployment
+
+`chat_worker/` contains the Worker API and `schema.sql`. The Cloudflare account's `advantage-chat` D1 database holds conversations, messages, staff sessions, and rate limits. The GitHub Pages site remains static. The Worker serves the private inbox at `/admin/chat`, and both visitor and staff clients automatically check for new messages (7 and 5 seconds respectively). This is near-live polling, not SSE; the Python option below retains SSE.
+
+In Cloudflare Workers & Pages, connect only `ponootis-blip/advantage-moving` and create the `advantage-chat` Worker with root path `/chat_worker/`, build command `npm run build`, and deploy command `npx wrangler deploy`. Its `wrangler.jsonc` binds D1 as `CHAT_DB`; `chat_server/ui` is deployed as Worker static assets for the staff inbox. Import `chat_worker/schema.sql` into D1 once before accepting traffic.
+
+Set `CHAT_ADMIN_PASSWORD` as a **Worker secret** in Cloudflare's Worker settings, never as a build variable, committed file, or website JavaScript. It must be a unique password of at least 16 characters. Until it is set, the Worker intentionally returns HTTP 503 and the public chat launcher remains hidden. The password is needed at `https://advantage-chat.ponootis.workers.dev/admin/chat`. Rotating it invalidates existing staff cookies.
+
+Only after a visitor-to-staff-to-visitor test succeeds, set `window.ADVANTAGE_CHAT_API` in `chat-config.js` to `https://advantage-chat.ponootis.workers.dev` and publish the site. The Worker allows the `https://ponootis-blip.github.io` origin, so add a future custom domain to its allowlist before switching the site. Cloudflare's free-tier request and D1 limits apply; monitor usage in the dashboard. No automatic email/SMS alert exists yet, so staff must keep the inbox open to see unread messages.
+
+Worker tests: `node --test chat_worker/test_worker.mjs`. The test uses an in-memory SQLite stand-in for D1 and does not access production data. Also run the live browser acceptance flow before enabling the widget.
+
+## Original Python deployment
 
 ## What runs where
 
 - GitHub Pages continues to serve the static website.
-- A company-controlled HTTPS server runs `chat_server.app`. It owns the API, message database, staff sessions, and the private inbox at `/admin/chat`.
+- For the Python option, a company-controlled HTTPS server runs `chat_server.app`. It owns the API, message database, staff sessions, and the private inbox at `/admin/chat`.
 - `nav.js` loads `chat-config.js`. The widget loads only when that file contains an HTTPS chat server origin, or when the site itself is being served locally by the chat server. If the API health check fails, the launcher is not shown.
 - The old `/admin/` static site editor uses a browser-side password and a GitHub token. It is **not** the chat inbox and does not authenticate chat staff.
 
-GitHub Pages cannot run Python or SQLite. The public chat button must stay disabled until the HTTPS server is operating and its address is added to `chat-config.js`.
+GitHub Pages cannot run Python or SQLite. The public chat button must stay disabled until one HTTPS backend is operating and its address is added to `chat-config.js`.
 
 ## Local end-to-end test
 

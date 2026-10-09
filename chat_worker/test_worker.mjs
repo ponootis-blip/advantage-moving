@@ -29,13 +29,14 @@ function database() {
 const base = 'https://advantage-chat.ponootis.workers.dev';
 const site = 'https://ponootis-blip.github.io';
 const password = 'A-long-unique-test-password-42';
-const env = { CHAT_DB: database(), CHAT_ADMIN_PASSWORD: password };
+const env = { CHAT_DB: database(), CHAT_ADMIN_PASSWORD: password,
+  ASSETS: { fetch: async () => new Response('<!doctype html><title>Staff inbox</title>', { headers: { 'Content-Type': 'text/html' } }) } };
 async function call(path, method = 'GET', body, headers = {}) {
   const request = new Request(base + path, { method, headers: {
     ...(body ? { 'Content-Type': 'application/json' } : {}), ...headers,
   }, ...(body ? { body: JSON.stringify(body) } : {}) });
   const response = await worker.fetch(request, env);
-  return { response, data: await response.json() };
+  return { response, data: await response.json().catch(() => null) };
 }
 
 test('visitor to agent to visitor with persistence, isolation, and authorization', async () => {
@@ -52,6 +53,8 @@ test('visitor to agent to visitor with persistence, isolation, and authorization
   assert.equal(duplicate.data.message.id, first.data.message.id);
   assert.equal((await call('/api/chat/conversation/' + id, 'GET', undefined, { Origin: site, 'X-Chat-Token': 'wrong' })).response.status, 404);
   assert.equal((await call('/api/admin/chat/conversations')).response.status, 401);
+  assert.equal((await call('/admin/chat')).response.status, 303);
+  assert.equal((await call('/inbox.html')).response.status, 404);
   const badLogin = await call('/api/admin/chat/login', 'POST', { password: 'wrong' }, { Origin: base });
   assert.equal(badLogin.response.status, 401);
   const login = await call('/api/admin/chat/login', 'POST', { password }, { Origin: base });
@@ -59,6 +62,9 @@ test('visitor to agent to visitor with persistence, isolation, and authorization
   const cookie = login.response.headers.get('Set-Cookie').split(';')[0];
   assert.match(login.response.headers.get('Set-Cookie'), /HttpOnly; Secure; SameSite=Lax/);
   const staff = { Cookie: cookie, Origin: base, 'X-CSRF-Token': login.data.csrf };
+  const inbox = await worker.fetch(new Request(base + '/admin/chat', { headers: staff }), env);
+  assert.equal(inbox.status, 200);
+  assert.match(inbox.headers.get('Content-Security-Policy'), /script-src 'self'/);
   const list = await call('/api/admin/chat/conversations', 'GET', undefined, staff);
   assert.equal(list.data.conversations[0].unread, 1);
   assert.equal(list.data.conversations[0].last_body, 'Hello');

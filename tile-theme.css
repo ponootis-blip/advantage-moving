@@ -90,10 +90,11 @@
 .theme-tile .final-cta{
   background-color:#c8642b;
   background-image:
-    linear-gradient(rgba(255,226,190,.35) 2px,transparent 2px),linear-gradient(90deg,rgba(255,226,190,.35) 2px,transparent 2px),
-    radial-gradient(circle at 25% 30%,rgba(255,255,255,.16),transparent 45%),
+    url("assets/marble-veins.svg?v=1"),
+    radial-gradient(ellipse at 22% 28%,rgba(255,236,210,.16),transparent 55%),
+    radial-gradient(ellipse at 80% 75%,rgba(120,40,0,.12),transparent 60%),
     linear-gradient(110deg,#b9541f,#d06c30 55%,#dc8a3a);
-  background-size:64px 64px,64px 64px,auto,auto;
+  background-size:900px 600px,auto,auto,auto;
 }
 .theme-tile footer{position:relative;background-color:#05314d;background-image:linear-gradient(rgba(255,255,255,.05) 1.5px,transparent 1.5px),linear-gradient(90deg,rgba(255,255,255,.05) 1.5px,transparent 1.5px);background-size:40px 40px}
 .theme-tile .footer-brand img{border-radius:var(--tile-r);box-shadow:var(--bevel)}

@@ -39,3 +39,21 @@
     if (openBtn) { close(openBtn); openBtn.focus(); }
   });
 })();
+
+/* Load the isolated visitor chat only when a chat server is configured.
+   The server can also serve this static site directly for same-origin testing. */
+(function () {
+  "use strict";
+  var base = new URL(".", document.currentScript.src);
+  var config = document.createElement("script");
+  config.src = new URL("chat-config.js?v=1", base).href;
+  config.onload = function () {
+    var configured = typeof window.ADVANTAGE_CHAT_API === "string" && /^https:\/\//.test(window.ADVANTAGE_CHAT_API);
+    var local = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+    if (!configured && !local) return;
+    var widget = document.createElement("script");
+    widget.src = new URL("chat-widget.js?v=1", base).href;
+    document.body.append(widget);
+  };
+  document.head.append(config);
+})();

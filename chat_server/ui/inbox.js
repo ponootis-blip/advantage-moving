@@ -49,7 +49,8 @@
     detail.textContent=(conversation.visitor_email?conversation.visitor_email+" · ":"")+(conversation.status==="closed"?"Closed · ":"Open · ")+"Started "+when(conversation.messages[0]&&conversation.messages[0].created_at);
     if(JSON.stringify(currentMessages)!==JSON.stringify(conversation.messages)){currentMessages=conversation.messages;draw(currentMessages)}
     reply.hidden=false;document.querySelector("#close").hidden=conversation.status==="closed";
-    await api("/api/admin/chat/conversations/"+encodeURIComponent(id)+"/read",{method:"POST",body:"{}"});
+    if(conversation.messages.some(function(item){return item.sender_type==="visitor"&&!item.read_at}))
+      await api("/api/admin/chat/conversations/"+encodeURIComponent(id)+"/read",{method:"POST",body:"{}"});
   }
   async function select(id){
     if(selected)drafts.set(selected,bodyInput.value);
@@ -91,8 +92,13 @@
     status.textContent="Reconnecting…";
     retry=setTimeout(connect,1800);
   }
+  async function poll(){
+    try{await refreshList();if(selected)await refreshThread();status.textContent="Live"}
+    catch(err){status.textContent="Reconnecting…"}
+    retry=setTimeout(function(){retry=null;poll()},5000);
+  }
   async function init(){
-    try{var me=await api("/api/admin/chat/me");csrf=me.csrf;await connect()}
+    try{var me=await api("/api/admin/chat/me");csrf=me.csrf;if(me.realtime==="poll")await poll();else await connect()}
     catch(err){error.textContent=err.message}
   }
   init();

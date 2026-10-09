@@ -4,7 +4,7 @@
   var script=document.currentScript;
   var api=(window.ADVANTAGE_CHAT_API||"").replace(/\/$/,"")||location.origin;
   var key="advantage-chat-session-v1";
-  var data=null, open=false, busy=false, stopped=false, retry=null, stream=null, connecting=false, unread=0,pending=null;
+  var data=null, open=false, busy=false, stopped=false, retry=null, stream=null, connecting=false, unread=0,pending=null,realtime="sse";
   var host=document.createElement("div"), root=host.attachShadow({mode:"open"});
   var css=document.createElement("link"); css.rel="stylesheet"; css.href=new URL("chat-widget.css?v=1",script.src).href;
   root.append(css);
@@ -52,7 +52,14 @@
     }catch(e){if(e.status===404){drop();say("Start a new conversation") }else say("Reconnecting…",true)}
   }
   async function connect(){
-    if(stopped||!data||connecting)return;
+    if(stopped||!data||connecting||retry)return;
+    if(realtime==="poll"){
+      connecting=true;
+      await refresh();
+      connecting=false;
+      retry=setTimeout(function(){retry=null;connect()},7000);
+      return;
+    }
     connecting=true;
     await refresh();
     if(!data||stopped){connecting=false;return}
@@ -102,7 +109,7 @@
     finally{busy=false;send.disabled=false;input.focus()}
   });
   async function mount(){
-    try{var r=await fetch(api+"/api/chat/health",{mode:"cors",cache:"no-store"});if(!r.ok)return}
+    try{var r=await fetch(api+"/api/chat/health",{mode:"cors",cache:"no-store"});if(!r.ok)return;var health=await r.json();realtime=health.realtime==="poll"?"poll":"sse"}
     catch(e){return}
     document.body.append(host);
     // Keep the chat entry point clear of the homepage's primary quote card.

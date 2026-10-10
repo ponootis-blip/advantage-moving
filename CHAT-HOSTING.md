@@ -1,6 +1,6 @@
-# Self-hosted customer chat
+# Company-owned customer chat
 
-The quote form still uses Formspree. Chat is a separate application owned by Advantage Moving; no hosted chat vendor handles conversations. There are two deployment options: the Cloudflare Worker with D1 storage, or the original Python/SQLite server described below.
+The quote form still uses Formspree. Chat is a separate application owned by Advantage Moving. Cloudflare supplies the Worker hosting and D1 storage, but no third-party chat platform operates the inbox. There are two deployment options: the Cloudflare Worker, or the original Python/SQLite server described below.
 
 ## Cloudflare free-tier deployment
 

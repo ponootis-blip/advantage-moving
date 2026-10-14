@@ -25,7 +25,7 @@ function respond(int $status, array $body): void
 $home = dirname($_SERVER['DOCUMENT_ROOT'] ?? __DIR__ . '/..');
 $dataDir = $home . '/advantage-leads';
 $config = [
-    'to' => 'service@advantagemovingaustin.com',
+    'to' => 'advantagemovingaustin@gmail.com',
     'from' => 'website@advantagemovingaustin.com',
     'from_name' => 'Advantage Moving website',
     'allowed_hosts' => ['advantagemovingaustin.com', 'www.advantagemovingaustin.com'],

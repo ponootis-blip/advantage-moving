@@ -12,10 +12,12 @@ assert.match(index,/href="privacy-policy\.html"/);
 assert.match(index,/id="qStatus"[^>]*tabindex="-1"/);
 assert.match(index,/JavaScript is required for the online form/);
 assert.match(script,/AbortController/);
-assert.match(script,/hostname!=="formspree\.io"/);
+assert.match(script,/provider!=="server"/);
+assert.doesNotMatch(script,/formspree/i);
 assert.match(script,/status\.focus\(\)/);
 assert.doesNotMatch(script,/provider==="web3forms"/);
-assert.match(privacy,/processed by Formspree/);
+assert.match(privacy,/received by our own website server/);
+assert.doesNotMatch(privacy,/Formspree/);
 
 const htmlFiles=fs.readdirSync(root).filter(file=>file.endsWith(".html"));
 for(const file of htmlFiles){
@@ -30,5 +32,6 @@ for(const match of sitemap.matchAll(/<loc>https:\/\/advantagemovingaustin\.com\/
   assert.ok(fs.existsSync(path.join(root,file)),`sitemap target missing: ${file}`);
 }
 
-assert.match(config,/REPLACE_WITH_FORMSPREE_FORM_ID|https:\/\/formspree\.io\/f\/[a-z0-9]+/i);
+assert.match(config,/provider: "server"/);
+assert.match(config,/endpoint: "\/api\/quote\.php"/);
 console.log(`PASS: ${htmlFiles.length} pages, quote safeguards, privacy copy, and sitemap targets`);

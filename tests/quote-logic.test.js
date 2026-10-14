@@ -3,11 +3,11 @@ const assert=require("node:assert/strict");
 const {estimateMove,localDateInputValue,normalizeQuoteConfig,quoteReference}=require("../site.js");
 
 assert.equal(normalizeQuoteConfig(),null);
-assert.equal(normalizeQuoteConfig({provider:"formspree",endpoint:"https://formspree.io/f/REPLACE_WITH_FORMSPREE_FORM_ID"}),null);
-assert.equal(normalizeQuoteConfig({provider:"formspree",endpoint:"http://formspree.io/f/abc123"}),null);
-assert.equal(normalizeQuoteConfig({provider:"formspree",endpoint:"https://example.com/f/abc123"}),null);
-assert.equal(normalizeQuoteConfig({provider:"web3forms",endpoint:"https://formspree.io/f/abc123"}),null);
-assert.equal(normalizeQuoteConfig({provider:"formspree",endpoint:"https://formspree.io/f/abc123"}),"https://formspree.io/f/abc123");
+assert.equal(normalizeQuoteConfig({provider:"formspree",endpoint:"https://formspree.io/f/abc123"}),null);
+assert.equal(normalizeQuoteConfig({provider:"server",endpoint:"https://evil.example/api/quote.php"}),null);
+assert.equal(normalizeQuoteConfig({provider:"server",endpoint:"//evil.example/quote.php"}),null);
+assert.equal(normalizeQuoteConfig({provider:"server",endpoint:"//evil/quote.php"}),null);
+assert.equal(normalizeQuoteConfig({provider:"server",endpoint:"/api/quote.php"}),"/api/quote.php");
 
 const reference=quoteReference();
 assert.match(reference,/^ADV-[A-Z0-9]{5}-[A-F0-9]{6}$/);

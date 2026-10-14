@@ -4,9 +4,10 @@ var CREW_RATE={2:140,3:180,4:220,5:260};
 function round10(n){return Math.round(n/10)*10}
 function estimateMove(options){var size=SIZE_TABLE[options.size]||SIZE_TABLE.two;var labor=size.hours*CREW_RATE[size.crew];var mileage=options.distance==="state"?150+Math.max(20,Math.min(900,Number(options.miles)||0))*2.5:0;var addons=(options.packing?size.pack:0)+(options.piano?250:0);var total=labor+mileage+addons;return{crew:size.crew,hours:size.hours,low:round10(total*.9),high:round10(total*1.2)}}
 function localDateInputValue(date){var pad=function(value){return String(value).padStart(2,"0")};return date.getFullYear()+"-"+pad(date.getMonth()+1)+"-"+pad(date.getDate())}
+/* quote requests post to our own server (api/quote.php); only same-site paths are accepted */
 function normalizeQuoteConfig(config){
-  if(!config||config.provider!=="formspree"||typeof config.endpoint!=="string"||config.endpoint.indexOf("REPLACE_")!==-1){return null}
-  try{var url=new URL(config.endpoint);if(url.protocol!=="https:"||url.hostname!=="formspree.io"||!/^\/f\/[a-z0-9]+$/i.test(url.pathname)){return null}return url.href}catch(error){return null}
+  if(!config||config.provider!=="server"||typeof config.endpoint!=="string"){return null}
+  return /^(\/[a-z0-9_-]+)+\.php$/i.test(config.endpoint)?config.endpoint:null
 }
 function quoteReference(){var random="";if(typeof crypto!=="undefined"&&crypto.getRandomValues){var bytes=new Uint8Array(3);crypto.getRandomValues(bytes);random=Array.from(bytes,function(byte){return byte.toString(16).padStart(2,"0")}).join("").toUpperCase()}else{random=Math.floor(Math.random()*16777215).toString(16).padStart(6,"0").toUpperCase()}return "ADV-"+Date.now().toString(36).slice(-5).toUpperCase()+"-"+random}
 var DAY_NAMES=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -82,7 +83,7 @@ if(typeof document!=="undefined"&&document.getElementById("quoteForm")){
       if(!endpoint){throw new Error("not-configured")}
       var controller=new AbortController(),timer=setTimeout(function(){controller.abort()},12000);
       var response;
-      try{response=await fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(payload),signal:controller.signal})}finally{clearTimeout(timer)}
+      try{response=await fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},credentials:"same-origin",body:JSON.stringify(payload),signal:controller.signal})}finally{clearTimeout(timer)}
       var data=await response.json().catch(function(){return{}});
       if(!response.ok){throw new Error(data.error||data.message||"Unable to send")}
       quoteStep1.hidden=true;quoteStep2.hidden=true;

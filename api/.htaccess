@@ -1,0 +1,4 @@
+# Only quote.php is reachable; the example config is never served.
+<FilesMatch "\.example\.php$">
+  Require all denied
+</FilesMatch>

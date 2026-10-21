@@ -107,14 +107,23 @@
       }
     ],
     "photo": "assets/bg.jpg",
-    "googleBusinessUrl": "",
-    "googleReviewUrl": "",
-    "sameAs": [],
+    "googleBusinessUrl": "https://maps.google.com/?cid=7848392723184479247",
+    "googleReviewUrl": "https://search.google.com/local/writereview?placeid=ChIJi-5QKDWzRIYRD-wrY5kX62w",
+    "sameAs": [
+      "https://www.facebook.com/advantagemovingaustin",
+      "https://www.yelp.com/biz/advantage-moving-buda"
+    ],
     "description": "Family-owned, full-service movers based in Buda, Texas since 2001, serving Austin and every town south along I-35—including Buda and Kyle—within about 30 miles, plus moves anywhere in Texas.",
     "serviceRadiusMiles": 30,
     "serviceCenter": {
       "lat": 30.0852,
       "lng": -97.8403
+    },
+    "legalName": "Advantage Moving Inc.",
+    "googlePlaceId": "ChIJi-5QKDWzRIYRD-wrY5kX62w",
+    "geo": {
+      "lat": 30.0607785,
+      "lng": -97.7804702
     }
   },
   "pages": [
@@ -126,7 +135,7 @@
       "ogTitle": "South Austin Movers | Advantage Moving",
       "index": true,
       "priority": "1.0",
-      "lastmod": "2026-10-07"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "south-austin-movers.html",
@@ -135,7 +144,7 @@
       "description": "South Austin movers for homes, apartments, offices, packing and pianos. Serving 78704, South Congress, South Lamar, Manchaca and nearby areas. Free quote.",
       "index": true,
       "priority": "0.9",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "local-moving-austin.html",
@@ -144,7 +153,7 @@
       "description": "Local South Austin movers for apartments, condos and homes. Careful crews, packing help and clear estimates from Advantage Moving. Family owned since 2001.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "austin-movers.html",
@@ -153,7 +162,7 @@
       "description": "Texas intrastate movers from South Austin to San Antonio, Houston, Dallas, El Paso and statewide destinations. Family owned since 2001.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "commercial-movers-austin.html",
@@ -162,7 +171,7 @@
       "description": "South Austin commercial movers for offices, retail and restaurants. Coordinated scheduling, equipment protection and clear estimates. Call 512-443-6141.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "packing-services-austin.html",
@@ -171,7 +180,7 @@
       "description": "Packing services in South Austin for homes, apartments, offices, fragile items and full moves. Materials and careful crews from Advantage Moving.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "piano-moving-austin.html",
@@ -180,7 +189,7 @@
       "description": "South Austin piano movers for uprights, baby grands, organs, clocks, antiques and valuables. Experienced, unrushed handling. Free estimate.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "buda-movers.html",
@@ -189,7 +198,7 @@
       "description": "Buda movers for homes, apartments, offices, packing and Texas moves. Advantage Moving is based on Satterwhite Road in Buda. Family owned since 2001.",
       "index": true,
       "priority": "0.75",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "kyle-movers.html",
@@ -198,7 +207,7 @@
       "description": "Kyle TX movers for homes, apartments, offices, packing and statewide moves. Family-owned Advantage Moving serves Kyle from nearby Buda. Free estimates.",
       "index": true,
       "priority": "0.75",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "dripping-springs-movers.html",
@@ -207,7 +216,7 @@
       "description": "Dripping Springs movers for Hill Country homes, acreage, packing, pianos and Texas moves. Family-owned Advantage Moving provides free estimates.",
       "index": true,
       "priority": "0.75",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-guide-south-austin.html",
@@ -216,7 +225,7 @@
       "description": "Plan a South Austin move with a practical checklist for licensed movers, estimates, packing, apartments, move day and Texas consumer protections.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "advantage-movers.html",
@@ -225,7 +234,7 @@
       "description": "Meet Advantage Moving, the Cousins family moving company serving South Austin and Central Texas since 2001. Licensed, insured and based in Buda.",
       "index": true,
       "priority": "0.6",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "san-marcos-movers.html",
@@ -234,7 +243,7 @@
       "description": "Family-owned, full-service San Marcos movers since 2001. Apartments, student housing, homes and businesses along I-35. Call (512) 443-6141.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "austin-to-houston-movers.html",
@@ -243,7 +252,7 @@
       "description": "Full-service Austin to Houston movers. One family-owned crew from packing to setup, licensed by TxDMV #000572890B. Free written estimate.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "austin-to-san-antonio-movers.html",
@@ -252,7 +261,7 @@
       "description": "Moving from Austin to San Antonio? Full-service, family-owned movers on the I-35 corridor since 2001. TxDMV licensed. Get a free estimate.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "austin-to-dallas-movers.html",
@@ -261,7 +270,7 @@
       "description": "Full-service movers from Austin to Dallas, Fort Worth and the Metroplex suburbs. Family owned since 2001, TxDMV licensed. Free estimate.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "move-day-guide.html",
@@ -270,7 +279,7 @@
       "description": "A step-by-step moving day guide for Austin: what to pack last, Texas paperwork, beating the heat and what to check before you sign.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "apartment-movers-austin.html",
@@ -279,7 +288,7 @@
       "description": "Full-service apartment and condo movers for Austin, Buda, Kyle and San Marcos. Walk-ups, elevators and tight halls handled. Family owned since 2001.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "furniture-movers-austin.html",
@@ -288,7 +297,7 @@
       "description": "Careful furniture moving in Austin: sectionals, armoires, beds and heirlooms wrapped, protected, taken apart and reassembled when needed. Free estimate.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-storage-austin.html",
@@ -297,7 +306,7 @@
       "description": "Closing delayed or lease ending early? Advantage coordinates short-term storage between homes so your Austin-area move happens in two easy steps.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-quotes-texas.html",
@@ -306,7 +315,7 @@
       "description": "Binding vs not-to-exceed, what changes the price, and whether movers charge for stairs—how Texas moving quotes really work, from a TxDMV-licensed mover.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "questions-to-ask-movers.html",
@@ -315,7 +324,7 @@
       "description": "The ten questions that separate professional movers from risky ones in Texas—license, written proposals, liability, claims—and the answers to listen for.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-glossary.html",
@@ -324,7 +333,7 @@
       "description": "Binding proposal, not-to-exceed, TxDMV certificate, COI, long carry and more—plain-English definitions of the moving terms Texans run into.",
       "index": true,
       "priority": "0.6",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-guides.html",
@@ -333,7 +342,7 @@
       "description": "Free moving checklist, box and cost calculators, plus guides to Texas moving quotes, questions to ask movers, moving day and change of address.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "house-movers-austin.html",
@@ -342,7 +351,7 @@
       "description": "Full-service house movers for Austin, Buda, Kyle and San Marcos: packing, protection, loading, transport and setup. Family owned since 2001.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "small-moves-austin.html",
@@ -351,7 +360,7 @@
       "description": "Moving a few rooms, a dorm or a handful of heavy items in Austin? Advantage handles small moves with the same careful, full-service crew.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "last-minute-movers-austin.html",
@@ -360,7 +369,7 @@
       "description": "Need movers fast in Austin, Buda or Kyle? Call Advantage. A real person answers daily 8–5 and we'll tell you straight what we can do on short notice.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "loading-unloading-help.html",
@@ -369,7 +378,7 @@
       "description": "Rented a truck or container? Advantage provides experienced loading and unloading help in Austin and along I-35—properly padded, packed tight and safe.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "senior-moving-austin.html",
@@ -378,7 +387,7 @@
       "description": "Patient, careful senior moves and downsizing in Austin and along I-35: packing, setup in the new home and room-by-room planning. Family owned since 2001.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "student-movers.html",
@@ -387,7 +396,7 @@
       "description": "Student moves near UT Austin and Texas State in San Marcos: dorms, apartments and storage between semesters, from a family-owned crew. Easy to reach.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "unpacking-services-austin.html",
@@ -396,7 +405,7 @@
       "description": "Skip the weeks of boxes. Advantage unpacks, sets up furniture and removes packing materials so your new Austin-area home feels like home sooner.",
       "index": true,
       "priority": "0.6",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "antique-art-movers-austin.html",
@@ -405,7 +414,7 @@
       "description": "Careful moving for antiques, fine art, mirrors, clocks and heirlooms in Austin and along I-35: custom padding, packing and an unhurried crew.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "in-home-furniture-moving.html",
@@ -414,7 +423,7 @@
       "description": "Need heavy furniture moved within your home—for a remodel, new flooring, staging or rearranging? Advantage moves it safely, room to room or floor to floor.",
       "index": true,
       "priority": "0.6",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "services.html",
@@ -423,7 +432,7 @@
       "description": "Every moving service from one family-owned, full-service crew: local, house, apartment, commercial, packing, pianos, storage, labor and Texas moves.",
       "index": true,
       "priority": "0.9",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-checklist.html",
@@ -432,7 +441,7 @@
       "description": "A free, printable moving checklist from 8 weeks out to the first week after. Enter your move date for target dates and tick off tasks as you go.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-box-calculator.html",
@@ -441,7 +450,7 @@
       "description": "Free moving box calculator: estimate small, medium, large, wardrobe and dish-pack boxes, tape and packing paper for a studio to a 4+ bedroom home.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-cost-calculator.html",
@@ -450,7 +459,7 @@
       "description": "Estimate the cost of a local Austin-area or Texas move in seconds. Choose your home size, distance, packing and piano for a planning range.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "change-of-address-checklist-texas.html",
@@ -459,7 +468,7 @@
       "description": "Moving in Texas? Update your driver license within 30 days, plus vehicle registration, USPS, voter registration and utilities. A simple checklist.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "manchaca-movers.html",
@@ -468,7 +477,7 @@
       "description": "Family-owned, full-service Manchaca movers: acreage, older ranch homes and new subdivisions between South Austin and Buda. Licensed TxDMV #000572890B.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "sunset-valley-movers.html",
@@ -477,7 +486,7 @@
       "description": "Full-service movers for Sunset Valley, the small city surrounded by southwest Austin—homes on quiet streets and businesses along US 290. Family owned.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "oak-hill-movers.html",
@@ -486,7 +495,7 @@
       "description": "Full-service Oak Hill movers for southwest Austin homes near US 290 and SH 71—hillside lots, stairs and Hill Country views. Family owned since 2001.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "circle-c-movers.html",
@@ -495,7 +504,7 @@
       "description": "Movers for Circle C Ranch in southwest Austin: HOA-friendly scheduling, careful family-home moves and full-service packing. Family owned since 2001.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "driftwood-movers.html",
@@ -504,7 +513,7 @@
       "description": "Full-service Driftwood movers for Hill Country homes and acreage along FM 1826 and FM 150: gravel drives, gates and long carries handled.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "wimberley-movers.html",
@@ -513,7 +522,7 @@
       "description": "Full-service movers for Wimberley and Woodcreek: hillside homes, narrow roads and river properties in the Hill Country. Family owned since 2001.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "lockhart-movers.html",
@@ -522,7 +531,7 @@
       "description": "Full-service Lockhart movers for historic homes near the courthouse square and newer subdivisions across Caldwell County. Family owned since 2001.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "del-valle-movers.html",
@@ -531,7 +540,7 @@
       "description": "Full-service Del Valle movers for southeast Travis County near the airport and SH 71/SH 130: new subdivisions, apartments and homes. Family owned.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "mustang-ridge-movers.html",
@@ -540,7 +549,7 @@
       "description": "Full-service movers for Mustang Ridge along US 183 south of Austin: homes on larger lots, new neighborhoods and moves across Texas. Family owned.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "niederwald-movers.html",
@@ -549,7 +558,7 @@
       "description": "Full-service movers for Niederwald on SH 21 in Hays and Caldwell counties: country homes, acreage and moves across Central Texas. Family owned.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "uhland-movers.html",
@@ -558,7 +567,7 @@
       "description": "Full-service Uhland movers on SH 21 and FM 2720 near Kyle and Lockhart: homes on acreage and new subdivisions. Family owned since 2001.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "martindale-movers.html",
@@ -567,7 +576,7 @@
       "description": "Full-service movers for Martindale on the San Marcos River, just east of San Marcos: homes, river properties and moves across Texas. Family owned.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "corporate-relocation-austin.html",
@@ -576,7 +585,7 @@
       "description": "Corporate and employee relocation within Texas: coordinated household moves for new hires and transfers to and from Austin. Family owned since 2001.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "military-movers-texas.html",
@@ -585,7 +594,7 @@
       "description": "Military moving help within Texas: personally procured moves (PPM), local moves around installations and careful household moves for service members.",
       "index": true,
       "priority": "0.6",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "heavy-item-movers-austin.html",
@@ -594,7 +603,7 @@
       "description": "Movers for heavy and awkward items in Austin: gun safes, appliances, pool tables, gym equipment and more—planned, padded and moved safely.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "white-glove-moving-austin.html",
@@ -603,7 +612,7 @@
       "description": "White-glove moving in Austin: extra protection, full packing and unpacking, furniture placement and a crew that treats your home like theirs.",
       "index": true,
       "priority": "0.6",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "areas.html",
@@ -612,7 +621,7 @@
       "description": "Advantage Moving serves Austin and every town south along I-35—Buda, Kyle, San Marcos—plus Hill Country and Caldwell County towns within about 30 miles.",
       "index": true,
       "priority": "0.9",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "mover-tip-calculator.html",
@@ -621,7 +630,7 @@
       "description": "How much should you tip movers? Work out a fair tip per mover from crew size, hours, the bill and how the day went. Tipping is always optional.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "home-inventory.html",
@@ -630,7 +639,7 @@
       "description": "Build a room-by-room moving inventory with cubic feet, weight and declared value. Print it or export a CSV for your quote and your records.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "box-label-maker.html",
@@ -639,7 +648,7 @@
       "description": "Make free color-coded, numbered moving box labels by room with FRAGILE, OPEN FIRST and THIS SIDE UP flags. Print on paper or label sheets.",
       "index": true,
       "priority": "0.7",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "first-night-box.html",
@@ -648,7 +657,7 @@
       "description": "The open-first box checklist: medication, chargers, bedding, tools, snacks, cleaning supplies and pet and kid essentials for your first night.",
       "index": true,
       "priority": "0.6",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-with-pets-plants.html",
@@ -657,7 +666,7 @@
       "description": "How to move dogs, cats and houseplants safely in Texas: vet records, ID tags, carriers, moving-day safety in the heat and plant care.",
       "index": true,
       "priority": "0.6",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "moving-with-kids.html",
@@ -666,7 +675,7 @@
       "description": "How to make moving easier for kids: telling them early, involving them, keeping routines on moving day, school records and settling into the new home.",
       "index": true,
       "priority": "0.6",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "best-time-to-move-austin.html",
@@ -675,7 +684,7 @@
       "description": "When to move in Austin for better availability and lower stress: peak season, summer heat, UT move-in, big events, the best days and how far ahead to book.",
       "index": true,
       "priority": "0.8",
-      "lastmod": "2026-10-08"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "privacy-policy.html",
@@ -684,7 +693,7 @@
       "description": "How Advantage Moving Austin handles your quote-request information. Questions? Call (512) 443-6141.",
       "index": true,
       "priority": "0.2",
-      "lastmod": "2026-10-07"
+      "lastmod": "2026-10-21"
     },
     {
       "file": "launch-checklist.html",
@@ -702,7 +711,7 @@
       "description": "",
       "index": false,
       "sitemap": false,
-      "lastmod": "2026-10-07"
+      "lastmod": "2026-10-21"
     }
   ],
   "faq": [

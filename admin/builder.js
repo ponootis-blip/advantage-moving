@@ -62,6 +62,7 @@
     var b = data.business, base = data.site.baseUrl, p = phoneForms(b.phone);
     var o = { "@context": "https://schema.org", "@type": "MovingCompany", "@id": base + "#business", "name": b.name };
     if (b.alternateName) o.alternateName = b.alternateName;
+    if (b.legalName) o.legalName = b.legalName;
     if (b.tagline) o.slogan = b.tagline;
     if (b.description) o.description = b.description;
     o.url = base;
@@ -71,6 +72,9 @@
     if (b.email) o.email = b.email;
     if (b.foundingYear) o.foundingDate = String(b.foundingYear);
     o.address = { "@type": "PostalAddress", "streetAddress": b.street, "addressLocality": b.city, "addressRegion": b.region, "postalCode": b.postalCode, "addressCountry": b.country || "US" };
+    // office pin, matching the Google Business Profile, plus a link to that Maps listing
+    if (b.geo && b.geo.lat && b.geo.lng) o.geo = { "@type": "GeoCoordinates", "latitude": Number(b.geo.lat), "longitude": Number(b.geo.lng) };
+    if (/^https:\/\//.test(b.googleBusinessUrl || "")) o.hasMap = b.googleBusinessUrl;
     if (b.hours && b.hours.days && b.hours.days.length) {
       o.openingHoursSpecification = [{ "@type": "OpeningHoursSpecification", "dayOfWeek": b.hours.days, "opens": b.hours.opens, "closes": b.hours.closes }];
     }

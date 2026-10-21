@@ -87,6 +87,7 @@ if(typeof document!=="undefined"&&document.getElementById("quoteForm")){
       var data=await response.json().catch(function(){return{}});
       if(!response.ok){throw new Error(data.error||data.message||"Unable to send")}
       quoteStep1.hidden=true;quoteStep2.hidden=true;
+      if(typeof window.gtag==="function"){window.gtag("event","generate_lead",{form_id:"quote",move_type:payload["Move type"]||"unknown"})}
       var after=currentStatus();
       status.innerHTML="<strong>Thanks, "+escapeHtml(name)+". Request "+reference+" is on its way.</strong>"+
         "<ol class='next-steps'><li>"+(after.open?"We’re open now and will call you shortly.":"We’re closed right now—we’ll call you "+escapeHtml(after.next)+".")+"</li><li>We confirm stairs, access and anything heavy or fragile.</li><li>You get a written proposal before anything is loaded.</li></ol>"+

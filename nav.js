@@ -33,6 +33,11 @@
   });
 
   document.addEventListener("click", function (e) { if (!e.target.closest(".mega") && !e.target.closest(".nav-drop")) closeAll(); });
+  // Analytics: count taps on any phone link (GA4 "click_to_call")
+  document.addEventListener("click", function (e) {
+    var tel = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (tel && typeof window.gtag === "function") window.gtag("event", "click_to_call", { link_location: tel.closest("header,.sitehead,.mobile-actions,footer,main") ? (tel.closest("header,.sitehead,.mobile-actions,footer,main").className || "page").split(" ")[0] : "page" });
+  });
   document.addEventListener("keydown", function (e) {
     if (e.key !== "Escape") return;
     var openBtn = head.querySelector('.nav-toggle[aria-expanded="true"]');

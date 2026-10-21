@@ -70,7 +70,7 @@
     o.image = [base + data.site.defaultOgImage].concat(b.photo ? [base + b.photo] : []);
     if (p) o.telephone = p.schema;
     if (b.email) o.email = b.email;
-    if (b.foundingYear) o.foundingDate = String(b.foundingYear);
+    if (b.foundingDate || b.foundingYear) o.foundingDate = String(b.foundingDate || b.foundingYear);
     o.address = { "@type": "PostalAddress", "streetAddress": b.street, "addressLocality": b.city, "addressRegion": b.region, "postalCode": b.postalCode, "addressCountry": b.country || "US" };
     // office pin, matching the Google Business Profile, plus a link to that Maps listing
     if (b.geo && b.geo.lat && b.geo.lng) o.geo = { "@type": "GeoCoordinates", "latitude": Number(b.geo.lat), "longitude": Number(b.geo.lng) };

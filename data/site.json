@@ -12,7 +12,7 @@
     "tagline": "Get the Advantage",
     "owner": "The Cousins family",
     "phone": "5124436141",
-    "smsNumber": "",
+    "smsNumber": "5124436141",
     "email": "service@advantagemovingaustin.com",
     "street": "2462 Satterwhite Rd.",
     "city": "Buda",
@@ -124,7 +124,8 @@
     "geo": {
       "lat": 30.0607785,
       "lng": -97.7804702
-    }
+    },
+    "foundingDate": "2001-12"
   },
   "pages": [
     {

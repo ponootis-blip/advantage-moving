@@ -33,8 +33,10 @@
   });
 
   document.addEventListener("click", function (e) { if (!e.target.closest(".mega") && !e.target.closest(".nav-drop")) closeAll(); });
-  // Analytics: count taps on any phone link (GA4 "click_to_call")
+  // Analytics: count taps on phone and text links (GA4 "click_to_call", "click_to_text")
   document.addEventListener("click", function (e) {
+    var sms = e.target.closest && e.target.closest('a[href^="sms:"]');
+    if (sms && typeof window.gtag === "function") window.gtag("event", "click_to_text");
     var tel = e.target.closest && e.target.closest('a[href^="tel:"]');
     if (tel && typeof window.gtag === "function") window.gtag("event", "click_to_call", { link_location: tel.closest("header,.sitehead,.mobile-actions,footer,main") ? (tel.closest("header,.sitehead,.mobile-actions,footer,main").className || "page").split(" ")[0] : "page" });
   });
